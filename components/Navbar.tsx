@@ -2,8 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
+    const [openMobileNav, setOpenMobileNav] = useState(false);
+
     return (
         <div className="navbar-area top-0 start-0 end-0 h-auto">
             <div className="container">
@@ -33,7 +37,10 @@ const Navbar = () => {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <span className="burger-menu">
+                        <span
+                            className="burger-menu"
+                            onClick={() => setOpenMobileNav(!openMobileNav)}
+                        >
                             <span className="top-bar" />
                             <span className="middle-bar" />
                             <span className="bottom-bar" />
@@ -381,6 +388,10 @@ const Navbar = () => {
                             </a>
                         </div>
                     </div>
+                    <MobileNav
+                        openMobileNav={openMobileNav}
+                        setOpenMobileNav={setOpenMobileNav}
+                    />
                 </nav>
             </div>
         </div>
