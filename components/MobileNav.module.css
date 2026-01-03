@@ -1,0 +1,33 @@
+.rotate {
+    display: inline-block;
+    transform: rotate(180deg);
+    transform-origin: center;
+    transition: transform 0.1s ease;
+}
+
+.mobileNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    z-index: 1050;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px); /* small slide effect */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.mobileNav.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.navFontMain {
+    font-size: 18px;
+}

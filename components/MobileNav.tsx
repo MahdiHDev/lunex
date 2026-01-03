@@ -1,13 +1,7 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import {
-    Button,
-    CloseButton,
-    Collapse,
-    Container,
-    Nav,
-    Navbar,
-} from "react-bootstrap";
-import { ChevronDown, ChevronUp } from "react-bootstrap-icons";
+import { CloseButton, Collapse, Container, Nav, Navbar } from "react-bootstrap";
+import { ArrowDown } from "react-bootstrap-icons";
+import styles from "./MobileNav.module.css";
 
 type MobileNavProps = {
     openMobileNav: boolean;
@@ -23,37 +17,42 @@ const MobileNav = ({ openMobileNav, setOpenMobileNav }: MobileNavProps) => {
 
     return (
         <Navbar
-            className="bg-white w-100"
+            className={`bg-white w-100 ${styles.mobileNav} ${
+                openMobileNav ? styles.open : ""
+            }`}
             // style={{ display: openMobileNav ? "block" : "none" }}
             style={{
-                display: openMobileNav ? "block" : "none",
                 minHeight: "100vh",
-                zIndex: 1050,
                 position: "fixed",
                 top: 0,
             }}
         >
-            <Container fluid className="h-100">
+            <Container className="h-100 w-100">
                 <CloseButton
-                    style={{ position: "absolute", top: "20px", right: "20px" }}
+                    style={{
+                        position: "absolute",
+                        top: "20px",
+                        right: "20px",
+                    }}
                     onClick={() => setOpenMobileNav(false)}
                 />
                 <Nav className="flex-column w-100">
                     {/* HOME */}
-                    <div className="py-3">
-                        <Button
-                            variant="none"
-                            className="w-100 border-0 d-flex justify-content-between align-items-center text-start fw-semibold"
+                    <div>
+                        <div
+                            className={`w-100 border-0 d-flex justify-content-between align-items-center text-start fw-semibold ${styles.navFontMain}`}
                             onClick={() => toggleMenu("home")}
                             aria-expanded={openMenu === "home"}
                         >
                             Home
-                            {openMenu === "home" ? (
-                                <ChevronUp />
-                            ) : (
-                                <ChevronDown />
-                            )}
-                        </Button>
+                            <div className="">
+                                <ArrowDown
+                                    className={
+                                        openMenu === "home" ? styles.rotate : ""
+                                    }
+                                />
+                            </div>
+                        </div>
 
                         <Collapse in={openMenu === "home"}>
                             <div>
@@ -91,20 +90,23 @@ const MobileNav = ({ openMobileNav, setOpenMobileNav }: MobileNavProps) => {
                     </div>
 
                     {/* WORKS */}
-                    <div className="py-3">
-                        <Button
-                            variant="none"
-                            className="w-100 border-0 d-flex justify-content-between align-items-center text-start fw-semibold"
+                    <div>
+                        <div
+                            className={`w-100 border-0 d-flex justify-content-between align-items-center text-start fw-semibold ${styles.navFontMain}`}
                             onClick={() => toggleMenu("works")}
                             aria-expanded={openMenu === "works"}
                         >
                             Works
-                            {openMenu === "works" ? (
-                                <ChevronUp />
-                            ) : (
-                                <ChevronDown />
-                            )}
-                        </Button>
+                            <div className="">
+                                <ArrowDown
+                                    className={
+                                        openMenu === "works"
+                                            ? styles.rotate
+                                            : ""
+                                    }
+                                />
+                            </div>
+                        </div>
 
                         <Collapse in={openMenu === "works"}>
                             <div>
@@ -119,20 +121,23 @@ const MobileNav = ({ openMobileNav, setOpenMobileNav }: MobileNavProps) => {
                     </div>
 
                     {/* CAREERS */}
-                    <div className="py-3">
-                        <Button
-                            variant="none"
-                            className="w-100 border-0 d-flex justify-content-between align-items-center text-start fw-semibold"
+                    <div>
+                        <div
+                            className={`w-100 border-0 d-flex justify-content-between align-items-center text-start fw-semibold ${styles.navFontMain}`}
                             onClick={() => toggleMenu("careers")}
                             aria-expanded={openMenu === "careers"}
                         >
                             Careers
-                            {openMenu === "careers" ? (
-                                <ChevronUp />
-                            ) : (
-                                <ChevronDown />
-                            )}
-                        </Button>
+                            <div className={``}>
+                                <ArrowDown
+                                    className={
+                                        openMenu === "careers"
+                                            ? styles.rotate
+                                            : ""
+                                    }
+                                />
+                            </div>
+                        </div>
 
                         <Collapse in={openMenu === "careers"}>
                             <div>
@@ -147,20 +152,23 @@ const MobileNav = ({ openMobileNav, setOpenMobileNav }: MobileNavProps) => {
                     </div>
 
                     {/* PAGES */}
-                    <div className="py-3">
-                        <Button
-                            variant="none"
-                            className="w-100 border-0 d-flex justify-content-between align-items-center text-start fw-semibold"
+                    <div>
+                        <div
+                            className={`w-100 border-0 d-flex justify-content-between align-items-center text-start fw-semibold ${styles.navFontMain}`}
                             onClick={() => toggleMenu("pages")}
                             aria-expanded={openMenu === "pages"}
                         >
                             Pages
-                            {openMenu === "pages" ? (
-                                <ChevronUp />
-                            ) : (
-                                <ChevronDown />
-                            )}
-                        </Button>
+                            <div className="">
+                                <ArrowDown
+                                    className={
+                                        openMenu === "pages"
+                                            ? styles.rotate
+                                            : ""
+                                    }
+                                />
+                            </div>
+                        </div>
 
                         <Collapse in={openMenu === "pages"}>
                             <div>
@@ -176,22 +184,24 @@ const MobileNav = ({ openMobileNav, setOpenMobileNav }: MobileNavProps) => {
                             </div>
                         </Collapse>
                     </div>
-
                     {/* BLOGS */}
-                    <div className="py-3">
-                        <Button
-                            variant="none"
-                            className="w-100 border-0 d-flex justify-content-between align-items-center text-start fw-semibold"
+                    <div>
+                        <div
+                            className={`w-100 border-0 d-flex justify-content-between align-items-center text-start fw-semibold ${styles.navFontMain}`}
                             onClick={() => toggleMenu("blogs")}
                             aria-expanded={openMenu === "blogs"}
                         >
                             Blogs
-                            {openMenu === "blogs" ? (
-                                <ChevronUp />
-                            ) : (
-                                <ChevronDown />
-                            )}
-                        </Button>
+                            <div className="">
+                                <ArrowDown
+                                    className={
+                                        openMenu === "blogs"
+                                            ? styles.rotate
+                                            : ""
+                                    }
+                                />
+                            </div>
+                        </div>
 
                         <Collapse in={openMenu === "blogs"}>
                             <div>
@@ -206,20 +216,23 @@ const MobileNav = ({ openMobileNav, setOpenMobileNav }: MobileNavProps) => {
                     </div>
 
                     {/* CONTACTS */}
-                    <div className="py-3">
-                        <Button
-                            variant="none"
-                            className="w-100 border-0 d-flex justify-content-between align-items-center text-start fw-semibold"
+                    <div>
+                        <div
+                            className={`w-100 border-0 d-flex justify-content-between align-items-center text-start fw-semibold ${styles.navFontMain}`}
                             onClick={() => toggleMenu("contacts")}
                             aria-expanded={openMenu === "contacts"}
                         >
                             Contacts
-                            {openMenu === "contacts" ? (
-                                <ChevronUp />
-                            ) : (
-                                <ChevronDown />
-                            )}
-                        </Button>
+                            <div className="">
+                                <ArrowDown
+                                    className={
+                                        openMenu === "contacts"
+                                            ? styles.rotate
+                                            : ""
+                                    }
+                                />
+                            </div>
+                        </div>
 
                         <Collapse in={openMenu === "contacts"}>
                             <div>
