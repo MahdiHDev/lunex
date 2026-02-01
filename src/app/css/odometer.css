@@ -1,0 +1,45 @@
+.odometer {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.odometer-digit {
+    display: inline-block;
+    position: relative;
+}
+
+.odometer-digit-spacer {
+    display: inline-block;
+    visibility: hidden;
+}
+
+.odometer-digit-inner {
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.odometer-ribbon {
+    display: block;
+}
+
+.odometer-ribbon-inner {
+    display: block;
+    backface-visibility: hidden;
+}
+
+.odometer-value {
+    display: block;
+    transform: translateZ(0);
+}
+
+.odometer-animating .odometer-ribbon-inner {
+    transition: transform 2s;
+}
+
+.odometer-theme-default .odometer-digit {
+    padding: 0 0.03em;
+}

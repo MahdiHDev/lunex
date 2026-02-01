@@ -65,10 +65,7 @@ const Navbar = () => {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-2.html"
-                                            className="nav-link"
-                                        >
+                                        <a href="index-2" className="nav-link">
                                             Digital Agency
                                         </a>
                                     </li>

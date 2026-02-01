@@ -81,6 +81,10 @@ Default CSS
     --neueMachinaFontFamily: "Neue Machina Regular";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -206,14 +210,16 @@ p:last-child {
     font-family: "Fashion Wacks Regular";
     font-style: normal;
     font-weight: normal;
-    src: local("Fashion Wacks Regular"),
+    src:
+        local("Fashion Wacks Regular"),
         url("../fonts/FashionWacksRegular.woff") format("woff");
 }
 @font-face {
     font-family: "Neue Machina Regular";
     font-style: normal;
     font-weight: normal;
-    src: local("Neue Machina Regular"),
+    src:
+        local("Neue Machina Regular"),
         url("../fonts/NeueMachina-Regular.otf") format("woff");
 }
 .ptb-150 {
@@ -834,23 +840,38 @@ Preloader Area CSS
             var(--whiteColor) 0 calc(50% + 10px),
             var(--blackColor) 0
         );
-    background: var(--c) 0% 100%, var(--c) 50% 100%, var(--c) 100% 100%;
+    background:
+        var(--c) 0% 100%,
+        var(--c) 50% 100%,
+        var(--c) 100% 100%;
     background-size: 20% calc(200% + 20px);
     animation: l4 1s infinite linear;
 }
 
 @keyframes l4 {
     33% {
-        background-position: 0% 50%, 50% 100%, 100% 100%;
+        background-position:
+            0% 50%,
+            50% 100%,
+            100% 100%;
     }
     50% {
-        background-position: 0% 0%, 50% 50%, 100% 100%;
+        background-position:
+            0% 0%,
+            50% 50%,
+            100% 100%;
     }
     66% {
-        background-position: 0% 0%, 50% 0%, 100% 50%;
+        background-position:
+            0% 0%,
+            50% 0%,
+            100% 50%;
     }
     100% {
-        background-position: 0% 0%, 50% 0%, 100% 0%;
+        background-position:
+            0% 0%,
+            50% 0%,
+            100% 0%;
     }
 }
 /*================================================
