@@ -1,8 +1,11 @@
 import OdometerClient from "@/components/common/OdometerClient";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/navbars/Navbar";
 
 export default function Home() {
     return (
         <div>
+            <Navbar />
             {/* Banner Section Started  */}
             <section className="creative-agency-banner-area position-relative z-1">
                 <div
@@ -1227,6 +1230,7 @@ export default function Home() {
                 <span className="d-block"> LTR / RTL </span>
             </button>
             {/* End LTR / RTL */}
+            <Footer />
         </div>
     );
 }

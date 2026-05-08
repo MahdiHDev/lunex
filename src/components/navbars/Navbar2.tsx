@@ -1,52 +1,57 @@
 "use client";
 
-import Image from "next/image";
+import { useTheme } from "next-themes";
 import Link from "next/link";
-import { useState } from "react";
-import MobileNav from "./MobileNav";
+import { useEffect, useState } from "react";
+import MobileNav from "../MobileNav";
 
-const Navbar = () => {
+const Navbar2 = () => {
     const [openMobileNav, setOpenMobileNav] = useState(false);
+    const { theme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        const mountedTimeout = setTimeout(() => {
+            setMounted(true);
+        }, 0);
+
+        return () => clearTimeout(mountedTimeout);
+    }, []);
+
+    if (!mounted) return null;
+
+    const toggleTheme = () => {
+        setTheme(theme === "dark" ? "light" : "dark");
+    };
 
     return (
         <div className="navbar-area top-0 start-0 end-0 h-auto">
             <div className="container">
                 <nav className="navbar p-0 navbar-expand-lg">
-                    <Link className="navbar-brand" href={"/"}>
-                        <Image
+                    <a className="navbar-brand" href="index">
+                        <img
                             src="assets/images/logo.svg"
                             alt="logo"
                             className="black-logo"
-                            width={115}
-                            height={30}
                         />
-                        <Image
+                        <img
                             src="assets/images/white-logo.svg"
                             className="d-none"
                             alt="logo"
-                            width={115}
-                            height={30}
                         />
-                    </Link>
+                    </a>
                     <button
+                        onClick={() => setOpenMobileNav(!openMobileNav)}
                         className="navbar-toggler"
                         type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
                     >
-                        <span
-                            className="burger-menu"
-                            onClick={() => setOpenMobileNav(!openMobileNav)}
-                        >
+                        <span className="burger-menu">
                             <span className="top-bar" />
                             <span className="middle-bar" />
                             <span className="bottom-bar" />
                         </span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className="collapse navbar-collapse">
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <a
@@ -57,308 +62,293 @@ const Navbar = () => {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="index.html"
+                                        <Link href="/" className="nav-link">
+                                            Creative Agency
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link
+                                            href="index-2"
                                             className="nav-link active"
                                         >
-                                            Creative Agency
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a href="index-2" className="nav-link">
                                             Digital Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-3.html"
+                                        <Link
+                                            href="index-3"
                                             className="nav-link"
                                         >
                                             Development Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-4.html"
+                                        <Link
+                                            href="index-4"
                                             className="nav-link"
                                         >
                                             Digital Marketing Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-5.html"
+                                        <Link
+                                            href="index-5"
                                             className="nav-link"
                                         >
                                             UI/UX Design Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-6.html"
+                                        <Link
+                                            href="index-6"
                                             className="nav-link"
                                         >
                                             Branding Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-7.html"
+                                        <Link
+                                            href="index-7"
                                             className="nav-link"
                                         >
                                             Content Creation Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-8.html"
+                                        <Link
+                                            href="index-8"
                                             className="nav-link"
                                         >
                                             SEO Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-9.html"
+                                        <Link
+                                            href="index-9"
                                             className="nav-link"
                                         >
                                             Cyber Security Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     href="javascript:void(0)"
                                     className="dropdown-toggle nav-link"
                                 >
                                     Works
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="works.html"
-                                            className="nav-link"
-                                        >
+                                        <Link href="works" className="nav-link">
                                             Works
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="work-single.html"
+                                        <Link
+                                            href="work-single"
                                             className="nav-link"
                                         >
                                             Work Single
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     href="javascript:void(0)"
                                     className="dropdown-toggle nav-link"
                                 >
                                     Careers
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="careers.html"
+                                        <Link
+                                            href="careers"
                                             className="nav-link"
                                         >
                                             Careers
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="career-single.html"
+                                        <Link
+                                            href="career-single"
                                             className="nav-link"
                                         >
                                             Career Single
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     href="javascript:void(0)"
                                     className="dropdown-toggle nav-link"
                                 >
                                     Pages
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="about.html"
-                                            className="nav-link"
-                                        >
+                                        <Link href="about" className="nav-link">
                                             About Us
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="team.html"
-                                            className="nav-link"
-                                        >
+                                        <Link href="team" className="nav-link">
                                             Team
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
+                                        <Link
                                             href="javascript:void(0)"
                                             className="dropdown-toggle nav-link"
                                         >
                                             Services
-                                        </a>
+                                        </Link>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
-                                                <a
-                                                    href="services.html"
+                                                <Link
+                                                    href="services"
                                                     className="nav-link"
                                                 >
                                                     Services
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a
-                                                    href="service-single.html"
+                                                <Link
+                                                    href="service-single"
                                                     className="nav-link"
                                                 >
                                                     Service Single
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="pricing.html"
+                                        <Link
+                                            href="pricing"
                                             className="nav-link"
                                         >
                                             Pricing
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="book-a-call.html"
+                                        <Link
+                                            href="book-a-call"
                                             className="nav-link"
                                         >
                                             Book A Call
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
+                                        <Link
                                             href="javascript:void(0)"
                                             className="dropdown-toggle nav-link"
                                         >
                                             My Account
-                                        </a>
+                                        </Link>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
-                                                <a
-                                                    href="signin.html"
+                                                <Link
+                                                    href="signin"
                                                     className="nav-link"
                                                 >
                                                     Signin
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a
-                                                    href="signup.html"
+                                                <Link
+                                                    href="signup"
                                                     className="nav-link"
                                                 >
                                                     Signup
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a
-                                                    href="forgot-password.html"
+                                                <Link
+                                                    href="forgot-password"
                                                     className="nav-link"
                                                 >
                                                     Forgot Password?
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="faq.html" className="nav-link">
+                                        <Link href="faq" className="nav-link">
                                             FAQ
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="privacy-policy.html"
+                                        <Link
+                                            href="privacy-policy"
                                             className="nav-link"
                                         >
                                             Privacy Policy
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="terms-conditions.html"
+                                        <Link
+                                            href="terms-conditions"
                                             className="nav-link"
                                         >
                                             Terms &amp; Conditions
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="error.html"
-                                            className="nav-link"
-                                        >
+                                        <Link href="error" className="nav-link">
                                             404 Error Page
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     href="javascript:void(0)"
                                     className="dropdown-toggle nav-link"
                                 >
                                     Blogs
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="blog.html"
-                                            className="nav-link"
-                                        >
+                                        <Link href="blog" className="nav-link">
                                             Blog
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="blog-single.html"
+                                        <Link
+                                            href="blog-single"
                                             className="nav-link"
                                         >
                                             Blog Single
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     href="javascript:void(0)"
                                     className="dropdown-toggle nav-link"
                                 >
                                     Contacts
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="contact.html"
+                                        <Link
+                                            href="contact"
                                             className="nav-link"
                                         >
                                             Contact Style 1
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="contact-2.html"
+                                        <Link
+                                            href="contact-2"
                                             className="nav-link"
                                         >
                                             Contact Style 2
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
@@ -366,23 +356,28 @@ const Navbar = () => {
                         <div className="others-option d-flex align-items-center">
                             <button
                                 type="button"
+                                onClick={toggleTheme}
                                 className="light-dark-btn d-inline-block p-0 bg-transparent border-0 lh-1"
                                 id="light-dark-btn"
                             >
-                                <i className="ri-sun-line" />
+                                {theme === "dark" ? (
+                                    <i className="ri-sun-line" />
+                                ) : (
+                                    <i className="ri-sun-line" />
+                                )}
                             </button>
-                            <a
-                                href="contact.html"
-                                className="link-btn d-flex align-items-center"
+                            <Link
+                                href="contact"
+                                className="link-btn style-two d-flex align-items-center"
                             >
                                 <span>
                                     <img
-                                        src="assets/images/icons/white-right-top-arrow.svg"
+                                        src="assets/images/icons/right-top-arrow.svg"
                                         alt="right-top-arrow"
                                     />
                                 </span>
                                 Talk to Us
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <MobileNav
@@ -395,4 +390,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Navbar2;
