@@ -1,10 +1,16 @@
 import OdometerClient from "@/components/common/OdometerClient";
+import ScrambleText from "@/components/common/ScrambleText";
+import ScrollColorChange from "@/components/common/ScrollColorChange";
+import TestimonialsSlider from "@/components/common/TestimonialsSlider";
+import TextAnimation from "@/components/common/TextAnimation";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/navbars/Navbar";
 
 export default function Home() {
     return (
         <div>
+            <ScrollColorChange />
+            <ScrambleText />
             <Navbar />
             {/* Banner Section Started  */}
             <section className="creative-agency-banner-area position-relative z-1">
@@ -168,10 +174,10 @@ export default function Home() {
                                         <div>02</div>
                                         Services
                                     </div>
-                                    <h2 className="text-animation">
+                                    <TextAnimation className="text-animation">
                                         Our innovative{" "}
                                         <span>creative solutions</span>
-                                    </h2>
+                                    </TextAnimation>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-12">
@@ -353,9 +359,9 @@ export default function Home() {
                                         <div>03</div>
                                         Projects
                                     </div>
-                                    <h2 className="text-animation">
+                                    <TextAnimation className="text-animation">
                                         Our <span>deliverables</span>
-                                    </h2>
+                                    </TextAnimation>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-12">
@@ -632,7 +638,9 @@ export default function Home() {
             <section className="video-area pt-150 pb-125">
                 <div className="container">
                     <div className="video-box">
-                        <h1 className="text-animation">Innovative</h1>
+                        <TextAnimation as="h1" className="text-animation">
+                            Innovative
+                        </TextAnimation>
                         <div
                             className="main-video position-relative"
                             data-cue="slideInUp"
@@ -644,8 +652,12 @@ export default function Home() {
                             />
                         </div>
                         <div className="content d-flex align-items-center justify-content-between">
-                            <h2 className="text-animation">Design</h2>
-                            <h3 className="text-animation">Strategy</h3>
+                            <TextAnimation as="h2" className="text-animation">
+                                Design
+                            </TextAnimation>
+                            <TextAnimation as="h3" className="text-animation">
+                                Strategy
+                            </TextAnimation>
                         </div>
                     </div>
                 </div>
@@ -663,9 +675,12 @@ export default function Home() {
                                         <div>04</div>
                                         Insights
                                     </div>
-                                    <h2 className="text-animation">
+                                    <TextAnimation
+                                        as="h2"
+                                        className="text-animation"
+                                    >
                                         Our recent <span>thoughts</span>
-                                    </h2>
+                                    </TextAnimation>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-12">
@@ -798,9 +813,12 @@ export default function Home() {
                                         <div>05</div>
                                         Trophies
                                     </div>
-                                    <h2 className="text-animation">
+                                    <TextAnimation
+                                        as="h2"
+                                        className="text-animation"
+                                    >
                                         11+ Trophies
-                                    </h2>
+                                    </TextAnimation>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-12">
@@ -904,9 +922,12 @@ export default function Home() {
                         </div>
                         <div className="col-lg-5 col-md-6">
                             <div className="why-choose-us-middle-side">
-                                <h2 className="text-animation">
+                                <TextAnimation
+                                    as="h2"
+                                    className="text-animation"
+                                >
                                     Why <span>trust us</span>
-                                </h2>
+                                </TextAnimation>
                                 <a
                                     href="contact.html"
                                     className="link-btn menu_link d-inline-block text-center position-relative rounded-circle"
@@ -950,7 +971,7 @@ export default function Home() {
             {/* End Why Choose Us Area */}
 
             {/* Start Testimonials Area */}
-            <div className="testimonials-area bg-image position-relative z-1 bg-black ptb-150">
+            {/* <div className="testimonials-area bg-image position-relative z-1 bg-black ptb-150">
                 <div className="container">
                     <div className="creative-agency-section-title text-white">
                         <div className="left-side">
@@ -958,9 +979,9 @@ export default function Home() {
                                 <div>07</div>
                                 Client stories
                             </div>
-                            <h2 className="text-animation">
+                            <TextAnimation as="h2" className="text-animation">
                                 Client success <span>stories</span>
-                            </h2>
+                            </TextAnimation>
                         </div>
                     </div>
                     <div
@@ -1026,7 +1047,8 @@ export default function Home() {
                 <div className="shape2">
                     <img src="assets/images/shapes/shape2.svg" alt="shape2" />
                 </div>
-            </div>
+            </div> */}
+            <TestimonialsSlider />
             {/* End Testimonials Area */}
 
             {/* Start FAQ Area */}
@@ -1040,9 +1062,12 @@ export default function Home() {
                                         <div>08</div>
                                         FAQ
                                     </div>
-                                    <h2 className="text-animation">
+                                    <TextAnimation
+                                        as="h2"
+                                        className="text-animation"
+                                    >
                                         Frequently <span>asked questions</span>
-                                    </h2>
+                                    </TextAnimation>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-12">

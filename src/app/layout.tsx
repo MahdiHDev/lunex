@@ -2,17 +2,6 @@
 import BootstrapClient from "@/components/BootstrapClient";
 // import "@/styles/odometer.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
 
 export const metadata = {
     title: "Lunex",
@@ -52,7 +41,7 @@ export default function RootLayout({
                 {/* <link rel="stylesheet" href="assets/css/scrollCue.css" /> */}
             </head>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+            // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
                 <ThemeProvider
                     attribute="class"

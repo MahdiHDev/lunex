@@ -2385,6 +2385,7 @@ Creative Agency Banner Area CSS
 .creative-agency-banner-image {
     max-width: 396px;
     margin-top: -342px;
+    z-index: 999999; /* added on nextjs project */
 }
 .creative-agency-banner-image .main-image {
     border-radius: 200px;
