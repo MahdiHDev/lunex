@@ -1,3 +1,4 @@
+import ScrambleText from "@/components/common/ScrambleText";
 import Navbar3 from "@/components/navbars/Navbar3";
 import Image from "next/image";
 
@@ -19,6 +20,7 @@ import logoWhite from "public/assets/images/white-logo.svg";
 const page = () => {
     return (
         <div>
+            <ScrambleText />
             {/* Sidemenu Area */}
             <div className="sidemenu-area d-none d-lg-block">
                 <a href="index.html" className="logo d-inline-block">

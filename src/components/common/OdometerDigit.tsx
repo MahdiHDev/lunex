@@ -19,6 +19,7 @@ export default function OdometerDigit({ digit }: OdometerDigitProps) {
                     display: inline-block;
                     height: 1em;
                     overflow: hidden;
+                    width: 0.5em;
                     vertical-align: top;
                 }
                 .odometer-digit-inner {
