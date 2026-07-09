@@ -1,22 +1,44 @@
+import Navbar3 from "@/components/navbars/Navbar3";
+import Image from "next/image";
+
+import about1 from "public/assets/images/abouts/about1.jpg";
+import elements from "public/assets/images/abouts/element.svg";
+import star from "public/assets/images/abouts/star.png";
+import banner from "public/assets/images/banners/banner3.jpg";
+import menu from "public/assets/images/icons/menu.svg";
+import rightTopArrow from "public/assets/images/icons/right-top-arrow.svg";
+import whiteRightTopArrow from "public/assets/images/icons/white-right-top-arrow.svg";
+import logo from "public/assets/images/logo.svg";
+import project1 from "public/assets/images/projects/project1.jpg";
+import project2 from "public/assets/images/projects/project2.jpg";
+import project3 from "public/assets/images/projects/project3.jpg";
+import border1 from "public/assets/images/shapes/border1.svg";
+import border2 from "public/assets/images/shapes/border2.svg";
+import logoWhite from "public/assets/images/white-logo.svg";
+
 const page = () => {
     return (
-        <div className="bg-f8f9fd">
+        <div>
             {/* Sidemenu Area */}
             <div className="sidemenu-area d-none d-lg-block">
                 <a href="index.html" className="logo d-inline-block">
-                    <img
-                        src="assets/images/logo.svg"
+                    <Image
+                        src={logo}
                         alt="logo"
                         className="black-logo"
+                        width={150}
+                        height={50}
                     />
-                    <img
-                        src="assets/images/white-logo.svg"
+                    <Image
+                        src={logoWhite}
                         className="d-none"
                         alt="logo"
+                        width={150}
+                        height={50}
                     />
                 </a>
                 <button className="navbar-toggler" type="button">
-                    <img src="assets/images/icons/menu.svg" alt="menu" />
+                    <Image src={menu} alt="menu" width={30} height={30} />
                 </button>
                 <div className="socials">
                     <a href="#" className="d-block" target="_blank">
@@ -38,42 +60,7 @@ const page = () => {
             </div>
             {/* End Sidemenu Area */}
             {/* Start Navbar Area */}
-            <div className="navbar-area style-two top-0 start-0 end-0 h-auto">
-                <div className="container">
-                    <nav className="navbar p-0">
-                        <a className="navbar-brand" href="index.html">
-                            <img
-                                src="assets/images/logo.svg"
-                                alt="logo"
-                                className="black-logo"
-                            />
-                            <img
-                                src="assets/images/white-logo.svg"
-                                className="d-none"
-                                alt="logo"
-                            />
-                        </a>
-                        <button className="navbar-toggler" type="button">
-                            <span className="burger-menu">
-                                <span className="top-bar" />
-                                <span className="middle-bar" />
-                                <span className="bottom-bar" />
-                            </span>
-                        </button>
-                        <div className="collapse navbar-collapse">
-                            <div className="others-option">
-                                <button
-                                    type="button"
-                                    className="light-dark-btn d-inline-block p-0 bg-transparent border-0 lh-1"
-                                    id="light-dark-btn"
-                                >
-                                    <i className="ri-sun-line" />
-                                </button>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+            <Navbar3 />
             {/* End Navbar Area */}
             {/* Start Menu Popup Area */}
             <div className="menu-popup-area position-fixed start-0 end-0 top-0 bottom-0">
@@ -617,9 +604,11 @@ const page = () => {
                             href="contact.html"
                             className="link-btn menu_link text-center d-inline-block rounded-circle"
                         >
-                            <img
+                            <Image
                                 src="assets/images/icons/white-right-top-arrow.svg"
                                 alt="right-top-arrow"
+                                width={12}
+                                height={12}
                             />
                             <span className="menu_link-text">Let's Chat</span>
                         </a>
@@ -629,17 +618,14 @@ const page = () => {
                         </p>
                     </div>
                     <div className="shape4">
-                        <img
-                            src="assets/images/banners/banner3.jpg"
-                            alt="banner3"
-                        />
+                        <Image src={banner} alt="banner3" />
                     </div>
                 </div>
                 <div className="border1">
-                    <img src="assets/images/shapes/border1.svg" alt="border1" />
+                    <Image src={border1} alt="border1" />
                 </div>
                 <div className="border2">
-                    <img src="assets/images/shapes/border2.svg" alt="border2" />
+                    <Image src={border2} alt="border2" />
                 </div>
             </div>
             {/* End Dev Agency Banner Area */}
@@ -649,8 +635,8 @@ const page = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-7">
                             <div className="about-content text-animation">
-                                <img
-                                    src="assets/images/abouts/element.svg"
+                                <Image
+                                    src={elements}
                                     className="rotateme"
                                     alt="element-image"
                                 />
@@ -658,13 +644,10 @@ const page = () => {
                                     We combine creativity and technology to
                                     transform ideas into impactful digital
                                     solutions. Driven by innovation and a{" "}
-                                    <img
-                                        src="assets/images/abouts/star.png"
-                                        alt="star"
-                                    />{" "}
-                                    commitment to client satisfaction, we strive
-                                    to exceed expectations and deliver
-                                    exceptional results.
+                                    <Image src={star} alt="star" /> commitment
+                                    to client satisfaction, we strive to exceed
+                                    expectations and deliver exceptional
+                                    results.
                                 </p>
                             </div>
                             <div className="about-btn" data-cue="slideInUp">
@@ -672,12 +655,12 @@ const page = () => {
                                     href="contact.html"
                                     className="link-btn menu_link d-inline-block text-center position-relative rounded-circle"
                                 >
-                                    <img
-                                        src="assets/images/icons/right-top-arrow.svg"
+                                    <Image
+                                        src={rightTopArrow}
                                         alt="right-top-arrow"
                                     />
-                                    <img
-                                        src="assets/images/icons/white-right-top-arrow.svg"
+                                    <Image
+                                        src={whiteRightTopArrow}
                                         alt="white-right-top-arrow"
                                     />
                                     <span className="menu_link-text">
@@ -688,10 +671,7 @@ const page = () => {
                         </div>
                         <div className="col-lg-5">
                             <div className="about-image" data-cue="zoomIn">
-                                <img
-                                    src="assets/images/abouts/about1.jpg"
-                                    alt="about-image"
-                                />
+                                <Image src={about1} alt="about-image" />
                                 <div className="d-flex align-items-center">
                                     <span className="sub-title d-block">
                                         We rank in the top
@@ -870,8 +850,8 @@ const page = () => {
                                 <div className="row align-items-center">
                                     <div className="col-xl-7 col-lg-6 col-md-7">
                                         <div className="image text-center">
-                                            <img
-                                                src="assets/images/projects/project1.jpg"
+                                            <Image
+                                                src={project1}
                                                 alt="project-image"
                                             />
                                         </div>
@@ -911,8 +891,8 @@ const page = () => {
                                 <div className="row align-items-center">
                                     <div className="col-xl-7 col-lg-6 col-md-7">
                                         <div className="image text-center">
-                                            <img
-                                                src="assets/images/projects/project2.jpg"
+                                            <Image
+                                                src={project2}
                                                 alt="project-image"
                                             />
                                         </div>
@@ -952,8 +932,8 @@ const page = () => {
                                 <div className="row align-items-center">
                                     <div className="col-xl-7 col-lg-6 col-md-7">
                                         <div className="image text-center">
-                                            <img
-                                                src="assets/images/projects/project3.jpg"
+                                            <Image
+                                                src={project3}
                                                 alt="project-image"
                                             />
                                         </div>
