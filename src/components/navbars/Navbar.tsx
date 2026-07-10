@@ -77,42 +77,27 @@ const Navbar = () => {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-3.html"
-                                            className="nav-link"
-                                        >
+                                        <a href="index-3" className="nav-link">
                                             Development Agency
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-4.html"
-                                            className="nav-link"
-                                        >
+                                        <a href="index-4" className="nav-link">
                                             Digital Marketing Agency
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-5.html"
-                                            className="nav-link"
-                                        >
+                                        <a href="index-5" className="nav-link">
                                             UI/UX Design Agency
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-6.html"
-                                            className="nav-link"
-                                        >
+                                        <a href="index-6" className="nav-link">
                                             Branding Agency
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-7.html"
-                                            className="nav-link"
-                                        >
+                                        <a href="index-7" className="nav-link">
                                             Content Creation Agency
                                         </a>
                                     </li>
@@ -125,10 +110,7 @@ const Navbar = () => {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-9.html"
-                                            className="nav-link"
-                                        >
+                                        <a href="index-9" className="nav-link">
                                             Cyber Security Agency
                                         </a>
                                     </li>
@@ -143,16 +125,13 @@ const Navbar = () => {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="works.html"
-                                            className="nav-link"
-                                        >
+                                        <a href="works" className="nav-link">
                                             Works
                                         </a>
                                     </li>
                                     <li className="nav-item">
                                         <a
-                                            href="work-single.html"
+                                            href="work-single"
                                             className="nav-link"
                                         >
                                             Work Single
@@ -195,18 +174,12 @@ const Navbar = () => {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="about.html"
-                                            className="nav-link"
-                                        >
+                                        <a href="about" className="nav-link">
                                             About Us
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="team.html"
-                                            className="nav-link"
-                                        >
+                                        <a href="team" className="nav-link">
                                             Team
                                         </a>
                                     </li>

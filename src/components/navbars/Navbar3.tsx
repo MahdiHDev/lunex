@@ -26,7 +26,7 @@ const Navbar3 = () => {
         <div className="navbar-area style-two top-0 start-0 end-0 h-auto">
             <div className="container">
                 <nav className="navbar p-0">
-                    <a className="navbar-brand" href="index.html">
+                    <a className="navbar-brand" href="">
                         <img
                             src="assets/images/logo.svg"
                             alt="logo"
