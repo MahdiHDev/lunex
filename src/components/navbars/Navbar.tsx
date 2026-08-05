@@ -4,10 +4,11 @@ import useMountedTheme from "@/hooks/useMountedTheme";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import MobileNav from "../MobileNav";
+import MenuPopup from "../menu/MenuPopup";
 
 const Navbar = () => {
-    const [openMobileNav, setOpenMobileNav] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+    console.log(menuOpen);
     const { mounted, theme, toggleTheme } = useMountedTheme();
 
     if (!mounted) return null;
@@ -43,7 +44,7 @@ const Navbar = () => {
                     >
                         <span
                             className="burger-menu"
-                            onClick={() => setOpenMobileNav(!openMobileNav)}
+                            onClick={() => setMenuOpen(!menuOpen)}
                         >
                             <span className="top-bar" />
                             <span className="middle-bar" />
@@ -377,9 +378,9 @@ const Navbar = () => {
                             </a>
                         </div>
                     </div>
-                    <MobileNav
-                        openMobileNav={openMobileNav}
-                        setOpenMobileNav={setOpenMobileNav}
+                    <MenuPopup
+                        isOpen={menuOpen}
+                        onClose={() => setMenuOpen(false)}
                     />
                 </nav>
             </div>
