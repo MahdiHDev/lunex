@@ -1,10 +1,19 @@
 import OdometerClient from "@/components/common/OdometerClient";
 import ScrambleText from "@/components/common/ScrambleText";
 import ScrollColorChange from "@/components/common/ScrollColorChange";
+import SlideInUp from "@/components/common/SlideInUp";
 import TestimonialsSlider from "@/components/common/TestimonialsSlider";
 import TextAnimation from "@/components/common/TextAnimation";
 import Footer from "@/components/Footer";
+import ProjectCircle from "@/components/home/ProjectCircle";
 import Navbar from "@/components/navbars/Navbar";
+import Image from "next/image";
+
+// image import
+// assets/images/blogs/blog1.jpg
+import blog1 from "public/assets/images/blogs/blog1.jpg";
+import blog2 from "public/assets/images/blogs/blog2.jpg";
+import blog3 from "public/assets/images/blogs/blog3.jpg";
 
 export default function Home() {
     return (
@@ -14,95 +23,96 @@ export default function Home() {
             <Navbar />
             {/* Banner Section Started  */}
             <section className="creative-agency-banner-area position-relative z-1">
-                <div
-                    className="container"
-                    data-cues="slideInUp"
-                    data-group="creativeAgencyBanner"
-                >
-                    <div className="creative-agency-banner-content">
-                        <span className="sub-title d-block fw-medium">
-                            The creative agency
-                        </span>
-                        <div className="title">
-                            <h1>Innovate. inspire</h1>
-                            <h1>
-                                <span className="d-inline-block">
-                                    ignite growth
-                                </span>
-                            </h1>
-                        </div>
-                    </div>
-                    <div className="creative-agency-banner-image mx-auto text-center position-relative">
-                        <img
-                            src="assets/images/banners/banner1.jpg"
-                            className="main-image"
-                            alt="banner-image"
-                        />
-                        <a
-                            href="about.html"
-                            className="link-btn menu_link d-inline-block rounded-circle"
-                        >
-                            <img
-                                src="assets/images/icons/white-right-top-arrow.svg"
-                                alt="right-top-arrow"
-                            />
-                            <span className="menu_link-text">
-                                Let&apos;s Chat
+                <SlideInUp>
+                    <div
+                        className="container"
+                        data-group="creativeAgencyBanner"
+                    >
+                        <div className="creative-agency-banner-content">
+                            <span className="sub-title d-block fw-medium">
+                                The creative agency
                             </span>
-                        </a>
+                            <div className="title">
+                                <h1>Innovate. inspire</h1>
+                                <h1>
+                                    <span className="d-inline-block">
+                                        ignite growth
+                                    </span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div className="creative-agency-banner-image mx-auto text-center position-relative">
+                            <img
+                                src="assets/images/banners/banner1.jpg"
+                                className="main-image"
+                                alt="banner-image"
+                            />
+                            <a
+                                href="about.html"
+                                className="link-btn menu_link d-inline-block rounded-circle"
+                            >
+                                <img
+                                    src="assets/images/icons/white-right-top-arrow.svg"
+                                    alt="right-top-arrow"
+                                />
+                                <span className="menu_link-text">
+                                    Let&apos;s Chat
+                                </span>
+                            </a>
+                        </div>
+                        <div className="creative-agency-banner-text">
+                            <p>
+                                At <strong>Lunex</strong>, we blend creativity
+                                and strategy to create impactful brand
+                                experiences that inspire and drive growth. 🚀
+                            </p>
+                        </div>
+                        <ul className="creative-agency-banner-socials ps-0 mb-0 list-unstyled">
+                            <li>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    className="d-inline-block position-relative"
+                                >
+                                    <i className="ri-instagram-line" />
+                                    Instagram
+                                    <img
+                                        src="assets/images/icons/right-top-arrow.svg"
+                                        alt="right-top-arrow"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    className="d-inline-block position-relative"
+                                >
+                                    <i className="ri-twitter-x-fill" />
+                                    Twitter
+                                    <img
+                                        src="assets/images/icons/right-top-arrow.svg"
+                                        alt="right-top-arrow"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    className="d-inline-block position-relative"
+                                >
+                                    <i className="ri-youtube-fill" />
+                                    YouTube
+                                    <img
+                                        src="assets/images/icons/right-top-arrow.svg"
+                                        alt="right-top-arrow"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div className="creative-agency-banner-text">
-                        <p>
-                            At <strong>Lunex</strong>, we blend creativity and
-                            strategy to create impactful brand experiences that
-                            inspire and drive growth. 🚀
-                        </p>
-                    </div>
-                    <ul className="creative-agency-banner-socials ps-0 mb-0 list-unstyled">
-                        <li>
-                            <a
-                                href="#"
-                                target="_blank"
-                                className="d-inline-block position-relative"
-                            >
-                                <i className="ri-instagram-line" />
-                                Instagram
-                                <img
-                                    src="assets/images/icons/right-top-arrow.svg"
-                                    alt="right-top-arrow"
-                                />
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                target="_blank"
-                                className="d-inline-block position-relative"
-                            >
-                                <i className="ri-twitter-x-fill" />
-                                Twitter
-                                <img
-                                    src="assets/images/icons/right-top-arrow.svg"
-                                    alt="right-top-arrow"
-                                />
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                target="_blank"
-                                className="d-inline-block position-relative"
-                            >
-                                <i className="ri-youtube-fill" />
-                                YouTube
-                                <img
-                                    src="assets/images/icons/right-top-arrow.svg"
-                                    alt="right-top-arrow"
-                                />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                </SlideInUp>
             </section>
             {/* Banner Section End  */}
 
@@ -164,151 +174,154 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div
-                        className="row justify-content-center"
-                        data-cues="slideInUp"
-                    >
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-service-box position-relative z-1">
-                                <a
-                                    href="service-single.html"
-                                    className="link-btn d-inline-block rounded-circle"
-                                >
-                                    <img
-                                        src="assets/images/icons/white-right-top-arrow2.svg"
-                                        alt="right-top-arrow"
-                                    />
-                                </a>
-                                <h3>
-                                    <a href="service-single.html">
-                                        Brand <span>strategy</span>
+                    <SlideInUp>
+                        {/* <ServiceBoxes /> */}
+                        <div className="row justify-content-center">
+                            <div className="col-lg-4 col-md-6">
+                                <div className="single-service-box position-relative z-1">
+                                    <a
+                                        href="service-single.html"
+                                        className="link-btn d-inline-block rounded-circle"
+                                    >
+                                        <img
+                                            src="assets/images/icons/white-right-top-arrow2.svg"
+                                            alt="right-top-arrow"
+                                        />
                                     </a>
-                                </h3>
-                                <p>
-                                    We help define your brand’s identity and
-                                    create a roadmap for consistent growth,
-                                    positioning, and market presence.
-                                </p>
+                                    <h3>
+                                        <a href="service-single.html">
+                                            Brand <span>strategy</span>
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        We help define your brand’s identity and
+                                        create a roadmap for consistent growth,
+                                        positioning, and market presence.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6">
+                                <div className="single-service-box position-relative z-1">
+                                    <a
+                                        href="service-single.html"
+                                        className="link-btn d-inline-block rounded-circle"
+                                    >
+                                        <img
+                                            src="assets/images/icons/white-right-top-arrow2.svg"
+                                            alt="right-top-arrow"
+                                        />
+                                    </a>
+                                    <h3>
+                                        <a href="service-single.html">
+                                            Creative <span>design</span>
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        From logos to websites, our creative
+                                        design solutions bring your brand to
+                                        life with visually stunning and
+                                        user-centric designs.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6">
+                                <div className="single-service-box position-relative z-1">
+                                    <a
+                                        href="service-single.html"
+                                        className="link-btn d-inline-block rounded-circle"
+                                    >
+                                        <img
+                                            src="assets/images/icons/white-right-top-arrow2.svg"
+                                            alt="right-top-arrow"
+                                        />
+                                    </a>
+                                    <h3>
+                                        <a href="service-single.html">
+                                            Digital <span>marketing</span>
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        We craft tailored digital marketing
+                                        strategies that engage your audience,
+                                        boost conversions, &amp; build brand
+                                        loyalty across multiple platforms.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6">
+                                <div className="single-service-box position-relative z-1">
+                                    <a
+                                        href="service-single.html"
+                                        className="link-btn d-inline-block rounded-circle"
+                                    >
+                                        <img
+                                            src="assets/images/icons/white-right-top-arrow2.svg"
+                                            alt="right-top-arrow"
+                                        />
+                                    </a>
+                                    <h3>
+                                        <a href="service-single.html">
+                                            Web <span>development</span>
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        Our expert web development team creates
+                                        high-performance websites &amp;
+                                        applications that enhance experience
+                                        &amp; functionality.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6">
+                                <div className="single-service-box position-relative z-1">
+                                    <a
+                                        href="service-single.html"
+                                        className="link-btn d-inline-block rounded-circle"
+                                    >
+                                        <img
+                                            src="assets/images/icons/white-right-top-arrow2.svg"
+                                            alt="right-top-arrow"
+                                        />
+                                    </a>
+                                    <h3>
+                                        <a href="service-single.html">
+                                            Social media <span>management</span>
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        We manage &amp; optimize your social
+                                        media presence, creating engaging
+                                        content &amp; strategies to grow your
+                                        audience.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6">
+                                <div className="single-service-box position-relative z-1">
+                                    <a
+                                        href="service-single.html"
+                                        className="link-btn d-inline-block rounded-circle"
+                                    >
+                                        <img
+                                            src="assets/images/icons/white-right-top-arrow2.svg"
+                                            alt="right-top-arrow"
+                                        />
+                                    </a>
+                                    <h3>
+                                        <a href="service-single.html">
+                                            Content <span>creation</span>
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        We develop compelling content, from
+                                        copywriting to video production,
+                                        designed to tell your story &amp;
+                                        connect with your audience.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-service-box position-relative z-1">
-                                <a
-                                    href="service-single.html"
-                                    className="link-btn d-inline-block rounded-circle"
-                                >
-                                    <img
-                                        src="assets/images/icons/white-right-top-arrow2.svg"
-                                        alt="right-top-arrow"
-                                    />
-                                </a>
-                                <h3>
-                                    <a href="service-single.html">
-                                        Creative <span>design</span>
-                                    </a>
-                                </h3>
-                                <p>
-                                    From logos to websites, our creative design
-                                    solutions bring your brand to life with
-                                    visually stunning and user-centric designs.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-service-box position-relative z-1">
-                                <a
-                                    href="service-single.html"
-                                    className="link-btn d-inline-block rounded-circle"
-                                >
-                                    <img
-                                        src="assets/images/icons/white-right-top-arrow2.svg"
-                                        alt="right-top-arrow"
-                                    />
-                                </a>
-                                <h3>
-                                    <a href="service-single.html">
-                                        Digital <span>marketing</span>
-                                    </a>
-                                </h3>
-                                <p>
-                                    We craft tailored digital marketing
-                                    strategies that engage your audience, boost
-                                    conversions, &amp; build brand loyalty
-                                    across multiple platforms.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-service-box position-relative z-1">
-                                <a
-                                    href="service-single.html"
-                                    className="link-btn d-inline-block rounded-circle"
-                                >
-                                    <img
-                                        src="assets/images/icons/white-right-top-arrow2.svg"
-                                        alt="right-top-arrow"
-                                    />
-                                </a>
-                                <h3>
-                                    <a href="service-single.html">
-                                        Web <span>development</span>
-                                    </a>
-                                </h3>
-                                <p>
-                                    Our expert web development team creates
-                                    high-performance websites &amp; applications
-                                    that enhance experience &amp; functionality.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-service-box position-relative z-1">
-                                <a
-                                    href="service-single.html"
-                                    className="link-btn d-inline-block rounded-circle"
-                                >
-                                    <img
-                                        src="assets/images/icons/white-right-top-arrow2.svg"
-                                        alt="right-top-arrow"
-                                    />
-                                </a>
-                                <h3>
-                                    <a href="service-single.html">
-                                        Social media <span>management</span>
-                                    </a>
-                                </h3>
-                                <p>
-                                    We manage &amp; optimize your social media
-                                    presence, creating engaging content &amp;
-                                    strategies to grow your audience.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-service-box position-relative z-1">
-                                <a
-                                    href="service-single.html"
-                                    className="link-btn d-inline-block rounded-circle"
-                                >
-                                    <img
-                                        src="assets/images/icons/white-right-top-arrow2.svg"
-                                        alt="right-top-arrow"
-                                    />
-                                </a>
-                                <h3>
-                                    <a href="service-single.html">
-                                        Content <span>creation</span>
-                                    </a>
-                                </h3>
-                                <p>
-                                    We develop compelling content, from
-                                    copywriting to video production, designed to
-                                    tell your story &amp; connect with your
-                                    audience.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    </SlideInUp>
                 </div>
             </section>
             {/* Service Section End  */}
@@ -349,252 +362,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="projects-circle-list text-center position-relative">
-                        <img
-                            src="assets/images/shapes/circle.svg"
-                            className="d-none d-lg-inline-block"
-                            alt="border-image"
-                        />
-                        <div className="images text-start">
-                            <div className="image">
-                                <img
-                                    src="assets/images/projects/project5.jpg"
-                                    alt="project-image"
-                                />
-                                <div className="text">
-                                    <h3>
-                                        <a href="work-single.html">
-                                            Digital pulse
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        A complete brand refresh, elevating
-                                        identity with modern design and
-                                        messaging that connects with a global
-                                        audience.
-                                    </p>
-                                    <a
-                                        href="work-single.html"
-                                        className="link-btn d-flex align-items-center position-relative"
-                                    >
-                                        View Project
-                                        <i className="ri-arrow-right-line" />
-                                    </a>
-                                </div>
-                                <a
-                                    href="work-single.html"
-                                    className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
-                                />
-                            </div>
-                            <div className="image">
-                                <img
-                                    src="assets/images/projects/project6.jpg"
-                                    alt="project-image"
-                                />
-                                <div className="text">
-                                    <h3>
-                                        <a href="work-single.html">
-                                            Visual impact
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        A complete brand refresh, elevating
-                                        identity with modern design and
-                                        messaging that connects with a global
-                                        audience.
-                                    </p>
-                                    <a
-                                        href="work-single.html"
-                                        className="link-btn d-flex align-items-center position-relative"
-                                    >
-                                        View Project
-                                        <i className="ri-arrow-right-line" />
-                                    </a>
-                                </div>
-                                <a
-                                    href="work-single.html"
-                                    className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
-                                />
-                            </div>
-                            <div className="image">
-                                <img
-                                    src="assets/images/projects/project7.jpg"
-                                    alt="project-image"
-                                />
-                                <div className="text">
-                                    <h3>
-                                        <a href="work-single.html">
-                                            Social hub
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        A complete brand refresh, elevating
-                                        identity with modern design and
-                                        messaging that connects with a global
-                                        audience.
-                                    </p>
-                                    <a
-                                        href="work-single.html"
-                                        className="link-btn d-flex align-items-center position-relative"
-                                    >
-                                        View Project
-                                        <i className="ri-arrow-right-line" />
-                                    </a>
-                                </div>
-                                <a
-                                    href="work-single.html"
-                                    className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
-                                />
-                            </div>
-                            <div className="image">
-                                <img
-                                    src="assets/images/projects/project8.jpg"
-                                    alt="project-image"
-                                />
-                                <div className="text">
-                                    <h3>
-                                        <a href="work-single.html">
-                                            UI/UX design
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        A complete brand refresh, elevating
-                                        identity with modern design and
-                                        messaging that connects with a global
-                                        audience.
-                                    </p>
-                                    <a
-                                        href="work-single.html"
-                                        className="link-btn d-flex align-items-center position-relative"
-                                    >
-                                        View Project
-                                        <i className="ri-arrow-right-line" />
-                                    </a>
-                                </div>
-                                <a
-                                    href="work-single.html"
-                                    className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
-                                />
-                            </div>
-                            <div className="image">
-                                <img
-                                    src="assets/images/projects/project9.jpg"
-                                    alt="project-image"
-                                />
-                                <div className="text">
-                                    <h3>
-                                        <a href="work-single.html">
-                                            Print design
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        A complete brand refresh, elevating
-                                        identity with modern design and
-                                        messaging that connects with a global
-                                        audience.
-                                    </p>
-                                    <a
-                                        href="work-single.html"
-                                        className="link-btn d-flex align-items-center position-relative"
-                                    >
-                                        View Project
-                                        <i className="ri-arrow-right-line" />
-                                    </a>
-                                </div>
-                                <a
-                                    href="work-single.html"
-                                    className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
-                                />
-                            </div>
-                        </div>
-                        <div className="contents text-start">
-                            <div className="item">
-                                <h3>
-                                    <a href="work-single.html">Digital pulse</a>
-                                </h3>
-                                <p>
-                                    A complete brand refresh, elevating identity
-                                    with modern design and messaging that
-                                    connects with a global audience.
-                                </p>
-                                <a
-                                    href="work-single.html"
-                                    className="link-btn d-flex align-items-center position-relative"
-                                >
-                                    View Project
-                                    <i className="ri-arrow-right-line" />
-                                </a>
-                            </div>
-                            <div className="item">
-                                <h3>
-                                    <a href="work-single.html">Visual impact</a>
-                                </h3>
-                                <p>
-                                    A complete brand refresh, elevating identity
-                                    with modern design and messaging that
-                                    connects with a global audience.
-                                </p>
-                                <a
-                                    href="work-single.html"
-                                    className="link-btn d-flex align-items-center position-relative"
-                                >
-                                    View Project
-                                    <i className="ri-arrow-right-line" />
-                                </a>
-                            </div>
-                            <div className="item">
-                                <h3>
-                                    <a href="work-single.html">Social hub</a>
-                                </h3>
-                                <p>
-                                    A complete brand refresh, elevating identity
-                                    with modern design and messaging that
-                                    connects with a global audience.
-                                </p>
-                                <a
-                                    href="work-single.html"
-                                    className="link-btn d-flex align-items-center position-relative"
-                                >
-                                    View Project
-                                    <i className="ri-arrow-right-line" />
-                                </a>
-                            </div>
-                            <div className="item">
-                                <h3>
-                                    <a href="work-single.html">UI/UX design</a>
-                                </h3>
-                                <p>
-                                    A complete brand refresh, elevating identity
-                                    with modern design and messaging that
-                                    connects with a global audience.
-                                </p>
-                                <a
-                                    href="work-single.html"
-                                    className="link-btn d-flex align-items-center position-relative"
-                                >
-                                    View Project
-                                    <i className="ri-arrow-right-line" />
-                                </a>
-                            </div>
-                            <div className="item">
-                                <h3>
-                                    <a href="work-single.html">Print design</a>
-                                </h3>
-                                <p>
-                                    A complete brand refresh, elevating identity
-                                    with modern design and messaging that
-                                    connects with a global audience.
-                                </p>
-                                <a
-                                    href="work-single.html"
-                                    className="link-btn d-flex align-items-center position-relative"
-                                >
-                                    View Project
-                                    <i className="ri-arrow-right-line" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+
+                    <ProjectCircle />
                 </div>
             </section>
             {/* Project Area Section End  */}
@@ -606,16 +375,16 @@ export default function Home() {
                         <TextAnimation as="h1" className="text-animation">
                             Innovative
                         </TextAnimation>
-                        <div
-                            className="main-video position-relative"
-                            data-cue="slideInUp"
-                        >
-                            <img
-                                src="assets/images/videos/video1.jpg"
-                                className="image-container"
-                                alt="video-image"
-                            />
-                        </div>
+                        <SlideInUp>
+                            <div className="main-video position-relative">
+                                <img
+                                    src="assets/images/videos/video1.jpg"
+                                    className="image-container"
+                                    alt="video-image"
+                                />
+                            </div>
+                        </SlideInUp>
+
                         <div className="content d-flex align-items-center justify-content-between">
                             <TextAnimation as="h2" className="text-animation">
                                 Design
@@ -665,20 +434,14 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div
-                        className="row justify-content-center"
-                        data-cues="slideInUp"
-                    >
+                    <SlideInUp className="row justify-content-center">
                         <div className="col-lg-4 col-md-6">
                             <div className="single-blog-post">
                                 <a
                                     href="blog-single.html"
                                     className="d-block image"
                                 >
-                                    <img
-                                        src="assets/images/blogs/blog1.jpg"
-                                        alt="blog-image"
-                                    />
+                                    <Image src={blog1} alt="blog-image" />
                                 </a>
                                 <div className="content">
                                     <span className="date d-block">
@@ -706,10 +469,7 @@ export default function Home() {
                                     href="blog-single.html"
                                     className="d-block image"
                                 >
-                                    <img
-                                        src="assets/images/blogs/blog2.jpg"
-                                        alt="blog-image"
-                                    />
+                                    <Image src={blog2} alt="blog-image" />
                                 </a>
                                 <div className="content">
                                     <span className="date d-block">
@@ -737,10 +497,7 @@ export default function Home() {
                                     href="blog-single.html"
                                     className="d-block image"
                                 >
-                                    <img
-                                        src="assets/images/blogs/blog3.jpg"
-                                        alt="blog-image"
-                                    />
+                                    <Image src={blog3} alt="blog-image" />
                                 </a>
                                 <div className="content">
                                     <span className="date d-block">
@@ -762,7 +519,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </SlideInUp>
                 </div>
             </div>
             {/* End Blog Area */}
@@ -823,35 +580,40 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="col-lg-8 col-md-7">
-                            <div className="awards-list" data-cues="slideInUp">
-                                <div className="single-award d-flex align-items-center justify-content-between position-relative">
-                                    <h3 className="mb-0">Maverick</h3>
-                                    <div className="number">07</div>
-                                    <a
-                                        href="careers.html"
-                                        target="_blank"
-                                        className="link-btn position-absolute start-0 end-0 top-0 bottom-0 z-1"
-                                    />
+                            <SlideInUp>
+                                <div
+                                    className="awards-list"
+                                    data-cues="slideInUp"
+                                >
+                                    <div className="single-award d-flex align-items-center justify-content-between position-relative">
+                                        <h3 className="mb-0">Maverick</h3>
+                                        <div className="number">07</div>
+                                        <a
+                                            href="careers.html"
+                                            target="_blank"
+                                            className="link-btn position-absolute start-0 end-0 top-0 bottom-0 z-1"
+                                        />
+                                    </div>
+                                    <div className="single-award d-flex align-items-center justify-content-between position-relative">
+                                        <h3 className="mb-0">Champion</h3>
+                                        <div className="number">03</div>
+                                        <a
+                                            href="careers.html"
+                                            target="_blank"
+                                            className="link-btn position-absolute start-0 end-0 top-0 bottom-0 z-1"
+                                        />
+                                    </div>
+                                    <div className="single-award d-flex align-items-center justify-content-between position-relative">
+                                        <h3 className="mb-0">Luminary</h3>
+                                        <div className="number">01</div>
+                                        <a
+                                            href="careers.html"
+                                            target="_blank"
+                                            className="link-btn position-absolute start-0 end-0 top-0 bottom-0 z-1"
+                                        />
+                                    </div>
                                 </div>
-                                <div className="single-award d-flex align-items-center justify-content-between position-relative">
-                                    <h3 className="mb-0">Champion</h3>
-                                    <div className="number">03</div>
-                                    <a
-                                        href="careers.html"
-                                        target="_blank"
-                                        className="link-btn position-absolute start-0 end-0 top-0 bottom-0 z-1"
-                                    />
-                                </div>
-                                <div className="single-award d-flex align-items-center justify-content-between position-relative">
-                                    <h3 className="mb-0">Luminary</h3>
-                                    <div className="number">01</div>
-                                    <a
-                                        href="careers.html"
-                                        target="_blank"
-                                        className="link-btn position-absolute start-0 end-0 top-0 bottom-0 z-1"
-                                    />
-                                </div>
-                            </div>
+                            </SlideInUp>
                         </div>
                     </div>
                 </div>
