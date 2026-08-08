@@ -3,11 +3,13 @@
 import { useState } from "react";
 
 // import images
-import projecct5 from "public/assets/images/projects/project5.jpg";
-import projecct6 from "public/assets/images/projects/project6.jpg";
-import projecct7 from "public/assets/images/projects/project7.jpg";
-import projecct8 from "public/assets/images/projects/project8.jpg";
-import projecct9 from "public/assets/images/projects/project9.jpg";
+import Image from "next/image";
+import project5 from "public/assets/images/projects/project5.jpg";
+import project6 from "public/assets/images/projects/project6.jpg";
+import project7 from "public/assets/images/projects/project7.jpg";
+import project8 from "public/assets/images/projects/project8.jpg";
+import project9 from "public/assets/images/projects/project9.jpg";
+import circel from "public/assets/images/shapes/circle.svg";
 
 const description =
     "A complete brand refresh, elevating identity with modern design and messaging that connects with a global audience.";
@@ -15,27 +17,22 @@ const description =
 const projects = [
     {
         title: "Digital Pulse",
-        image: projecct5,
         description,
     },
     {
         title: "Visual Impact",
-        image: projecct6,
         description,
     },
     {
         title: "Social Hub",
-        image: projecct7,
         description,
     },
     {
         title: "UI/UX Design",
-        image: projecct8,
         description,
     },
     {
         title: "Print Design",
-        image: projecct9,
         description,
     },
 ];
@@ -45,8 +42,8 @@ export default function ProjectCircle() {
 
     return (
         <div className="projects-circle-list text-center position-relative">
-            <img
-                src="assets/images/shapes/circle.svg"
+            <Image
+                src={circel}
                 className="d-none d-lg-inline-block"
                 alt="border-image"
             />
@@ -56,10 +53,7 @@ export default function ProjectCircle() {
                     onMouseEnter={() => setActiveIndex(0)}
                     onMouseLeave={() => setActiveIndex(0)}
                 >
-                    <img
-                        src="assets/images/projects/project5.jpg"
-                        alt="project-image"
-                    />
+                    <Image src={project5} alt="project-image" />
                     <div className="text">
                         <h3>
                             <a href="work-single.html">Digital pulse</a>
@@ -87,10 +81,7 @@ export default function ProjectCircle() {
                     onMouseEnter={() => setActiveIndex(1)}
                     onMouseLeave={() => setActiveIndex(0)}
                 >
-                    <img
-                        src="assets/images/projects/project6.jpg"
-                        alt="project-image"
-                    />
+                    <Image src={project6} alt="project-image" />
                     <div className="text">
                         <h3>
                             <a href="work-single.html">Visual impact</a>
@@ -118,10 +109,7 @@ export default function ProjectCircle() {
                     onMouseEnter={() => setActiveIndex(2)}
                     onMouseLeave={() => setActiveIndex(0)}
                 >
-                    <img
-                        src="assets/images/projects/project7.jpg"
-                        alt="project-image"
-                    />
+                    <Image src={project7} alt="project-image" />
                     <div className="text">
                         <h3>
                             <a href="work-single.html">Social hub</a>
@@ -149,10 +137,7 @@ export default function ProjectCircle() {
                     onMouseEnter={() => setActiveIndex(3)}
                     onMouseLeave={() => setActiveIndex(0)}
                 >
-                    <img
-                        src="assets/images/projects/project8.jpg"
-                        alt="project-image"
-                    />
+                    <Image src={project8} alt="project-image" />
                     <div className="text">
                         <h3>
                             <a href="work-single.html">UI/UX design</a>
@@ -180,10 +165,7 @@ export default function ProjectCircle() {
                     onMouseEnter={() => setActiveIndex(4)}
                     onMouseLeave={() => setActiveIndex(0)}
                 >
-                    <img
-                        src="assets/images/projects/project9.jpg"
-                        alt="project-image"
-                    />
+                    <Image src={project9} alt="project-image" />
                     <div className="text">
                         <h3>
                             <a href="work-single.html">Print design</a>
@@ -305,7 +287,7 @@ export default function ProjectCircle() {
                     <p>{projects[activeIndex].description}</p>
 
                     <a
-                        href="work-single.html"
+                        href="work-single"
                         className="link-btn d-flex align-items-center position-relative"
                     >
                         View Project
