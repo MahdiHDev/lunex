@@ -5,6 +5,7 @@ import SlideInUp from "@/components/common/SlideInUp";
 import TestimonialsSlider from "@/components/common/TestimonialsSlider";
 import TextAnimation from "@/components/common/TextAnimation";
 import Footer from "@/components/Footer";
+import AwardList from "@/components/home/AwardList";
 import ProjectCircle from "@/components/home/ProjectCircle";
 import Navbar from "@/components/navbars/Navbar";
 import Image from "next/image";
@@ -23,7 +24,7 @@ export default function Home() {
             <Navbar />
             {/* Banner Section Started  */}
             <section className="creative-agency-banner-area position-relative z-1">
-                <SlideInUp>
+                <SlideInUp selector=".creative-agency-banner-content, .creative-agency-banner-image, .creative-agency-banner-text, .creative-agency-banner-socials">
                     <div
                         className="container"
                         data-group="creativeAgencyBanner"
@@ -175,7 +176,6 @@ export default function Home() {
                         </div>
                     </div>
                     <SlideInUp>
-                        {/* <ServiceBoxes /> */}
                         <div className="row justify-content-center">
                             <div className="col-lg-4 col-md-6">
                                 <div className="single-service-box position-relative z-1">
@@ -375,7 +375,7 @@ export default function Home() {
                         <TextAnimation as="h1" className="text-animation">
                             Innovative
                         </TextAnimation>
-                        <SlideInUp>
+                        <SlideInUp selector=".main-video">
                             <div className="main-video position-relative">
                                 <img
                                     src="assets/images/videos/video1.jpg"
@@ -434,7 +434,10 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <SlideInUp className="row justify-content-center">
+                    <SlideInUp
+                        className="row justify-content-center"
+                        selector=".single-blog-post"
+                    >
                         <div className="col-lg-4 col-md-6">
                             <div className="single-blog-post">
                                 <a
@@ -556,66 +559,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="row align-items-center">
-                        <div className="col-lg-4 col-md-5">
-                            <div className="awards-list-image position-relative">
-                                <div className="awards-image text-center">
-                                    <img
-                                        src="assets/images/awards/award1.jpg"
-                                        alt="awards-image"
-                                    />
-                                </div>
-                                <div className="awards-image text-center">
-                                    <img
-                                        src="assets/images/awards/award2.jpg"
-                                        alt="awards-image"
-                                    />
-                                </div>
-                                <div className="awards-image text-center">
-                                    <img
-                                        src="assets/images/awards/award3.jpg"
-                                        alt="awards-image"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-8 col-md-7">
-                            <SlideInUp>
-                                <div
-                                    className="awards-list"
-                                    data-cues="slideInUp"
-                                >
-                                    <div className="single-award d-flex align-items-center justify-content-between position-relative">
-                                        <h3 className="mb-0">Maverick</h3>
-                                        <div className="number">07</div>
-                                        <a
-                                            href="careers.html"
-                                            target="_blank"
-                                            className="link-btn position-absolute start-0 end-0 top-0 bottom-0 z-1"
-                                        />
-                                    </div>
-                                    <div className="single-award d-flex align-items-center justify-content-between position-relative">
-                                        <h3 className="mb-0">Champion</h3>
-                                        <div className="number">03</div>
-                                        <a
-                                            href="careers.html"
-                                            target="_blank"
-                                            className="link-btn position-absolute start-0 end-0 top-0 bottom-0 z-1"
-                                        />
-                                    </div>
-                                    <div className="single-award d-flex align-items-center justify-content-between position-relative">
-                                        <h3 className="mb-0">Luminary</h3>
-                                        <div className="number">01</div>
-                                        <a
-                                            href="careers.html"
-                                            target="_blank"
-                                            className="link-btn position-absolute start-0 end-0 top-0 bottom-0 z-1"
-                                        />
-                                    </div>
-                                </div>
-                            </SlideInUp>
-                        </div>
-                    </div>
+                    <AwardList />
                 </div>
             </div>
             {/* End Awards Area */}
@@ -623,9 +567,9 @@ export default function Home() {
             {/* Start Why Choose Us Area */}
             <div className="why-choose-us-area pb-150">
                 <div className="container">
-                    <div
+                    <SlideInUp
                         className="row justify-content-center"
-                        data-cues="slideInUp"
+                        selector=".why-choose-us-left-side, .why-choose-us-middle-side, .why-choose-us-right-side"
                     >
                         <div className="col-lg-3 col-md-6">
                             <div className="why-choose-us-left-side">
@@ -692,89 +636,12 @@ export default function Home() {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </SlideInUp>
                 </div>
             </div>
             {/* End Why Choose Us Area */}
 
             {/* Start Testimonials Area */}
-            {/* <div className="testimonials-area bg-image position-relative z-1 bg-black ptb-150">
-                <div className="container">
-                    <div className="creative-agency-section-title text-white">
-                        <div className="left-side">
-                            <div className="number d-flex align-items-center">
-                                <div>07</div>
-                                Client stories
-                            </div>
-                            <TextAnimation as="h2" className="text-animation">
-                                Client success <span>stories</span>
-                            </TextAnimation>
-                        </div>
-                    </div>
-                    <div
-                        className="swiper testimonialsSwiper"
-                        data-cue="slideInUp"
-                    >
-                        <div className="swiper-wrapper">
-                            <div className="swiper-slide">
-                                <div className="testimonial-item">
-                                    <p>
-                                        &quote;The team&apos;s creative strategy
-                                        transformed our brand&apos;s presence.
-                                        With a fresh and engaging design, we
-                                        gained a new identity that resonates
-                                        deeply with our audience, positioning us
-                                        as a standout in a competitive market.
-                                        Our brand recognition has skyrocketed
-                                        since the launch.&quote;
-                                    </p>
-                                    <h3 className="fw-normal">
-                                        Sarah Thompson
-                                    </h3>
-                                    <span className="d-block">
-                                        CEO, InnovateTech Solutions
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="testimonial-item">
-                                    <p>
-                                        &quot;From initial concepts to final
-                                        execution, the team delivered beyond our
-                                        expectations. The brand overhaul not
-                                        only strengthened our online presence
-                                        but also resulted in a significant
-                                        increase in customer engagement and
-                                        sales. Their creative approach was
-                                        exactly what we needed.&quot;
-                                    </p>
-                                    <h3 className="fw-normal">John Harrison</h3>
-                                    <span className="d-block">
-                                        Marketing Director, Elite Enterprises
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-navigation d-flex align-items-center justify-content-end">
-                            <div className="swiper-button-prev">
-                                <img
-                                    src="assets/images/icons/white-left-arrow.svg"
-                                    alt="white-left-arrow"
-                                />
-                            </div>
-                            <div className="swiper-button-next">
-                                <img
-                                    src="assets/images/icons/white-right-arrow.svg"
-                                    alt="white-right-arrow"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="shape2">
-                    <img src="assets/images/shapes/shape2.svg" alt="shape2" />
-                </div>
-            </div> */}
             <TestimonialsSlider />
             {/* End Testimonials Area */}
 
@@ -810,166 +677,176 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div
-                        className="creative-agency-faq-accordion accordion"
-                        id="creativeAgencyFaqAccordion"
-                        data-cues="slideInUp"
-                    >
-                        <div className="accordion-item">
-                            <button
-                                className="accordion-button"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne"
-                                aria-expanded="true"
-                                aria-controls="collapseOne"
-                            >
-                                What services do you offer as a creative agency?
-                                <i className="ri-add-line" />
-                            </button>
-                            <div
-                                id="collapseOne"
-                                className="accordion-collapse collapse show"
-                                data-bs-parent="#creativeAgencyFaqAccordion"
-                            >
-                                <div className="accordion-body">
-                                    <p>
-                                        We offer a wide range of services,
-                                        including branding, graphic design, web
-                                        development, digital marketing, social
-                                        media strategy, content creation, UX/UI
-                                        design, and advertising campaigns. Our
-                                        team tailors each solution to fit the
-                                        unique needs of your business.
-                                    </p>
+                    <SlideInUp selector=".accordion-item" individual>
+                        <div
+                            className="creative-agency-faq-accordion accordion"
+                            id="creativeAgencyFaqAccordion"
+                            // data-cues="slideInUp"
+                        >
+                            <div className="accordion-item">
+                                <button
+                                    className="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                >
+                                    What services do you offer as a creative
+                                    agency?
+                                    <i className="ri-add-line" />
+                                </button>
+                                <div
+                                    id="collapseOne"
+                                    className="accordion-collapse collapse show"
+                                    data-bs-parent="#creativeAgencyFaqAccordion"
+                                >
+                                    <div className="accordion-body">
+                                        <p>
+                                            We offer a wide range of services,
+                                            including branding, graphic design,
+                                            web development, digital marketing,
+                                            social media strategy, content
+                                            creation, UX/UI design, and
+                                            advertising campaigns. Our team
+                                            tailors each solution to fit the
+                                            unique needs of your business.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <button
+                                    className="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                >
+                                    How can a creative agency help my business
+                                    grow?
+                                    <i className="ri-add-line" />
+                                </button>
+                                <div
+                                    id="collapseTwo"
+                                    className="accordion-collapse collapse"
+                                    data-bs-parent="#creativeAgencyFaqAccordion"
+                                >
+                                    <div className="accordion-body">
+                                        <p>
+                                            A creative agency can help your
+                                            business by crafting a strong,
+                                            unique brand identity, improving
+                                            your online presence, engaging your
+                                            target audience, and driving
+                                            measurable results through
+                                            innovative marketing strategies. We
+                                            focus on both creative and strategic
+                                            solutions to ensure long-term
+                                            growth.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <button
+                                    className="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="collapseThree"
+                                >
+                                    How long does it take to complete a project?
+                                    <i className="ri-add-line" />
+                                </button>
+                                <div
+                                    id="collapseThree"
+                                    className="accordion-collapse collapse"
+                                    data-bs-parent="#creativeAgencyFaqAccordion"
+                                >
+                                    <div className="accordion-body">
+                                        <p>
+                                            The duration of a project depends on
+                                            its scope and complexity. A simple
+                                            logo design might take a couple of
+                                            weeks, while a full-scale website
+                                            redesign could take several months.
+                                            We work closely with you to provide
+                                            a realistic timeline and keep you
+                                            informed throughout the process.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <button
+                                    className="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour"
+                                    aria-expanded="false"
+                                    aria-controls="collapseFour"
+                                >
+                                    What makes your agency different from
+                                    others?
+                                    <i className="ri-add-line" />
+                                </button>
+                                <div
+                                    id="collapseFour"
+                                    className="accordion-collapse collapse"
+                                    data-bs-parent="#creativeAgencyFaqAccordion"
+                                >
+                                    <div className="accordion-body">
+                                        <p>
+                                            Our team combines creativity with
+                                            strategy, ensuring that every
+                                            project not only looks great but
+                                            also drives business results. We
+                                            focus on building long-term
+                                            partnerships with our clients,
+                                            offering personalized solutions, and
+                                            staying ahead of industry trends to
+                                            ensure your brand stands out.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <button
+                                    className="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive"
+                                    aria-expanded="false"
+                                    aria-controls="collapseFive"
+                                >
+                                    How do you determine the cost of a project?
+                                    <i className="ri-add-line" />
+                                </button>
+                                <div
+                                    id="collapseFive"
+                                    className="accordion-collapse collapse"
+                                    data-bs-parent="#creativeAgencyFaqAccordion"
+                                >
+                                    <div className="accordion-body">
+                                        <p>
+                                            The cost of a project depends on
+                                            factors like the complexity of the
+                                            work, the resources required, and
+                                            the timeline. We provide detailed
+                                            quotes after understanding your
+                                            goals and project requirements. We
+                                            ensure transparency and work with
+                                            you to create a budget that fits
+                                            your needs.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item">
-                            <button
-                                className="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo"
-                                aria-expanded="false"
-                                aria-controls="collapseTwo"
-                            >
-                                How can a creative agency help my business grow?
-                                <i className="ri-add-line" />
-                            </button>
-                            <div
-                                id="collapseTwo"
-                                className="accordion-collapse collapse"
-                                data-bs-parent="#creativeAgencyFaqAccordion"
-                            >
-                                <div className="accordion-body">
-                                    <p>
-                                        A creative agency can help your business
-                                        by crafting a strong, unique brand
-                                        identity, improving your online
-                                        presence, engaging your target audience,
-                                        and driving measurable results through
-                                        innovative marketing strategies. We
-                                        focus on both creative and strategic
-                                        solutions to ensure long-term growth.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="accordion-item">
-                            <button
-                                className="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree"
-                                aria-expanded="false"
-                                aria-controls="collapseThree"
-                            >
-                                How long does it take to complete a project?
-                                <i className="ri-add-line" />
-                            </button>
-                            <div
-                                id="collapseThree"
-                                className="accordion-collapse collapse"
-                                data-bs-parent="#creativeAgencyFaqAccordion"
-                            >
-                                <div className="accordion-body">
-                                    <p>
-                                        The duration of a project depends on its
-                                        scope and complexity. A simple logo
-                                        design might take a couple of weeks,
-                                        while a full-scale website redesign
-                                        could take several months. We work
-                                        closely with you to provide a realistic
-                                        timeline and keep you informed
-                                        throughout the process.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="accordion-item">
-                            <button
-                                className="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour"
-                                aria-expanded="false"
-                                aria-controls="collapseFour"
-                            >
-                                What makes your agency different from others?
-                                <i className="ri-add-line" />
-                            </button>
-                            <div
-                                id="collapseFour"
-                                className="accordion-collapse collapse"
-                                data-bs-parent="#creativeAgencyFaqAccordion"
-                            >
-                                <div className="accordion-body">
-                                    <p>
-                                        Our team combines creativity with
-                                        strategy, ensuring that every project
-                                        not only looks great but also drives
-                                        business results. We focus on building
-                                        long-term partnerships with our clients,
-                                        offering personalized solutions, and
-                                        staying ahead of industry trends to
-                                        ensure your brand stands out.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="accordion-item">
-                            <button
-                                className="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive"
-                                aria-expanded="false"
-                                aria-controls="collapseFive"
-                            >
-                                How do you determine the cost of a project?
-                                <i className="ri-add-line" />
-                            </button>
-                            <div
-                                id="collapseFive"
-                                className="accordion-collapse collapse"
-                                data-bs-parent="#creativeAgencyFaqAccordion"
-                            >
-                                <div className="accordion-body">
-                                    <p>
-                                        The cost of a project depends on factors
-                                        like the complexity of the work, the
-                                        resources required, and the timeline. We
-                                        provide detailed quotes after
-                                        understanding your goals and project
-                                        requirements. We ensure transparency and
-                                        work with you to create a budget that
-                                        fits your needs.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </SlideInUp>
                 </div>
             </div>
             {/* End FAQ Area */}

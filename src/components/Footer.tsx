@@ -1,3 +1,5 @@
+import SlideInUp from "./common/SlideInUp";
+
 const Footer = () => {
     return (
         <footer className="creative-agency-footer-area">
@@ -14,19 +16,21 @@ const Footer = () => {
                                 />
                                 <span>us</span>
                             </h2>
-                            <a
-                                href="contact.html"
-                                className="link-btn menu_link text-center d-inline-block rounded-circle"
-                                data-cue="slideInUp"
-                            >
-                                <img
-                                    src="assets/images/icons/white-right-top-arrow.svg"
-                                    alt="right-top-arrow"
-                                />
-                                <span className="menu_link-text">
-                                    Let's Chat
-                                </span>
-                            </a>
+                            <SlideInUp selector=".footer-animation" individual>
+                                <a
+                                    href="contact.html"
+                                    className="link-btn menu_link text-center d-inline-block rounded-circle footer-animation"
+                                    data-cue="slideInUp"
+                                >
+                                    <img
+                                        src="assets/images/icons/white-right-top-arrow.svg"
+                                        alt="right-top-arrow"
+                                    />
+                                    <span className="menu_link-text">
+                                        Let's Chat
+                                    </span>
+                                </a>
+                            </SlideInUp>
                             <div className="newsletter-form-wrapper">
                                 <span className="title d-block fw-medium">
                                     Subscribe for updates

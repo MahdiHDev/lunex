@@ -7,6 +7,7 @@ import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SlideInUp from "./SlideInUp";
 
 const testimonials = [
     {
@@ -41,7 +42,10 @@ export default function TestimonialsSlider() {
                     </div>
                 </div>
 
-                <div className="testimonialsSwiper">
+                <SlideInUp
+                    className="testimonialsSwiper"
+                    selector=".testimonial-item"
+                >
                     <Swiper
                         modules={[Navigation, Autoplay]}
                         slidesPerView={1}
@@ -89,7 +93,7 @@ export default function TestimonialsSlider() {
                             />
                         </div>
                     </div>
-                </div>
+                </SlideInUp>
             </div>
 
             <div className="shape2">

@@ -1285,7 +1285,7 @@ const page = () => {
                                             alt="right-top-arrow"
                                         />
                                         <span className="menu_link-text">
-                                            Let's Chat
+                                            {`Let's Chat`}
                                         </span>
                                     </a>
                                     <div className="newsletter-form-wrapper">

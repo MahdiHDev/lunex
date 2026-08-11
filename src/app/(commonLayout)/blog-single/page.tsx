@@ -957,14 +957,14 @@ const page = () => {
                                     <p>
                                         In this post, we explore the profound
                                         impact storytelling has on branding.
-                                        Storytelling isn't just about crafting a
-                                        narrative; it's about creating an
-                                        emotional connection between your brand
-                                        and your audience. By sharing compelling
-                                        stories, brands can shape their
-                                        identity, evoke emotions, and build
-                                        trust with their customers. We’ll dive
-                                        into how effective storytelling can
+                                        Storytelling isn&apos;t just about
+                                        crafting a narrative; it&apos;s about
+                                        creating an emotional connection between
+                                        your brand and your audience. By sharing
+                                        compelling stories, brands can shape
+                                        their identity, evoke emotions, and
+                                        build trust with their customers. We’ll
+                                        dive into how effective storytelling can
                                         differentiate a brand in a saturated
                                         market and make it more memorable,
                                         relatable, and impactful.
@@ -972,10 +972,10 @@ const page = () => {
                                     <hr />
                                     <h3>Key points:</h3>
                                     <p>
-                                        Storytelling isn't just about crafting a
-                                        narrative; it's about creating an
-                                        emotional connection between your brand
-                                        and your audience.
+                                        Storytelling isn&apos;t just about
+                                        crafting a narrative; it&apos;s about
+                                        creating an emotional connection between
+                                        your brand and your audience.
                                     </p>
                                     <ul className="features-list ps-0 list-unstyled">
                                         <li className="position-relative">
@@ -1042,9 +1042,10 @@ const page = () => {
                                                 Great article! The impact of
                                                 storytelling in branding is
                                                 something many brands overlook.
-                                                It's amazing how storytelling
-                                                can build such an emotional
-                                                connection with customers.
+                                                It&apos;s amazing how
+                                                storytelling can build such an
+                                                emotional connection with
+                                                customers.
                                             </p>
                                         </li>
                                         <li className="comment-item">
@@ -1112,7 +1113,7 @@ const page = () => {
                                                     <input
                                                         className="form-check-input"
                                                         type="checkbox"
-                                                        defaultValue
+                                                        // defaultValue
                                                         id="readAndAccept"
                                                     />
                                                     <label
@@ -1157,7 +1158,7 @@ const page = () => {
                                             alt="right-top-arrow"
                                         />
                                         <span className="menu_link-text">
-                                            Let's Chat
+                                            Let&apos;s Chat
                                         </span>
                                     </a>
                                     <div className="newsletter-form-wrapper">
