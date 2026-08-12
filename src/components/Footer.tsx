@@ -1,3 +1,9 @@
+import Image from "next/image";
+import mapMarker from "public/assets/images/icons/map-marker.svg";
+import upArrow from "public/assets/images/icons/up-arrow.svg";
+import WhiteRightTopArrow from "public/assets/images/icons/white-right-top-arrow.svg";
+import whiteUpArrow from "public/assets/images/icons/white-up-arrow.svg";
+import user1 from "public/assets/images/users/user1.jpg";
 import SlideInUp from "./common/SlideInUp";
 
 const Footer = () => {
@@ -9,8 +15,8 @@ const Footer = () => {
                         <div className="footer-left-side position-relative">
                             <h2 className="mb-0">
                                 Collaborate with
-                                <img
-                                    src="assets/images/users/user1.jpg"
+                                <Image
+                                    src={user1}
                                     className="rounded-circle"
                                     alt="user-image"
                                 />
@@ -22,12 +28,12 @@ const Footer = () => {
                                     className="link-btn menu_link text-center d-inline-block rounded-circle footer-animation"
                                     data-cue="slideInUp"
                                 >
-                                    <img
-                                        src="assets/images/icons/white-right-top-arrow.svg"
+                                    <Image
+                                        src={WhiteRightTopArrow}
                                         alt="right-top-arrow"
                                     />
                                     <span className="menu_link-text">
-                                        Let's Chat
+                                        Let&apos;s Chat
                                     </span>
                                 </a>
                             </SlideInUp>
@@ -134,8 +140,8 @@ const Footer = () => {
                             </div>
                             <div className="location">
                                 <div className="position-relative">
-                                    <img
-                                        src="assets/images/icons/map-marker.svg"
+                                    <Image
+                                        src={mapMarker}
                                         alt="map-marker-icon"
                                     />
                                     <h3>The Empire State</h3>
@@ -156,14 +162,8 @@ const Footer = () => {
                         . All rights reserved.
                     </p>
                     <div className="go-top rounded-circle">
-                        <img
-                            src="assets/images/icons/up-arrow.svg"
-                            alt="up-arrow"
-                        />
-                        <img
-                            src="assets/images/icons/white-up-arrow.svg"
-                            alt="white-up-arrow"
-                        />
+                        <Image src={upArrow} alt="up-arrow" />
+                        <Image src={whiteUpArrow} alt="white-up-arrow" />
                     </div>
                 </div>
             </div>

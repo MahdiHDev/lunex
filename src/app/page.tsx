@@ -9,6 +9,7 @@ import AwardList from "@/components/home/AwardList";
 import ProjectCircle from "@/components/home/ProjectCircle";
 import Navbar from "@/components/navbars/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 // image import
 // assets/images/blogs/blog1.jpg
@@ -48,8 +49,8 @@ export default function Home() {
                                 className="main-image"
                                 alt="banner-image"
                             />
-                            <a
-                                href="about.html"
+                            <Link
+                                href={"about"}
                                 className="link-btn menu_link d-inline-block rounded-circle"
                             >
                                 <img
@@ -59,7 +60,7 @@ export default function Home() {
                                 <span className="menu_link-text">
                                     Let&apos;s Chat
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                         <div className="creative-agency-banner-text">
                             <p>
