@@ -8,7 +8,6 @@ import MenuPopup from "../menu/MenuPopup";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    console.log(menuOpen);
     const { mounted, theme, toggleTheme } = useMountedTheme();
 
     if (!mounted) return null;
@@ -175,14 +174,14 @@ const Navbar = () => {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a href="about" className="nav-link">
+                                        <Link href="about" className="nav-link">
                                             About Us
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="team" className="nav-link">
+                                        <Link href="team" className="nav-link">
                                             Team
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
                                         <a
@@ -219,12 +218,12 @@ const Navbar = () => {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="book-a-call.html"
+                                        <Link
+                                            href="book-a-call"
                                             className="nav-link"
                                         >
                                             Book A Call
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
                                         <a
@@ -235,12 +234,12 @@ const Navbar = () => {
                                         </a>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
-                                                <a
-                                                    href="signin.html"
+                                                <Link
+                                                    href={"signin"}
                                                     className="nav-link"
                                                 >
                                                     Signin
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
                                                 <a
@@ -261,33 +260,30 @@ const Navbar = () => {
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="faq.html" className="nav-link">
+                                        <Link href="faq" className="nav-link">
                                             FAQ
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="privacy-policy.html"
+                                        <Link
+                                            href="privacy-policy"
                                             className="nav-link"
                                         >
                                             Privacy Policy
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="terms-conditions.html"
+                                        <Link
+                                            href="terms-conditions"
                                             className="nav-link"
                                         >
                                             Terms &amp; Conditions
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="error.html"
-                                            className="nav-link"
-                                        >
+                                        <Link href="error" className="nav-link">
                                             404 Error Page
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>

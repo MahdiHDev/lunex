@@ -4,7 +4,6 @@ import TrustedClientSlider from "@/components/about/TrustedClientSlider";
 import ScrambleText from "@/components/common/ScrambleText";
 import SlideInUp from "@/components/common/SlideInUp";
 import TextAnimation from "@/components/common/TextAnimation";
-import Footer from "@/components/Footer";
 import Navbar from "@/components/navbars/Navbar";
 
 const page = () => {
@@ -492,8 +491,6 @@ const page = () => {
                 </div>
                 {/* End Trusted Clients Area */}
             </div>
-
-            <Footer />
         </div>
     );
 };

@@ -1,4 +1,5 @@
 "use client";
+import ScrambleText from "@/components/common/ScrambleText";
 import useMountedTheme from "@/hooks/useMountedTheme";
 import Link from "next/link";
 
@@ -9,6 +10,7 @@ const NotFound = () => {
 
     return (
         <div>
+            <ScrambleText />
             {/* Start Error Area */}
             <div className="page-banner-area error-area">
                 <div className="d-table">

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 interface Props {
@@ -232,12 +233,12 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                             </a>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="team.html"
+                                                            <Link
+                                                                href="team"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Team
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <button

@@ -4,11 +4,13 @@ import upArrow from "public/assets/images/icons/up-arrow.svg";
 import WhiteRightTopArrow from "public/assets/images/icons/white-right-top-arrow.svg";
 import whiteUpArrow from "public/assets/images/icons/white-up-arrow.svg";
 import user1 from "public/assets/images/users/user1.jpg";
+import ScrambleText from "./common/ScrambleText";
 import SlideInUp from "./common/SlideInUp";
 
 const Footer = () => {
     return (
         <footer className="creative-agency-footer-area">
+            <ScrambleText />
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-md-6">
