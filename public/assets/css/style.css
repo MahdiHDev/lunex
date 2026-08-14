@@ -17906,3 +17906,8 @@ Dark Mode CSS
     transform: rotate(180deg) translateY(2px);
     transition: transform 0.3s ease;
 }
+
+.trustedClientsSwiper .swiper-button-next svg,
+.trustedClientsSwiper .swiper-button-prev svg {
+    display: none !important;
+}

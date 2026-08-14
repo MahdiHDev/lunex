@@ -27,7 +27,6 @@ const page = () => {
                             <div
                                 className="digital-agency-faq-accordion accordion"
                                 id="digitalAgencyFaqAccordion"
-                                data-cues="slideInUp"
                             >
                                 <div className="accordion-item">
                                     <button

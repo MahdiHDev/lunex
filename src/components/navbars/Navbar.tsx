@@ -148,20 +148,20 @@ const Navbar = () => {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="careers.html"
+                                        <Link
+                                            href="careers"
                                             className="nav-link"
                                         >
                                             Careers
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="career-single.html"
+                                        <Link
+                                            href="career-single"
                                             className="nav-link"
                                         >
                                             Career Single
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
@@ -192,30 +192,30 @@ const Navbar = () => {
                                         </a>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
-                                                <a
-                                                    href="services.html"
+                                                <Link
+                                                    href="services"
                                                     className="nav-link"
                                                 >
                                                     Services
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a
-                                                    href="service-single.html"
+                                                <Link
+                                                    href="service-single"
                                                     className="nav-link"
                                                 >
                                                     Service Single
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="pricing.html"
+                                        <Link
+                                            href="pricing"
                                             className="nav-link"
                                         >
                                             Pricing
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link
@@ -242,20 +242,20 @@ const Navbar = () => {
                                                 </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a
-                                                    href="signup.html"
+                                                <Link
+                                                    href="signup"
                                                     className="nav-link"
                                                 >
                                                     Signup
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a
-                                                    href="forgot-password.html"
+                                                <Link
+                                                    href="forgot-password"
                                                     className="nav-link"
                                                 >
                                                     Forgot Password?
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
