@@ -296,20 +296,17 @@ const Navbar = () => {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="blog.html"
-                                            className="nav-link"
-                                        >
+                                        <Link href="blog" className="nav-link">
                                             Blog
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="blog-single.html"
+                                        <Link
+                                            href="blog-single"
                                             className="nav-link"
                                         >
                                             Blog Single
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>

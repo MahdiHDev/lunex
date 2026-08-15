@@ -1,6 +1,8 @@
+import TextAnimation from "@/components/common/TextAnimation";
+
 const page = () => {
     return (
-        <div>
+        <div className="bg-f8f9fd">
             {/* Start Book A Call Area */}
             <div className="book-call-area pb-150">
                 <div className="container">
@@ -11,9 +13,12 @@ const page = () => {
                                     <span className="sub-title d-block">
                                         Book appointment
                                     </span>
-                                    <h1 className="mb-0 text-animation">
+                                    <TextAnimation
+                                        as="h1"
+                                        className="mb-0 text-animation"
+                                    >
                                         Schedule a call <span>with us</span>
-                                    </h1>
+                                    </TextAnimation>
                                 </div>
                             </div>
                             <div className="col-lg-5 col-md-5">

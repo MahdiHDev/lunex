@@ -63,7 +63,7 @@ const TrustedClientsSwiper = () => {
         >
             {/* <div className="swiper-wrapper"> */}
             <SwiperSlide className="text-center">
-                <div className="item" style={{ backgroundColor: "#fff" }}>
+                <div className="item">
                     <Image src={partner1} alt="partner-image" />
                 </div>
             </SwiperSlide>

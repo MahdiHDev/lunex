@@ -11,3 +11,11 @@
 .creative-agency-banner-area {
     padding-top: 210px;
 }
+
+.dark-mode body {
+    background-color: #000;
+}
+
+.dark-mode .bg-f8f9fd {
+    background-color: transparent !important;
+}

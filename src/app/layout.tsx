@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-css-tags */
 import BootstrapClient from "@/components/BootstrapClient";
 // import "@/styles/odometer.css";
+import "@/app/globals.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 
 export const metadata = {
@@ -38,6 +39,7 @@ export default function RootLayout({
                 />
                 <link rel="stylesheet" href="/assets/css/style.css" />
                 <link rel="stylesheet" href="/assets/css/responsive.css" />
+
                 {/* <link rel="stylesheet" href="assets/css/scrollCue.css" /> */}
             </head>
             <body

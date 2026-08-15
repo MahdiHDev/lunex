@@ -23,7 +23,11 @@ const page = () => {
                 {/* Start FAQ Area */}
                 <div className="faq-area ptb-150">
                     <div className="container">
-                        <SlideInUp selector=".accordion-item" individual>
+                        <SlideInUp
+                            selector=".accordion-item"
+                            individual
+                            delay={0}
+                        >
                             <div
                                 className="digital-agency-faq-accordion accordion"
                                 id="digitalAgencyFaqAccordion"

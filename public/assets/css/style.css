@@ -6271,6 +6271,7 @@ Pricing Area CSS
     color: var(--blackColor);
     font-size: var(--fontSize);
     background-color: transparent;
+
     transition: var(--transition);
 }
 .pricing-tabs .nav-tabs .nav-item .nav-link.active,
@@ -6284,7 +6285,7 @@ Pricing Area CSS
 }
 .pricing-tabs .nav-tabs .nav-item:last-child {
     padding-left: 0;
-    margin-left: -1.9px;
+    margin-left: 1.9px; /* changed according to design previous is -1.9px */
     border-radius: 0 30px 30px 0;
 }
 .pricing-tabs .discount {

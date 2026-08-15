@@ -3,7 +3,7 @@ import TrustedClientsSwiper from "@/components/services/TrustedClientsSwiper";
 
 const page = () => {
     return (
-        <div style={{ backgroundColor: "#F8F9FD" }}>
+        <div className="bg-f8f9fd">
             <div>
                 {/* Start Services Page Banner Area */}
                 <div className="services-page-banner-area">

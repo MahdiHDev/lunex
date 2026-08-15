@@ -12,11 +12,13 @@ const SlideInUp = ({
     className,
     selector = ".single-service-box",
     individual = false,
+    delay = 0.35,
 }: {
     children: React.ReactNode;
     className?: string;
     selector?: string;
     individual?: boolean;
+    delay?: number;
 }) => {
     const rowRef = useRef<HTMLDivElement>(null);
 
@@ -32,7 +34,7 @@ const SlideInUp = ({
              * should animate when it reaches the viewport.
              */
             if (individual) {
-                elements.forEach((element) => {
+                elements.forEach((element, index) => {
                     gsap.fromTo(
                         element,
                         {
@@ -43,7 +45,7 @@ const SlideInUp = ({
                             y: 0,
                             opacity: 1,
                             duration: 0.8,
-                            delay: 0.15,
+                            delay: index * delay,
                             ease: "power3.out",
                             scrollTrigger: {
                                 trigger: element,

@@ -24,7 +24,11 @@ const Footer = () => {
                                 />
                                 <span>us</span>
                             </h2>
-                            <SlideInUp selector=".footer-animation" individual>
+                            <SlideInUp
+                                selector=".footer-animation"
+                                individual
+                                delay={0}
+                            >
                                 <a
                                     href="contact.html"
                                     className="link-btn menu_link text-center d-inline-block rounded-circle footer-animation"
