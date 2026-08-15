@@ -1,46 +1,30 @@
 "use client";
 
 import useMountedTheme from "@/hooks/useMountedTheme";
-import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import MenuPopup from "../menu/MenuPopup";
 
-const Navbar = () => {
+import Image from "next/image";
+
+import Link from "next/link";
+import logo from "public/assets/images/logo.svg";
+import whiteLogo from "public/assets/images/white-logo.svg";
+
+const NavbarContact = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const { mounted, theme, toggleTheme } = useMountedTheme();
 
     if (!mounted) return null;
 
     return (
-        <div className="navbar-area top-0 start-0 end-0 h-auto">
-            <div className="container">
+        <div className="navbar-area style-four top-0 start-0 end-0 h-auto">
+            <div className="container-fluid">
                 <nav className="navbar p-0 navbar-expand-lg">
-                    <Link className="navbar-brand" href={"/"}>
-                        <Image
-                            src="assets/images/logo.svg"
-                            alt="logo"
-                            className="black-logo"
-                            width={115}
-                            height={30}
-                        />
-                        <Image
-                            src="assets/images/white-logo.svg"
-                            className="d-none"
-                            alt="logo"
-                            width={115}
-                            height={30}
-                        />
+                    <Link className="navbar-brand" href="/">
+                        <Image src={logo} alt="logo" className="black-logo" />
+                        <Image src={whiteLogo} className="d-none" alt="logo" />
                     </Link>
-                    <button
-                        className="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
+                    <button className="navbar-toggler" type="button">
                         <span
                             className="burger-menu"
                             onClick={() => setMenuOpen(!menuOpen)}
@@ -50,21 +34,18 @@ const Navbar = () => {
                             <span className="bottom-bar" />
                         </span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className="collapse navbar-collapse">
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <a
                                     href="javascript:void(0)"
-                                    className="dropdown-toggle nav-link active"
+                                    className="dropdown-toggle nav-link"
                                 >
                                     Home
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <Link
-                                            href="/"
-                                            className="nav-link active"
-                                        >
+                                        <Link href="/" className="nav-link">
                                             Creative Agency
                                         </Link>
                                     </li>
@@ -253,7 +234,7 @@ const Navbar = () => {
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
                                                 <Link
-                                                    href={"signin"}
+                                                    href="signin"
                                                     className="nav-link"
                                                 >
                                                     Signin
@@ -299,9 +280,12 @@ const Navbar = () => {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link href="error" className="nav-link">
+                                        <a
+                                            href="error.html"
+                                            className="nav-link"
+                                        >
                                             404 Error Page
-                                        </Link>
+                                        </a>
                                     </li>
                                 </ul>
                             </li>
@@ -331,7 +315,7 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <a
                                     href="javascript:void(0)"
-                                    className="dropdown-toggle nav-link"
+                                    className="dropdown-toggle nav-link active"
                                 >
                                     Contacts
                                 </a>
@@ -347,7 +331,7 @@ const Navbar = () => {
                                     <li className="nav-item">
                                         <Link
                                             href="contact-2"
-                                            className="nav-link"
+                                            className="nav-link active"
                                         >
                                             Contact Style 2
                                         </Link>
@@ -356,13 +340,6 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <div className="others-option d-flex align-items-center">
-                            {/* <button
-                                type="button"
-                                className="light-dark-btn d-inline-block p-0 bg-transparent border-0 lh-1"
-                                id="light-dark-btn"
-                            >
-                                <i className="ri-sun-line" />
-                            </button> */}
                             <button
                                 type="button"
                                 className="light-dark-btn d-inline-block p-0 bg-transparent border-0 lh-1"
@@ -377,7 +354,7 @@ const Navbar = () => {
                             </button>
                             <a
                                 href="contact.html"
-                                className="link-btn d-flex align-items-center"
+                                className="link-btn fw-semibold d-flex align-items-center"
                             >
                                 <span>
                                     <img
@@ -399,4 +376,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default NavbarContact;

@@ -1,3 +1,4 @@
+import BlogCategoryNav from "@/components/common/BlogCategoryNav";
 import SlideInUp from "@/components/common/SlideInUp";
 import TextAnimation from "@/components/common/TextAnimation";
 import Image from "next/image";
@@ -63,44 +64,8 @@ const page = () => {
             {/* Start Blog Area */}
             <div className="blog-area ptb-150">
                 <div className="container">
-                    <SlideInUp selector=".main-blog-buttons">
-                        <ul
-                            className="main-blog-buttons text-center ps-0 list-unstyled"
-                            data-cue="slideInUp"
-                        >
-                            <li className="d-inline-block">
-                                <a href="blog.html" className="d-block active">
-                                    All post
-                                </a>
-                            </li>
-                            <li className="d-inline-block">
-                                <a href="blog-growth.html" className="d-block">
-                                    Growth
-                                </a>
-                            </li>
-                            <li className="d-inline-block">
-                                <a
-                                    href="blog-technology.html"
-                                    className="d-block"
-                                >
-                                    Technology
-                                </a>
-                            </li>
-                            <li className="d-inline-block">
-                                <a href="blog-social.html" className="d-block">
-                                    Social
-                                </a>
-                            </li>
-                            <li className="d-inline-block">
-                                <a
-                                    href="blog-branding.html"
-                                    className="d-block"
-                                >
-                                    Branding
-                                </a>
-                            </li>
-                        </ul>
-                    </SlideInUp>
+                    <BlogCategoryNav />
+
                     <SlideInUp
                         selector=".item"
                         individual
