@@ -1,6 +1,7 @@
 "use client";
 
 import useMountedTheme from "@/hooks/useMountedTheme";
+import useSticky from "@/hooks/useSticky";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -9,11 +10,14 @@ import MenuPopup from "../menu/MenuPopup";
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const { mounted, theme, toggleTheme } = useMountedTheme();
+    const isSticky = useSticky(100);
 
     if (!mounted) return null;
 
     return (
-        <div className="navbar-area top-0 start-0 end-0 h-auto">
+        <div
+            className={`navbar-area top-0 start-0 end-0 h-auto ${isSticky ? "is-sticky" : ""}`}
+        >
             <div className="container">
                 <nav className="navbar p-0 navbar-expand-lg">
                     <Link className="navbar-brand" href={"/"}>

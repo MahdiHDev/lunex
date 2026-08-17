@@ -1,5 +1,6 @@
 "use client";
 
+import useSticky from "@/hooks/useSticky";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -9,6 +10,7 @@ const Navbar2 = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
+    const isSticky = useSticky(100);
 
     useEffect(() => {
         const mountedTimeout = setTimeout(() => {
@@ -25,7 +27,9 @@ const Navbar2 = () => {
     };
 
     return (
-        <div className="navbar-area top-0 start-0 end-0 h-auto">
+        <div
+            className={`navbar-area top-0 start-0 end-0 h-auto ${isSticky ? "is-sticky" : ""}`}
+        >
             <div className="container">
                 <nav className="navbar p-0 navbar-expand-lg">
                     <a className="navbar-brand" href="">

@@ -47,81 +47,81 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                 <div className="accordion-body">
                                                     <div className="accordion">
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
+                                                            <Link
                                                                 className="accordion-link fw-semibold text-decoration-none active"
-                                                                href="index.html"
+                                                                href="/"
                                                             >
                                                                 Creative Agency
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
+                                                            <Link
                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                href="index-2.html"
+                                                                href="index-2"
                                                             >
                                                                 Digital Agency
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
+                                                            <Link
                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                href="index-3.html"
+                                                                href="index-3"
                                                             >
                                                                 Development
                                                                 Agency
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
+                                                            <Link
                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                href="index-4.html"
+                                                                href="index-4"
                                                             >
                                                                 Digital
                                                                 Marketing Agency
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
+                                                            <Link
                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                href="index-5.html"
+                                                                href="index-5"
                                                             >
                                                                 UI/UX Design
                                                                 Agency
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
+                                                            <Link
                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                href="index-6.html"
+                                                                href="index-6"
                                                             >
                                                                 Branding Agency
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
+                                                            <Link
                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                href="index-7.html"
+                                                                href="index-7"
                                                             >
                                                                 Content Creation
                                                                 Agency
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
+                                                            <Link
                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                href="index-8.html"
+                                                                href="index-8"
                                                             >
                                                                 SEO Agency
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
+                                                            <Link
                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                href="index-9.html"
+                                                                href="index-9"
                                                             >
                                                                 Cyber Security
                                                                 Agency
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -146,20 +146,20 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                 <div className="accordion-body">
                                                     <div className="accordion">
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="works.html"
+                                                            <Link
+                                                                href="works"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Works
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="work-single.html"
+                                                            <Link
+                                                                href="work-single"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Work Single
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -184,20 +184,20 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                 <div className="accordion-body">
                                                     <div className="accordion">
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="careers.html"
+                                                            <Link
+                                                                href="careers"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Careers
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="career-single.html"
+                                                            <Link
+                                                                href="career-single"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Career Single
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -225,12 +225,12 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         id="navbarAccordion2"
                                                     >
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="about.html"
+                                                            <Link
+                                                                href="about"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 About Us
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
@@ -259,41 +259,41 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                 <div className="accordion-body">
                                                                     <div className="accordion">
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                            <a
+                                                                            <Link
                                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                                href="services.html"
+                                                                                href="services"
                                                                             >
                                                                                 Services
-                                                                            </a>
+                                                                            </Link>
                                                                         </div>
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                            <a
+                                                                            <Link
                                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                                href="service-single.html"
+                                                                                href="service-single"
                                                                             >
                                                                                 Service
                                                                                 Single
-                                                                            </a>
+                                                                            </Link>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="pricing.html"
+                                                            <Link
+                                                                href="pricing"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Pricing
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="book-a-call.html"
+                                                            <Link
+                                                                href="book-a-call"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Book A Call
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <button
@@ -314,66 +314,66 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                 <div className="accordion-body">
                                                                     <div className="accordion">
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                            <a
+                                                                            <Link
                                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                                href="signin.html"
+                                                                                href="signin"
                                                                             >
                                                                                 Signin
-                                                                            </a>
+                                                                            </Link>
                                                                         </div>
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                            <a
+                                                                            <Link
                                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                                href="signup.html"
+                                                                                href="signup"
                                                                             >
                                                                                 Signup
-                                                                            </a>
+                                                                            </Link>
                                                                         </div>
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                            <a
+                                                                            <Link
                                                                                 className="accordion-link fw-semibold text-decoration-none"
-                                                                                href="forgot-password.html"
+                                                                                href="forgot-password"
                                                                             >
                                                                                 Forgot
                                                                                 Password?
-                                                                            </a>
+                                                                            </Link>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="faq.html"
+                                                            <Link
+                                                                href="faq"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 FAQ
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="privacy-policy.html"
+                                                            <Link
+                                                                href="privacy-policy"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Privacy Policy
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="terms-conditions.html"
+                                                            <Link
+                                                                href="terms-conditions"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Terms &amp;
                                                                 Conditions
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="error.html"
+                                                            <Link
+                                                                href="error"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 404 Error Page
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -398,20 +398,20 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                 <div className="accordion-body">
                                                     <div className="accordion">
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="blog.html"
+                                                            <Link
+                                                                href="blog"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Blog
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="blog-single.html"
+                                                            <Link
+                                                                href="blog-single"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Blog Single
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -436,20 +436,20 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                 <div className="accordion-body">
                                                     <div className="accordion">
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="contact.html"
+                                                            <Link
+                                                                href="contact"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Contact Style 1
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                            <a
-                                                                href="contact-2.html"
+                                                            <Link
+                                                                href="contact-2"
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Contact Style 2
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>

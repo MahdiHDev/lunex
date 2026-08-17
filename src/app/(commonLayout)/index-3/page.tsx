@@ -7,6 +7,7 @@ import ZoomIn from "@/components/common/ZoomIn";
 import FeedbackSlider from "@/components/index3/FeedbackSlider";
 import PartnersSllider from "@/components/index3/PartnerSlider";
 import ProjectsArea from "@/components/index3/ProjectArea";
+import SideMenu from "@/components/index3/SideMenu";
 import Navbar3 from "@/components/navbars/Navbar3";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,14 +19,11 @@ import banner from "public/assets/images/banners/banner3.jpg";
 import appDev from "public/assets/images/icons/app-dev.svg";
 import ecommerceSolution from "public/assets/images/icons/ecommerce-solutions.svg";
 import maintananceSupport from "public/assets/images/icons/maintenance-support.svg";
-import menu from "public/assets/images/icons/menu.svg";
 import rightTopArrow from "public/assets/images/icons/right-top-arrow.svg";
 import webDev from "public/assets/images/icons/web-dev.svg";
 import whiteRightTopArrow from "public/assets/images/icons/white-right-top-arrow.svg";
-import logo from "public/assets/images/logo.svg";
 import border1 from "public/assets/images/shapes/border1.svg";
 import border2 from "public/assets/images/shapes/border2.svg";
-import logoWhite from "public/assets/images/white-logo.svg";
 
 const page = () => {
     return (
@@ -33,562 +31,12 @@ const page = () => {
             <ScrambleText />
             <HeroReveal />
             {/* Sidemenu Area */}
-            <div className="sidemenu-area d-none d-lg-block">
-                <a href="index.html" className="logo d-inline-block">
-                    <Image
-                        src={logo}
-                        alt="logo"
-                        className="black-logo"
-                        // width={150}
-                        // height={50}
-                    />
-                    <Image
-                        src={logoWhite}
-                        className="d-none"
-                        alt="logo"
-                        // width={150}
-                        // height={50}
-                    />
-                </a>
-                <button className="navbar-toggler" type="button">
-                    <Image src={menu} alt="menu" />
-                </button>
-                <div className="socials">
-                    <a href="#" className="d-block" target="_blank">
-                        <i className="ri-facebook-circle-fill" />
-                    </a>
-                    <a href="#" className="d-block" target="_blank">
-                        <i className="ri-instagram-line" />
-                    </a>
-                    <a href="#" className="d-block" target="_blank">
-                        <i className="ri-threads-line" />
-                    </a>
-                    <a href="#" className="d-block" target="_blank">
-                        <i className="ri-twitter-x-line" />
-                    </a>
-                    <a href="#" className="d-block" target="_blank">
-                        <i className="ri-youtube-fill" />
-                    </a>
-                </div>
-            </div>
+            <SideMenu />
             {/* End Sidemenu Area */}
             {/* Start Navbar Area */}
             <Navbar3 />
             {/* End Navbar Area */}
-            {/* Start Menu Popup Area */}
-            <div className="menu-popup-area position-fixed start-0 end-0 top-0 bottom-0">
-                <div className="d-table">
-                    <div className="d-table-cell">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-8 col-md-12">
-                                    <div className="meanu-popup-nav">
-                                        <div
-                                            className="accordion"
-                                            id="navbarAccordion"
-                                        >
-                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                <button
-                                                    className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed active"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#navbarCollapseOne"
-                                                    aria-expanded="false"
-                                                    aria-controls="navbarCollapseOne"
-                                                >
-                                                    Home
-                                                </button>
-                                                <div
-                                                    id="navbarCollapseOne"
-                                                    className="accordion-collapse collapse"
-                                                    data-bs-parent="#navbarAccordion"
-                                                >
-                                                    <div className="accordion-body">
-                                                        <div className="accordion">
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                    href="index.html"
-                                                                >
-                                                                    Creative
-                                                                    Agency
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                    href="index-2.html"
-                                                                >
-                                                                    Digital
-                                                                    Agency
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    className="accordion-link fw-semibold text-decoration-none active"
-                                                                    href="index-3.html"
-                                                                >
-                                                                    Development
-                                                                    Agency
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                    href="index-4.html"
-                                                                >
-                                                                    Digital
-                                                                    Marketing
-                                                                    Agency
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                    href="index-5.html"
-                                                                >
-                                                                    UI/UX Design
-                                                                    Agency
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                    href="index-6.html"
-                                                                >
-                                                                    Branding
-                                                                    Agency
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                    href="index-7.html"
-                                                                >
-                                                                    Content
-                                                                    Creation
-                                                                    Agency
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                    href="index-8.html"
-                                                                >
-                                                                    SEO Agency
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                    href="index-9.html"
-                                                                >
-                                                                    Cyber
-                                                                    Security
-                                                                    Agency
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                <button
-                                                    className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#navbarCollapseTwo"
-                                                    aria-expanded="false"
-                                                    aria-controls="navbarCollapseTwo"
-                                                >
-                                                    Works
-                                                </button>
-                                                <div
-                                                    id="navbarCollapseTwo"
-                                                    className="accordion-collapse collapse"
-                                                    data-bs-parent="#navbarAccordion"
-                                                >
-                                                    <div className="accordion-body">
-                                                        <div className="accordion">
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="works.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Works
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="work-single.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Work Single
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                <button
-                                                    className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#navbarCollapseThree"
-                                                    aria-expanded="false"
-                                                    aria-controls="navbarCollapseThree"
-                                                >
-                                                    Careers
-                                                </button>
-                                                <div
-                                                    id="navbarCollapseThree"
-                                                    className="accordion-collapse collapse"
-                                                    data-bs-parent="#navbarAccordion"
-                                                >
-                                                    <div className="accordion-body">
-                                                        <div className="accordion">
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="careers.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Careers
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="career-single.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Career
-                                                                    Single
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                <button
-                                                    className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#navbarCollapseFour"
-                                                    aria-expanded="false"
-                                                    aria-controls="navbarCollapseFour"
-                                                >
-                                                    Pages
-                                                </button>
-                                                <div
-                                                    id="navbarCollapseFour"
-                                                    className="accordion-collapse collapse"
-                                                    data-bs-parent="#navbarAccordion"
-                                                >
-                                                    <div className="accordion-body">
-                                                        <div
-                                                            className="accordion"
-                                                            id="navbarAccordion2"
-                                                        >
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="about.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    About Us
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="team.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Team
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <button
-                                                                    className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed"
-                                                                    type="button"
-                                                                    data-bs-toggle="collapse"
-                                                                    data-bs-target="#navbarCollapseOne1"
-                                                                    aria-expanded="false"
-                                                                    aria-controls="navbarCollapseOne1"
-                                                                >
-                                                                    Services
-                                                                </button>
-                                                                <div
-                                                                    id="navbarCollapseOne1"
-                                                                    className="accordion-collapse collapse"
-                                                                    data-bs-parent="#navbarAccordion2"
-                                                                >
-                                                                    <div className="accordion-body">
-                                                                        <div className="accordion">
-                                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                                <a
-                                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                                    href="services.html"
-                                                                                >
-                                                                                    Services
-                                                                                </a>
-                                                                            </div>
-                                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                                <a
-                                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                                    href="service-single.html"
-                                                                                >
-                                                                                    Service
-                                                                                    Single
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="pricing.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Pricing
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="book-a-call.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Book A Call
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <button
-                                                                    className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed"
-                                                                    type="button"
-                                                                    data-bs-toggle="collapse"
-                                                                    data-bs-target="#navbarCollapseOne2"
-                                                                    aria-expanded="false"
-                                                                    aria-controls="navbarCollapseOne2"
-                                                                >
-                                                                    My Account
-                                                                </button>
-                                                                <div
-                                                                    id="navbarCollapseOne2"
-                                                                    className="accordion-collapse collapse"
-                                                                    data-bs-parent="#navbarAccordion2"
-                                                                >
-                                                                    <div className="accordion-body">
-                                                                        <div className="accordion">
-                                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                                <a
-                                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                                    href="signin.html"
-                                                                                >
-                                                                                    Signin
-                                                                                </a>
-                                                                            </div>
-                                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                                <a
-                                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                                    href="signup.html"
-                                                                                >
-                                                                                    Signup
-                                                                                </a>
-                                                                            </div>
-                                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                                <a
-                                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                                    href="forgot-password.html"
-                                                                                >
-                                                                                    Forgot
-                                                                                    Password?
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="faq.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    FAQ
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="privacy-policy.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Privacy
-                                                                    Policy
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="terms-conditions.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Terms &amp;
-                                                                    Conditions
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="error.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    404 Error
-                                                                    Page
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                <button
-                                                    className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#navbarCollapseFive"
-                                                    aria-expanded="false"
-                                                    aria-controls="navbarCollapseFive"
-                                                >
-                                                    Blogs
-                                                </button>
-                                                <div
-                                                    id="navbarCollapseFive"
-                                                    className="accordion-collapse collapse"
-                                                    data-bs-parent="#navbarAccordion"
-                                                >
-                                                    <div className="accordion-body">
-                                                        <div className="accordion">
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="blog.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Blog
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="blog-single.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Blog Single
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                <button
-                                                    className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#navbarCollapseSix"
-                                                    aria-expanded="false"
-                                                    aria-controls="navbarCollapseSix"
-                                                >
-                                                    Contacts
-                                                </button>
-                                                <div
-                                                    id="navbarCollapseSix"
-                                                    className="accordion-collapse collapse"
-                                                    data-bs-parent="#navbarAccordion"
-                                                >
-                                                    <div className="accordion-body">
-                                                        <div className="accordion">
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="contact.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Contact
-                                                                    Style 1
-                                                                </a>
-                                                            </div>
-                                                            <div className="accordion-item border-0 rounded-0 bg-transparent">
-                                                                <a
-                                                                    href="contact-2.html"
-                                                                    className="accordion-link fw-semibold text-decoration-none"
-                                                                >
-                                                                    Contact
-                                                                    Style 2
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-12">
-                                    <div className="menu-contact-info">
-                                        <div className="location">
-                                            <h5>The Empire State</h5>
-                                            <p>
-                                                Parker Avenue, Kingsley Road,
-                                                New York
-                                            </p>
-                                        </div>
-                                        <h4>support@lunex.com</h4>
-                                        <div className="socials">
-                                            <a
-                                                href="#"
-                                                className="d-inline-block"
-                                                target="_blank"
-                                            >
-                                                <i className="ri-facebook-circle-fill" />
-                                            </a>
-                                            <a
-                                                href="#"
-                                                className="d-inline-block"
-                                                target="_blank"
-                                            >
-                                                <i className="ri-instagram-line" />
-                                            </a>
-                                            <a
-                                                href="#"
-                                                className="d-inline-block"
-                                                target="_blank"
-                                            >
-                                                <i className="ri-threads-line" />
-                                            </a>
-                                            <a
-                                                href="#"
-                                                className="d-inline-block"
-                                                target="_blank"
-                                            >
-                                                <i className="ri-twitter-x-line" />
-                                            </a>
-                                            <a
-                                                href="#"
-                                                className="d-inline-block"
-                                                target="_blank"
-                                            >
-                                                <i className="ri-youtube-fill" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button
-                    type="button"
-                    className="menu-popup-close-btn position-absolute rounded-circle text-center border-0 p-0"
-                >
-                    <i className="ri-close-line" />
-                </button>
-            </div>
-            {/* End Menu Popup Area */}
+
             {/* Start Dev Agency Banner Area */}
             <div className="dev-agency-banner-area position-relative z-1">
                 <div className="container">
@@ -1011,25 +459,31 @@ const page = () => {
                         <div className="row align-items-end">
                             <div className="col-lg-7 col-md-12">
                                 <div className="left-side">
-                                    <h2 className="text-animation">
+                                    <TextAnimation className="text-animation">
                                         Our recent <span>posts</span>
-                                    </h2>
+                                    </TextAnimation>
                                 </div>
                             </div>
                             <div className="col-lg-5 col-md-12">
                                 <div className="right-side">
-                                    <a
-                                        href="blog.html"
+                                    <Link
+                                        href="blog"
                                         className="default-btn style-two mt-0"
                                     >
                                         View Posts
                                         <i className="ri-arrow-right-up-line" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="dev-blogs-list" data-cues="slideInUp">
+                    <SlideInUp
+                        selector=".blog-item"
+                        delay={0}
+                        individual
+                        className="dev-blogs-list"
+                        data-cues="slideInUp"
+                    >
                         <div className="blog-item position-relative">
                             <div className="content position-relative">
                                 <ul className="meta ps-0 list-unstyled">
@@ -1127,7 +581,7 @@ const page = () => {
                                 />
                             </a>
                         </div>
-                    </div>
+                    </SlideInUp>
                 </div>
             </div>
             {/* End Blog Area */}
@@ -1135,10 +589,10 @@ const page = () => {
             <div className="transform-area">
                 <div className="container">
                     <div className="transform-content">
-                        <h2 className="text-animation">
+                        <TextAnimation className="text-animation">
                             Bring your vision to life with simple, effective
                             solutions
-                        </h2>
+                        </TextAnimation>
                         <p>
                             Discover our collection of diverse projects that
                             showcase our expertise and commitment. From elegant
@@ -1146,7 +600,10 @@ const page = () => {
                             highlights creativity and precision.
                         </p>
                     </div>
-                    <div
+                    <SlideInUp
+                        selector=".border-image, .box1, .box2, .box3"
+                        individual
+                        delay={0}
                         className="transform-boxes mx-auto position-relative"
                         data-cues="slideInUp"
                     >
@@ -1164,7 +621,7 @@ const page = () => {
                         </div>
                         <div className="box2" />
                         <div className="box3" />
-                    </div>
+                    </SlideInUp>
                 </div>
             </div>
             {/* End Transform Area */}
@@ -1178,194 +635,204 @@ const page = () => {
                                     <span className="sub-title d-block">
                                         Need help?
                                     </span>
-                                    <h2 className="text-animation">
+                                    <TextAnimation className="text-animation">
                                         Questions we get asked
-                                    </h2>
+                                    </TextAnimation>
                                 </div>
                             </div>
                             <div className="col-lg-5 col-md-12">
                                 <div className="right-side">
-                                    <a
-                                        href="faq.html"
+                                    <Link
+                                        href="faq"
                                         className="default-btn style-two"
                                     >
                                         View FAQ
                                         <i className="ri-arrow-right-up-line" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div
-                        className="dev-agency-faq-accordion accordion"
-                        id="devAgencyFaqAccordion"
-                        data-cues="slideInUp"
-                    >
-                        <div className="accordion-item">
-                            <button
-                                className="accordion-button"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne"
-                                aria-expanded="true"
-                                aria-controls="collapseOne"
-                            >
-                                <span className="number d-inline-block rounded-circle text-center">
-                                    01
-                                </span>
-                                What services do you offer as a creative agency?
-                            </button>
-                            <div
-                                id="collapseOne"
-                                className="accordion-collapse collapse show"
-                                data-bs-parent="#devAgencyFaqAccordion"
-                            >
-                                <div className="accordion-body">
-                                    <p>
-                                        We offer a wide range of services,
-                                        including branding, graphic design, web
-                                        development, digital marketing, social
-                                        media strategy, content creation, UX/UI
-                                        design, and advertising campaigns. Our
-                                        team tailors each solution to fit the
-                                        unique needs of your business.
-                                    </p>
+                    <SlideInUp selector=".accordion-item" delay={0} individual>
+                        <div
+                            className="dev-agency-faq-accordion accordion"
+                            id="devAgencyFaqAccordion"
+                            data-cues="slideInUp"
+                        >
+                            <div className="accordion-item">
+                                <button
+                                    className="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                >
+                                    <span className="number d-inline-block rounded-circle text-center">
+                                        01
+                                    </span>
+                                    What services do you offer as a creative
+                                    agency?
+                                </button>
+                                <div
+                                    id="collapseOne"
+                                    className="accordion-collapse collapse show"
+                                    data-bs-parent="#devAgencyFaqAccordion"
+                                >
+                                    <div className="accordion-body">
+                                        <p>
+                                            We offer a wide range of services,
+                                            including branding, graphic design,
+                                            web development, digital marketing,
+                                            social media strategy, content
+                                            creation, UX/UI design, and
+                                            advertising campaigns. Our team
+                                            tailors each solution to fit the
+                                            unique needs of your business.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <button
+                                    className="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                >
+                                    <span className="number d-inline-block rounded-circle text-center">
+                                        02
+                                    </span>
+                                    How can a creative agency help my business
+                                    grow?
+                                </button>
+                                <div
+                                    id="collapseTwo"
+                                    className="accordion-collapse collapse"
+                                    data-bs-parent="#devAgencyFaqAccordion"
+                                >
+                                    <div className="accordion-body">
+                                        <p>
+                                            A creative agency can help your
+                                            business by crafting a strong,
+                                            unique brand identity, improving
+                                            your online presence, engaging your
+                                            target audience, and driving
+                                            measurable results through
+                                            innovative marketing strategies. We
+                                            focus on both creative and strategic
+                                            solutions to ensure long-term
+                                            growth.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <button
+                                    className="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="collapseThree"
+                                >
+                                    <span className="number d-inline-block rounded-circle text-center">
+                                        03
+                                    </span>
+                                    How long does it take to complete a project?
+                                </button>
+                                <div
+                                    id="collapseThree"
+                                    className="accordion-collapse collapse"
+                                    data-bs-parent="#devAgencyFaqAccordion"
+                                >
+                                    <div className="accordion-body">
+                                        <p>
+                                            The duration of a project depends on
+                                            its scope and complexity. A simple
+                                            logo design might take a couple of
+                                            weeks, while a full-scale website
+                                            redesign could take several months.
+                                            We work closely with you to provide
+                                            a realistic timeline and keep you
+                                            informed throughout the process.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <button
+                                    className="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour"
+                                    aria-expanded="false"
+                                    aria-controls="collapseFour"
+                                >
+                                    <span className="number d-inline-block rounded-circle text-center">
+                                        04
+                                    </span>
+                                    What makes your agency different from
+                                    others?
+                                </button>
+                                <div
+                                    id="collapseFour"
+                                    className="accordion-collapse collapse"
+                                    data-bs-parent="#devAgencyFaqAccordion"
+                                >
+                                    <div className="accordion-body">
+                                        <p>
+                                            Our team combines creativity with
+                                            strategy, ensuring that every
+                                            project not only looks great but
+                                            also drives business results. We
+                                            focus on building long-term
+                                            partnerships with our clients,
+                                            offering personalized solutions, and
+                                            staying ahead of industry trends to
+                                            ensure your brand stands out.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <button
+                                    className="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive"
+                                    aria-expanded="false"
+                                    aria-controls="collapseFive"
+                                >
+                                    <span className="number d-inline-block rounded-circle text-center">
+                                        05
+                                    </span>
+                                    How do you determine the cost of a project?
+                                </button>
+                                <div
+                                    id="collapseFive"
+                                    className="accordion-collapse collapse"
+                                    data-bs-parent="#devAgencyFaqAccordion"
+                                >
+                                    <div className="accordion-body">
+                                        <p>
+                                            The cost of a project depends on
+                                            factors like the complexity of the
+                                            work, the resources required, and
+                                            the timeline. We provide detailed
+                                            quotes after understanding your
+                                            goals and project requirements. We
+                                            ensure transparency and work with
+                                            you to create a budget that fits
+                                            your needs.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item">
-                            <button
-                                className="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo"
-                                aria-expanded="false"
-                                aria-controls="collapseTwo"
-                            >
-                                <span className="number d-inline-block rounded-circle text-center">
-                                    02
-                                </span>
-                                How can a creative agency help my business grow?
-                            </button>
-                            <div
-                                id="collapseTwo"
-                                className="accordion-collapse collapse"
-                                data-bs-parent="#devAgencyFaqAccordion"
-                            >
-                                <div className="accordion-body">
-                                    <p>
-                                        A creative agency can help your business
-                                        by crafting a strong, unique brand
-                                        identity, improving your online
-                                        presence, engaging your target audience,
-                                        and driving measurable results through
-                                        innovative marketing strategies. We
-                                        focus on both creative and strategic
-                                        solutions to ensure long-term growth.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="accordion-item">
-                            <button
-                                className="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree"
-                                aria-expanded="false"
-                                aria-controls="collapseThree"
-                            >
-                                <span className="number d-inline-block rounded-circle text-center">
-                                    03
-                                </span>
-                                How long does it take to complete a project?
-                            </button>
-                            <div
-                                id="collapseThree"
-                                className="accordion-collapse collapse"
-                                data-bs-parent="#devAgencyFaqAccordion"
-                            >
-                                <div className="accordion-body">
-                                    <p>
-                                        The duration of a project depends on its
-                                        scope and complexity. A simple logo
-                                        design might take a couple of weeks,
-                                        while a full-scale website redesign
-                                        could take several months. We work
-                                        closely with you to provide a realistic
-                                        timeline and keep you informed
-                                        throughout the process.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="accordion-item">
-                            <button
-                                className="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour"
-                                aria-expanded="false"
-                                aria-controls="collapseFour"
-                            >
-                                <span className="number d-inline-block rounded-circle text-center">
-                                    04
-                                </span>
-                                What makes your agency different from others?
-                            </button>
-                            <div
-                                id="collapseFour"
-                                className="accordion-collapse collapse"
-                                data-bs-parent="#devAgencyFaqAccordion"
-                            >
-                                <div className="accordion-body">
-                                    <p>
-                                        Our team combines creativity with
-                                        strategy, ensuring that every project
-                                        not only looks great but also drives
-                                        business results. We focus on building
-                                        long-term partnerships with our clients,
-                                        offering personalized solutions, and
-                                        staying ahead of industry trends to
-                                        ensure your brand stands out.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="accordion-item">
-                            <button
-                                className="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive"
-                                aria-expanded="false"
-                                aria-controls="collapseFive"
-                            >
-                                <span className="number d-inline-block rounded-circle text-center">
-                                    05
-                                </span>
-                                How do you determine the cost of a project?
-                            </button>
-                            <div
-                                id="collapseFive"
-                                className="accordion-collapse collapse"
-                                data-bs-parent="#devAgencyFaqAccordion"
-                            >
-                                <div className="accordion-body">
-                                    <p>
-                                        The cost of a project depends on factors
-                                        like the complexity of the work, the
-                                        resources required, and the timeline. We
-                                        provide detailed quotes after
-                                        understanding your goals and project
-                                        requirements. We ensure transparency and
-                                        work with you to create a budget that
-                                        fits your needs.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </SlideInUp>
                 </div>
             </div>
             {/* End FAQ Area */}
@@ -1373,9 +840,9 @@ const page = () => {
             <div className="lets-talk-area pb-150">
                 <div className="container">
                     <div className="lets-talk-content text-center">
-                        <h2 className="text-animation d-flex align-items-center justify-content-center">
-                            <span>Let's</span> do this!
-                        </h2>
+                        <TextAnimation className="text-animation d-flex align-items-center justify-content-center">
+                            <span>Let&apos;s</span> do this!
+                        </TextAnimation>
                         <a
                             href="contact.html"
                             className="link-btn menu_link d-inline-block text-center position-relative rounded-circle"
@@ -1388,7 +855,9 @@ const page = () => {
                                 src="assets/images/icons/white-right-top-arrow.svg"
                                 alt="white-right-top-arrow"
                             />
-                            <span className="menu_link-text">Let's Chat</span>
+                            <span className="menu_link-text">
+                                Let&apos;s Chat
+                            </span>
                         </a>
                     </div>
                 </div>

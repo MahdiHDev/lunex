@@ -1,44 +1,37 @@
 "use client";
 
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+
+import useMountedTheme from "@/hooks/useMountedTheme";
+import useSticky from "@/hooks/useSticky";
+import Image from "next/image";
+import Link from "next/link";
+import logo from "public/assets/images/logo.svg";
+import whiteLogo from "public/assets/images/white-logo.svg";
+import MenuPopup from "../menu/MenuPopup";
 
 const Navbar3 = () => {
-    const [openMobileNav, setOpenMobileNav] = useState(false);
-    const { theme, setTheme } = useTheme();
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        const mountedTimeout = setTimeout(() => {
-            setMounted(true);
-        }, 0);
-
-        return () => clearTimeout(mountedTimeout);
-    }, []);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const { mounted, theme, toggleTheme } = useMountedTheme();
+    const isSticky = useSticky(100);
 
     if (!mounted) return null;
 
-    const toggleTheme = () => {
-        setTheme(theme === "dark" ? "light" : "dark");
-    };
-
     return (
-        <div className="navbar-area style-two top-0 start-0 end-0 h-auto">
+        <div
+            className={`navbar-area style-two top-0 start-0 end-0 h-auto ${isSticky ? "is-sticky" : ""}`}
+        >
             <div className="container">
                 <nav className="navbar p-0">
-                    <a className="navbar-brand" href="">
-                        <img
-                            src="assets/images/logo.svg"
-                            alt="logo"
-                            className="black-logo"
-                        />
-                        <img
-                            src="assets/images/white-logo.svg"
-                            className="d-none"
-                            alt="logo"
-                        />
-                    </a>
-                    <button className="navbar-toggler" type="button">
+                    <Link className="navbar-brand" href="/">
+                        <Image src={logo} alt="logo" className="black-logo" />
+                        <Image src={whiteLogo} className="d-none" alt="logo" />
+                    </Link>
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        onClick={() => setMenuOpen(!menuOpen)}
+                    >
                         <span className="burger-menu">
                             <span className="top-bar" />
                             <span className="middle-bar" />
@@ -53,12 +46,17 @@ const Navbar3 = () => {
                                 id="light-dark-btn"
                                 onClick={toggleTheme}
                             >
-                                <i className="ri-sun-line" />
+                                {theme === "dark" ? (
+                                    <i className="ri-sun-line" />
+                                ) : (
+                                    <i className="ri-sun-line" />
+                                )}
                             </button>
                         </div>
                     </div>
                 </nav>
             </div>
+            <MenuPopup isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
         </div>
     );
 };
