@@ -3,10 +3,10 @@
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import MobileNav from "../MobileNav";
+import MenuPopup from "../menu/MenuPopup";
 
 const Navbar2 = () => {
-    const [openMobileNav, setOpenMobileNav] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
     const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
@@ -41,7 +41,7 @@ const Navbar2 = () => {
                         />
                     </a>
                     <button
-                        onClick={() => setOpenMobileNav(!openMobileNav)}
+                        onClick={() => setMenuOpen(!menuOpen)}
                         className="navbar-toggler"
                         type="button"
                     >
@@ -380,9 +380,9 @@ const Navbar2 = () => {
                             </Link>
                         </div>
                     </div>
-                    <MobileNav
-                        openMobileNav={openMobileNav}
-                        setOpenMobileNav={setOpenMobileNav}
+                    <MenuPopup
+                        isOpen={menuOpen}
+                        onClose={() => setMenuOpen(false)}
                     />
                 </nav>
             </div>

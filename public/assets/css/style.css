@@ -5158,6 +5158,8 @@ Projects Area CSS
     display: flex;
 }
 .projects-list .project-item {
+    /* added width 10% */
+    width: 10%;
     height: 580px;
     overflow: hidden;
     position: relative;
@@ -17909,6 +17911,10 @@ Dark Mode CSS
 }
 
 .trustedClientsSwiper .swiper-button-next svg,
-.trustedClientsSwiper .swiper-button-prev svg {
+.trustedClientsSwiper .swiper-button-prev svg,
+.feedbackSwiper .swiper-button-prev svg,
+.feedbackSwiper .swiper-button-next svg,
+.feedbackSwiperStyleTwo .swiper-button-prev svg,
+.feedbackSwiperStyleTwo .swiper-button-next svg {
     display: none !important;
 }

@@ -1,26 +1,37 @@
+import HeroReveal from "@/components/common/HeroReveal";
 import ScrambleText from "@/components/common/ScrambleText";
+import SlideInUp from "@/components/common/SlideInUp";
+import TextAnimation from "@/components/common/TextAnimation";
+import TextAnimation2 from "@/components/common/TextAnimation2";
+import ZoomIn from "@/components/common/ZoomIn";
+import FeedbackSlider from "@/components/index3/FeedbackSlider";
+import PartnersSllider from "@/components/index3/PartnerSlider";
+import ProjectsArea from "@/components/index3/ProjectArea";
 import Navbar3 from "@/components/navbars/Navbar3";
 import Image from "next/image";
+import Link from "next/link";
 
 import about1 from "public/assets/images/abouts/about1.jpg";
 import elements from "public/assets/images/abouts/element.svg";
 import star from "public/assets/images/abouts/star.png";
 import banner from "public/assets/images/banners/banner3.jpg";
+import appDev from "public/assets/images/icons/app-dev.svg";
+import ecommerceSolution from "public/assets/images/icons/ecommerce-solutions.svg";
+import maintananceSupport from "public/assets/images/icons/maintenance-support.svg";
 import menu from "public/assets/images/icons/menu.svg";
 import rightTopArrow from "public/assets/images/icons/right-top-arrow.svg";
+import webDev from "public/assets/images/icons/web-dev.svg";
 import whiteRightTopArrow from "public/assets/images/icons/white-right-top-arrow.svg";
 import logo from "public/assets/images/logo.svg";
-import project1 from "public/assets/images/projects/project1.jpg";
-import project2 from "public/assets/images/projects/project2.jpg";
-import project3 from "public/assets/images/projects/project3.jpg";
 import border1 from "public/assets/images/shapes/border1.svg";
 import border2 from "public/assets/images/shapes/border2.svg";
 import logoWhite from "public/assets/images/white-logo.svg";
 
 const page = () => {
     return (
-        <div>
+        <div className="bg-f8f9fd">
             <ScrambleText />
+            <HeroReveal />
             {/* Sidemenu Area */}
             <div className="sidemenu-area d-none d-lg-block">
                 <a href="index.html" className="logo d-inline-block">
@@ -28,19 +39,19 @@ const page = () => {
                         src={logo}
                         alt="logo"
                         className="black-logo"
-                        width={150}
-                        height={50}
+                        // width={150}
+                        // height={50}
                     />
                     <Image
                         src={logoWhite}
                         className="d-none"
                         alt="logo"
-                        width={150}
-                        height={50}
+                        // width={150}
+                        // height={50}
                     />
                 </a>
                 <button className="navbar-toggler" type="button">
-                    <Image src={menu} alt="menu" width={30} height={30} />
+                    <Image src={menu} alt="menu" />
                 </button>
                 <div className="socials">
                     <a href="#" className="d-block" target="_blank">
@@ -593,32 +604,38 @@ const page = () => {
                                 <span className="d-block">&amp; code</span>
                             </div>
                         </div>
-                        <p data-cue="slideInUp">
-                            We design, develop, and code innovative digital
-                            solutions to bring ideas to life.
-                        </p>
+                        <SlideInUp selector="p" individual>
+                            <p data-cue="slideInUp">
+                                We design, develop, and code innovative digital
+                                solutions to bring ideas to life.
+                            </p>
+                        </SlideInUp>
                     </div>
-                    <div
-                        className="dev-agency-banner-text"
-                        data-cue="slideInUp"
-                    >
-                        <a
-                            href="contact.html"
-                            className="link-btn menu_link text-center d-inline-block rounded-circle"
+                    <SlideInUp selector=".dev-agency-banner-text">
+                        <div
+                            className="dev-agency-banner-text"
+                            data-cue="slideInUp"
                         >
-                            <Image
-                                src="assets/images/icons/white-right-top-arrow.svg"
-                                alt="right-top-arrow"
-                                width={12}
-                                height={12}
-                            />
-                            <span className="menu_link-text">Let's Chat</span>
-                        </a>
-                        <p>
-                            We create and code impactful digital products from
-                            concept to execution.
-                        </p>
-                    </div>
+                            <a
+                                href="contact.html"
+                                className="link-btn menu_link text-center d-inline-block rounded-circle"
+                            >
+                                <Image
+                                    src="assets/images/icons/white-right-top-arrow.svg"
+                                    alt="right-top-arrow"
+                                    width={12}
+                                    height={12}
+                                />
+                                <span className="menu_link-text">
+                                    {`Let's`} Chat
+                                </span>
+                            </a>
+                            <p>
+                                We create and code impactful digital products
+                                from concept to execution.
+                            </p>
+                        </div>
+                    </SlideInUp>
                     <div className="shape4">
                         <Image src={banner} alt="banner3" />
                     </div>
@@ -636,13 +653,20 @@ const page = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-7">
-                            <div className="about-content text-animation">
-                                <Image
-                                    src={elements}
-                                    className="rotateme"
-                                    alt="element-image"
-                                />
-                                <p className="fw-medium">
+                            <TextAnimation2
+                                as={"div"}
+                                className="about-content text-animation"
+                            >
+                                <div className="text-animation-item">
+                                    <Image
+                                        src={elements}
+                                        className="rotateme"
+                                        alt="element-image"
+                                        height={65}
+                                        width={65}
+                                    />
+                                </div>
+                                <p className="fw-medium text-animation-item">
                                     We combine creativity and technology to
                                     transform ideas into impactful digital
                                     solutions. Driven by innovation and a{" "}
@@ -651,36 +675,40 @@ const page = () => {
                                     expectations and deliver exceptional
                                     results.
                                 </p>
-                            </div>
-                            <div className="about-btn" data-cue="slideInUp">
-                                <a
-                                    href="contact.html"
-                                    className="link-btn menu_link d-inline-block text-center position-relative rounded-circle"
-                                >
-                                    <Image
-                                        src={rightTopArrow}
-                                        alt="right-top-arrow"
-                                    />
-                                    <Image
-                                        src={whiteRightTopArrow}
-                                        alt="white-right-top-arrow"
-                                    />
-                                    <span className="menu_link-text">
-                                        Let's Chat
-                                    </span>
-                                </a>
-                            </div>
+                            </TextAnimation2>
+                            <SlideInUp selector=".about-btn">
+                                <div className="about-btn" data-cue="slideInUp">
+                                    <a
+                                        href="contact.html"
+                                        className="link-btn menu_link d-inline-block text-center position-relative rounded-circle"
+                                    >
+                                        <Image
+                                            src={rightTopArrow}
+                                            alt="right-top-arrow"
+                                        />
+                                        <Image
+                                            src={whiteRightTopArrow}
+                                            alt="white-right-top-arrow"
+                                        />
+                                        <span className="menu_link-text">
+                                            Let&apos;s Chat
+                                        </span>
+                                    </a>
+                                </div>
+                            </SlideInUp>
                         </div>
                         <div className="col-lg-5">
-                            <div className="about-image" data-cue="zoomIn">
-                                <Image src={about1} alt="about-image" />
-                                <div className="d-flex align-items-center">
-                                    <span className="sub-title d-block">
-                                        We rank in the top
-                                    </span>
-                                    <div className="number">5%</div>
+                            <ZoomIn selector=".about-image">
+                                <div className="about-image" data-cue="zoomIn">
+                                    <Image src={about1} alt="about-image" />
+                                    <div className="d-flex align-items-center">
+                                        <span className="sub-title d-block">
+                                            We rank in the top
+                                        </span>
+                                        <div className="number">5%</div>
+                                    </div>
                                 </div>
-                            </div>
+                            </ZoomIn>
                         </div>
                     </div>
                 </div>
@@ -693,82 +721,81 @@ const page = () => {
                         <div className="row align-items-end">
                             <div className="col-lg-7 col-md-12">
                                 <div className="left-side">
-                                    <h2 className="text-animation">
+                                    <TextAnimation className="text-animation">
                                         Discover our <span>offerings</span>
-                                    </h2>
+                                    </TextAnimation>
                                 </div>
                             </div>
                             <div className="col-lg-5 col-md-12">
                                 <div className="right-side">
-                                    <a
-                                        href="services.html"
+                                    <Link
+                                        href="services"
                                         className="default-btn style-two mt-0"
                                     >
                                         View Services
                                         <i className="ri-arrow-right-up-line" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="dev-services-list" data-cues="slideInUp">
+                    <SlideInUp
+                        selector=".item"
+                        individual
+                        delay={0}
+                        className="dev-services-list"
+                        data-cues="slideInUp"
+                    >
                         <div className="item position-relative">
                             <div className="icon">
-                                <img
-                                    src="assets/images/icons/web-dev.svg"
-                                    alt="icon"
-                                />
+                                <Image src={webDev} alt="icon" />
                             </div>
                             <h3>
-                                <a href="service-single.html">Brand strategy</a>
+                                <Link href="service-single">
+                                    Brand strategy
+                                </Link>
                             </h3>
                             <p>
                                 We help define your brand’s identity and create
                                 a roadmap for consistent growth, positioning,
                                 and market presence.
                             </p>
-                            <a
-                                href="service-single.html"
+                            <Link
+                                href="service-single"
                                 className="link-btn d-inline-block"
                             >
                                 <i className="ri-arrow-right-line" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="item position-relative">
                             <div className="icon">
-                                <img
-                                    src="assets/images/icons/app-dev.svg"
-                                    alt="icon"
-                                />
+                                <Image src={appDev} alt="icon" />
                             </div>
                             <h3>
-                                <a href="service-single.html">
+                                <Link href="service-single">
                                     Creative design
-                                </a>
+                                </Link>
                             </h3>
                             <p>
                                 From logos to websites, our creative design
                                 solutions bring your brand to life with visually
                                 stunning and user-centric designs.
                             </p>
-                            <a
-                                href="service-single.html"
+                            <Link
+                                href="service-single"
                                 className="link-btn d-inline-block"
                             >
                                 <i className="ri-arrow-right-line" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="item position-relative">
                             <div className="icon">
-                                <img
-                                    src="assets/images/icons/ecommerce-solutions.svg"
-                                    alt="icon"
-                                />
+                                <Image src={ecommerceSolution} alt="icon" />
                             </div>
                             <h3>
-                                <a href="service-single.html">
+                                <Link href="service-single">
                                     Digital marketing
-                                </a>
+                                </Link>
                             </h3>
                             <p>
                                 We craft tailored digital marketing strategies
@@ -776,240 +803,40 @@ const page = () => {
                                 &amp; build brand loyalty across multiple
                                 platforms.
                             </p>
-                            <a
-                                href="service-single.html"
+                            <Link
+                                href="service-single"
                                 className="link-btn d-inline-block"
                             >
                                 <i className="ri-arrow-right-line" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="item position-relative">
                             <div className="icon">
-                                <img
-                                    src="assets/images/icons/maintenance-support.svg"
-                                    alt="icon"
-                                />
+                                <Image src={maintananceSupport} alt="icon" />
                             </div>
                             <h3>
-                                <a href="service-single.html">
+                                <Link href="service-single">
                                     Web development
-                                </a>
+                                </Link>
                             </h3>
                             <p>
                                 Our expert web development team creates
                                 high-performance websites &amp; applications
                                 that enhance experience &amp; functionality.
                             </p>
-                            <a
-                                href="service-single.html"
+                            <Link
+                                href="service-single"
                                 className="link-btn d-inline-block"
                             >
                                 <i className="ri-arrow-right-line" />
-                            </a>
+                            </Link>
                         </div>
-                    </div>
+                    </SlideInUp>
                 </div>
             </div>
             {/* End Services Area */}
             {/* Start Projects Area */}
-            <div className="projects-area pb-150">
-                <div className="container">
-                    <div className="dev-agency-section-title">
-                        <div className="row align-items-end">
-                            <div className="col-lg-7 col-md-12">
-                                <div className="left-side">
-                                    <h2 className="text-animation">
-                                        Our works <span>gallery</span>
-                                    </h2>
-                                </div>
-                            </div>
-                            <div className="col-lg-5 col-md-12">
-                                <div className="right-side">
-                                    <p>
-                                        A glimpse into our creativity and
-                                        expertise—explore the projects that
-                                        define our commitment to innovation and
-                                        excellence.
-                                    </p>
-                                    <a
-                                        href="works.html"
-                                        className="default-btn style-two"
-                                    >
-                                        All Works
-                                        <i className="ri-arrow-right-up-line" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="projects-list" data-cue="slideInUp">
-                        <div className="project-item active">
-                            <div className="title">
-                                <div className="number">01</div>
-                                <span>Brand elevation strategy</span>
-                            </div>
-                            <div className="details">
-                                <div className="row align-items-center">
-                                    <div className="col-xl-7 col-lg-6 col-md-7">
-                                        <div className="image text-center">
-                                            <Image
-                                                src={project1}
-                                                alt="project-image"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-5 col-lg-6 col-md-5">
-                                        <div className="content">
-                                            <div className="number">01</div>
-                                            <h3>
-                                                <a href="work-single.html">
-                                                    Brand elevation strategy
-                                                </a>
-                                            </h3>
-                                            <p>
-                                                A comprehensive rebranding
-                                                project aimed at boosting brand
-                                                identity and increasing market
-                                                presence through strategic
-                                                design and messaging.
-                                            </p>
-                                            <a
-                                                href="work-single.html"
-                                                className="link-btn text-center d-inline-block rounded-circle position-relative"
-                                            >
-                                                <i className="ri-arrow-right-line" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="project-item">
-                            <div className="title">
-                                <div className="number">02</div>
-                                <span>High-impact ad campaign</span>
-                            </div>
-                            <div className="details">
-                                <div className="row align-items-center">
-                                    <div className="col-xl-7 col-lg-6 col-md-7">
-                                        <div className="image text-center">
-                                            <Image
-                                                src={project2}
-                                                alt="project-image"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-5 col-lg-6 col-md-5">
-                                        <div className="content">
-                                            <div className="number">02</div>
-                                            <h3>
-                                                <a href="work-single.html">
-                                                    High-impact ad campaign
-                                                </a>
-                                            </h3>
-                                            <p>
-                                                A targeted advertising campaign
-                                                designed to maximize brand
-                                                visibility and drive customer
-                                                engagement through creative and
-                                                impactful visuals.
-                                            </p>
-                                            <a
-                                                href="work-single.html"
-                                                className="link-btn text-center d-inline-block rounded-circle position-relative"
-                                            >
-                                                <i className="ri-arrow-right-line" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="project-item">
-                            <div className="title">
-                                <div className="number">03</div>
-                                <span>Engaging social media revamp</span>
-                            </div>
-                            <div className="details">
-                                <div className="row align-items-center">
-                                    <div className="col-xl-7 col-lg-6 col-md-7">
-                                        <div className="image text-center">
-                                            <Image
-                                                src={project3}
-                                                alt="project-image"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-5 col-lg-6 col-md-5">
-                                        <div className="content">
-                                            <div className="number">03</div>
-                                            <h3>
-                                                <a href="work-single.html">
-                                                    Engaging social media revamp
-                                                </a>
-                                            </h3>
-                                            <p>
-                                                A transformation of social media
-                                                presence, focusing on creative
-                                                content and effective strategies
-                                                to increase engagement and build
-                                                brand loyalty.
-                                            </p>
-                                            <a
-                                                href="work-single.html"
-                                                className="link-btn text-center d-inline-block rounded-circle position-relative"
-                                            >
-                                                <i className="ri-arrow-right-line" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="project-item">
-                            <div className="title">
-                                <div className="number">04</div>
-                                <span>Next-level web development</span>
-                            </div>
-                            <div className="details">
-                                <div className="row align-items-center">
-                                    <div className="col-xl-7 col-lg-6 col-md-7">
-                                        <div className="image text-center">
-                                            <img
-                                                src="assets/images/projects/project4.jpg"
-                                                alt="project-image"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-5 col-lg-6 col-md-5">
-                                        <div className="content">
-                                            <div className="number">04</div>
-                                            <h3>
-                                                <a href="work-single.html">
-                                                    Next-level web development
-                                                </a>
-                                            </h3>
-                                            <p>
-                                                Building modern, responsive
-                                                websites with cutting-edge
-                                                technology and a focus on
-                                                functionality and design to
-                                                ensure optimal user experience.
-                                            </p>
-                                            <a
-                                                href="work-single.html"
-                                                className="link-btn text-center d-inline-block rounded-circle position-relative"
-                                            >
-                                                <i className="ri-arrow-right-line" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ProjectsArea />
             {/* End Projects Area */}
             {/* Start Feedback Area */}
             <div className="feedback-area pb-150">
@@ -1029,118 +856,13 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid" data-cue="slideInUp">
-                    <div className="feedbackSwiperStyleTwo position-relative">
-                        <div className="swiper">
-                            <div className="swiper-wrapper">
-                                <div className="swiper-slide">
-                                    <div className="feedback-box position-relative z-1">
-                                        <img
-                                            src="assets/images/users/user7.jpg"
-                                            className="user rounded-circle"
-                                            alt="user-image"
-                                        />
-                                        <p>
-                                            The team’s creative strategy
-                                            transformed our brand's presence.
-                                            With a fresh and engaging design, we
-                                            gained a new identity that resonates
-                                            deeply with our audience,
-                                            positioning us as a standout in a
-                                            competitive market. Our brand
-                                            recognition has skyrocketed since
-                                            the launch.
-                                        </p>
-                                        <h3>Sarah Thompson</h3>
-                                        <span className="d-block">
-                                            CEO, InnovateTech Solutions
-                                        </span>
-                                        <div className="shape3">
-                                            <img
-                                                src="assets/images/shapes/shape3.svg"
-                                                alt="shape3"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="feedback-box position-relative z-1">
-                                        <img
-                                            src="assets/images/users/user8.jpg"
-                                            className="user rounded-circle"
-                                            alt="user-image"
-                                        />
-                                        <p>
-                                            From initial concepts to final
-                                            execution, the team delivered beyond
-                                            our expectations. The brand overhaul
-                                            not only strengthened our online
-                                            presence but also resulted in a
-                                            significant increase in customer
-                                            engagement and sales. Their creative
-                                            approach was exactly what we needed.
-                                        </p>
-                                        <h3>John Harrison</h3>
-                                        <span className="d-block">
-                                            Marketing Director, Elite
-                                            Enterprises
-                                        </span>
-                                        <div className="shape3">
-                                            <img
-                                                src="assets/images/shapes/shape3.svg"
-                                                alt="shape3"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="feedback-box position-relative z-1">
-                                        <img
-                                            src="assets/images/users/user9.jpg"
-                                            className="user rounded-circle"
-                                            alt="user-image"
-                                        />
-                                        <p>
-                                            The agency’s creative approach was
-                                            exactly what our business needed.
-                                            Their work made us stand out in an
-                                            already crowded market. We’ve seen
-                                            an impressive increase in website
-                                            traffic and customer inquiries, all
-                                            thanks to their fresh ideas and
-                                            strategic thinking.
-                                        </p>
-                                        <h3>Emily Roberts</h3>
-                                        <span className="d-block">
-                                            Founder, Urban Innovators
-                                        </span>
-                                        <div className="shape3">
-                                            <img
-                                                src="assets/images/shapes/shape3.svg"
-                                                alt="shape3"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="btn-box d-flex align-items-center justify-content-between">
-                            <div className="swiper-pagination" />
-                            <div className="swiper-navigation">
-                                <div className="swiper-button-prev">
-                                    <i className="ri-arrow-left-line" />
-                                </div>
-                                <div className="swiper-button-next">
-                                    <i className="ri-arrow-right-line" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {/* Start Feedback Area */}
+                <FeedbackSlider />
+                {/* End Feedack Area */}
             </div>
             {/* End Feedback Area */}
             {/* Start Partners Area */}
-            <div className="partners-area pb-150">
+            {/* <div className="partners-area pb-150">
                 <div className="container-fluid">
                     <div className="partnersSwiperOne swiper">
                         <div className="swiper-wrapper">
@@ -1279,7 +1001,8 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <PartnersSllider />
             {/* End Partners Area */}
             {/* Start Blog Area */}
             <div className="blog-area pb-150">

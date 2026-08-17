@@ -33,7 +33,7 @@ function StatBox({ count, label }: { count: number; label: string }) {
                         gsap.to(col, {
                             y: `-${targetDigit * 10}%`,
                             duration: 1.5 + i * 0.2,
-                            ease: "power2.out",
+                            ease: "power3.out",
                         });
                     });
                 },

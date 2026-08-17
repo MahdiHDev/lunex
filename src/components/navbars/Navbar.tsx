@@ -375,8 +375,8 @@ const Navbar = () => {
                                     <i className="ri-sun-line" />
                                 )}
                             </button>
-                            <a
-                                href="contact.html"
+                            <Link
+                                href="contact"
                                 className="link-btn d-flex align-items-center"
                             >
                                 <span>
@@ -386,7 +386,7 @@ const Navbar = () => {
                                     />
                                 </span>
                                 Talk to Us
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <MenuPopup
