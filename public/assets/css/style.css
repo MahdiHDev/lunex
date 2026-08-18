@@ -17915,6 +17915,8 @@ Dark Mode CSS
 .feedbackSwiper .swiper-button-prev svg,
 .feedbackSwiper .swiper-button-next svg,
 .feedbackSwiperStyleTwo .swiper-button-prev svg,
-.feedbackSwiperStyleTwo .swiper-button-next svg {
+.feedbackSwiperStyleTwo .swiper-button-next svg,
+.testimonialsSwiperStyleTwo .swiper-button-next svg,
+.testimonialsSwiperStyleTwo .swiper-button-prev svg {
     display: none !important;
 }

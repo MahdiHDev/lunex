@@ -1,3 +1,7 @@
+import Link from "next/link";
+import SlideInUp from "../common/SlideInUp";
+import TextAnimation from "../common/TextAnimation";
+
 const Footer2 = () => {
     return (
         <>
@@ -11,32 +15,34 @@ const Footer2 = () => {
                                     <span className="sub-title d-inline-block">
                                         Get in touch
                                     </span>
-                                    <h2 className="mb-0 text-animation">
+                                    <TextAnimation className="mb-0 text-animation">
                                         Prepared to grow?
-                                    </h2>
+                                    </TextAnimation>
                                 </div>
                                 <div className="col-lg-3 col-md-12">
-                                    <div
-                                        className="text-lg-end"
-                                        data-cue="slideInUp"
-                                    >
-                                        <a
-                                            href="contact.html"
-                                            className="link-btn menu_link d-inline-block text-center rounded-circle"
+                                    <SlideInUp selector=".text-lg-end">
+                                        <div
+                                            className="text-lg-end"
+                                            data-cue="slideInUp"
                                         >
-                                            <span className="menu_link-text">
-                                                Let's Chat
-                                            </span>
-                                        </a>
-                                    </div>
+                                            <Link
+                                                href="contact"
+                                                className="link-btn menu_link d-inline-block text-center rounded-circle"
+                                            >
+                                                <span className="menu_link-text">
+                                                    Let&apos;s Chat
+                                                </span>
+                                            </Link>
+                                        </div>
+                                    </SlideInUp>
                                 </div>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-4 col-md-6 order-md-1 order-lg-1">
                                 <div className="single-footer-widget">
-                                    <a
-                                        href="index.html"
+                                    <Link
+                                        href="/"
                                         className="logo d-inline-block"
                                     >
                                         <img
@@ -49,7 +55,7 @@ const Footer2 = () => {
                                             className="d-none"
                                             alt="logo"
                                         />
-                                    </a>
+                                    </Link>
                                     <span className="location d-block">
                                         Parker Avenue, Kingsley Road, New York
                                     </span>
@@ -62,27 +68,29 @@ const Footer2 = () => {
                                             <h3>Useful links</h3>
                                             <ul className="ps-0 mb-0 list-unstyled">
                                                 <li>
-                                                    <a href="services.html">
+                                                    <Link href="services">
                                                         Services
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="works.html">
+                                                    <Link href="works">
                                                         Works
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="careers.html">
+                                                    <Link href="careers">
                                                         Careers
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="blog.html">Blog</a>
+                                                    <Link href="blog">
+                                                        Blog
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="about.html">
+                                                    <Link href="about">
                                                         About
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -90,27 +98,27 @@ const Footer2 = () => {
                                             <h3>Useful links</h3>
                                             <ul className="ps-0 mb-0 list-unstyled">
                                                 <li>
-                                                    <a href="pricing.html">
+                                                    <Link href="pricing">
                                                         Pricing
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="blog-single.html">
+                                                    <Link href="blog-single">
                                                         Blog single
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="work-single.html">
+                                                    <Link href="work-single">
                                                         Work single
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="service-single.html">
+                                                    <Link href="service-single">
                                                         Service single
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="#">More</a>
+                                                    <Link href="#">More</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -152,41 +160,41 @@ const Footer2 = () => {
                                 </div>
                                 <div className="col-lg-6 col-md-6">
                                     <div className="socials">
-                                        <a
+                                        <Link
                                             href="#"
                                             className="d-inline-block"
                                             target="_blank"
                                         >
                                             <i className="ri-facebook-circle-fill" />
-                                        </a>
-                                        <a
+                                        </Link>
+                                        <Link
                                             href="#"
                                             className="d-inline-block"
                                             target="_blank"
                                         >
                                             <i className="ri-instagram-line" />
-                                        </a>
-                                        <a
+                                        </Link>
+                                        <Link
                                             href="#"
                                             className="d-inline-block"
                                             target="_blank"
                                         >
                                             <i className="ri-threads-line" />
-                                        </a>
-                                        <a
+                                        </Link>
+                                        <Link
                                             href="#"
                                             className="d-inline-block"
                                             target="_blank"
                                         >
                                             <i className="ri-twitter-x-line" />
-                                        </a>
-                                        <a
+                                        </Link>
+                                        <Link
                                             href="#"
                                             className="d-inline-block"
                                             target="_blank"
                                         >
                                             <i className="ri-youtube-fill" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

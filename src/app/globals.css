@@ -19,3 +19,24 @@
 .dark-mode .bg-f8f9fd {
     background-color: transparent !important;
 }
+
+.awesome_testimonials_slides_wrapper {
+    position: relative;
+}
+
+.testimonials-nav-prev,
+.testimonials-nav-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.testimonials-nav-prev {
+    left: -20px; /* Adjust according to original template spacing */
+}
+
+.testimonials-nav-next {
+    right: -20px; /* Adjust according to original template spacing */
+}
