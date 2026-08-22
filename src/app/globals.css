@@ -24,42 +24,23 @@
     position: relative;
 }
 
-.testimonials-nav-prev,
-.testimonials-nav-next {
-    position: absolute;
-    top: 50%;
-
-    z-index: 10;
-    cursor: pointer;
-}
-
-/* .testimonials-nav-prev { */
-/* left: -20px;  Adjust according to original template spacing */
-/* } */
-
-/* .testimonials-nav-next { */
-/* right: -20px; /* Adjust according to original template spacing */
-/* } */
-
-/* Navigation wrapper */
+/* Nav wrapper */
 .awesome_testimonials_slides .owl-nav {
     position: absolute;
     left: 0;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     width: 100%;
     z-index: 20;
-
     pointer-events: none;
+    padding: 0 clamp(8px, 2vw, 20px); /* keeps buttons off the edge on small screens */
 }
 
-/* Previous & Next buttons */
+/* Prev & next buttons - fluid size instead of fixed 60px */
 .awesome_testimonials_slides .owl-nav .owl-prev,
 .awesome_testimonials_slides .owl-nav .owl-next {
     position: relative;
@@ -67,22 +48,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 60px;
-    height: 60px;
-
+    width: clamp(50px, 6vw, 60px);
+    height: clamp(50px, 6vw, 60px);
     margin: 0;
     padding: 0;
-
     border: 0;
     outline: 0;
-
     color: inherit;
-
     cursor: pointer;
     pointer-events: auto;
     border-radius: 50%;
-
     transition: all 0.3s ease;
 }
 
@@ -91,32 +66,38 @@
     background-color: #6610f2;
 }
 
-/* Icons */
 .awesome_testimonials_slides .owl-nav .owl-prev i,
 .awesome_testimonials_slides .owl-nav .owl-next i {
     display: block;
-
-    font-size: 38px;
+    font-size: clamp(25px, 3vw, 38px);
     line-height: 1;
-
     transition: transform 0.3s ease;
     color: #fff;
 }
-/* Swiper version of Awesome Testimonials */
+
+/* On small screens, pull nav below/beside content instead of overlapping text */
+@media (max-width: 1199px) {
+    .awesome_testimonials_slides .owl-nav {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+/* Swiper structural rules */
 .awesome_testimonials_slides.swiper {
     width: 100%;
     height: auto;
+    position: relative; /* needed so container-end nav positions against this, not box_inner */
 }
 
 .awesome_testimonials_slides .swiper-wrapper {
     align-items: flex-start;
 }
-
+/* 
 .awesome_testimonials_slides .swiper-slide {
     height: auto;
-}
-
-/* Let Swiper's EffectFade control opacity */
-.awesome_testimonials_slides .swiper-slide {
     transition-property: opacity !important;
-}
+} */

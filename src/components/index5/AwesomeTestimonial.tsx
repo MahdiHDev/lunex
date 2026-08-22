@@ -28,12 +28,6 @@ const testimonials: Testimonial[] = [
         name: "Mason Logan",
         role: "Web Developer",
     },
-    {
-        id: 3,
-        quote: "Working with Lunex was an absolute pleasure. They took our vision and elevated it beyond what we could have imagined. Our logo is now the focal point of our brand and has helped us stand out in the market!",
-        name: "Aelira Evangelle",
-        role: "Web Designer",
-    },
 ];
 
 export default function AwesomeTestimonials() {
@@ -50,7 +44,7 @@ export default function AwesomeTestimonials() {
                     effect="fade"
                     fadeEffect={{ crossFade: true }}
                     autoplay={{
-                        delay: 5000,
+                        delay: 2500,
                         disableOnInteraction: false,
                         pauseOnMouseEnter: true,
                     }}
@@ -83,7 +77,7 @@ export default function AwesomeTestimonials() {
                         </SwiperSlide>
                     ))}
 
-                    <div className="owl-nav">
+                    <div className="owl-nav" slot="container-end">
                         <button
                             type="button"
                             className="owl-prev testimonials-nav-prev"
