@@ -83,12 +83,23 @@ export default function AwesomeTestimonials() {
                         </SwiperSlide>
                     ))}
 
-                    {/* <div className="testimonials-nav-prev">
-                        <i className="ri-arrow-left-up-line" />
+                    <div className="owl-nav">
+                        <button
+                            type="button"
+                            className="owl-prev testimonials-nav-prev"
+                            aria-label="Previous testimonial"
+                        >
+                            <i className="ri-arrow-left-up-line" />
+                        </button>
+
+                        <button
+                            type="button"
+                            className="owl-next testimonials-nav-next"
+                            aria-label="Next testimonial"
+                        >
+                            <i className="ri-arrow-right-up-line" />
+                        </button>
                     </div>
-                    <div className="testimonials-nav-next">
-                        <i className="ri-arrow-right-up-line" />
-                    </div> */}
                 </Swiper>
             </div>
         </>

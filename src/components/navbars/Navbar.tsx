@@ -4,6 +4,7 @@ import useMountedTheme from "@/hooks/useMountedTheme";
 import useSticky from "@/hooks/useSticky";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import MenuPopup from "../menu/MenuPopup";
 
@@ -11,8 +12,40 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const { mounted, theme, toggleTheme } = useMountedTheme();
     const isSticky = useSticky(100);
+    const pathname = usePathname();
 
     if (!mounted) return null;
+
+    const isActive = (href: string) => {
+        if (href === "/") {
+            return pathname === "/";
+        }
+
+        return pathname === href;
+    };
+
+    const worksActive = isActive("/works") || isActive("/work-single");
+    const careerActive = isActive("/careers") || isActive("/career-single");
+    const pagesActive =
+        isActive("/pages") ||
+        isActive("/about") ||
+        isActive("/team") ||
+        isActive("/services") ||
+        isActive("/service-single") ||
+        isActive("/pricing") ||
+        isActive("/book-a-call") ||
+        isActive("/signin") ||
+        isActive("/signup") ||
+        isActive("/forgot-password") ||
+        isActive("/faq") ||
+        isActive("/privacy-policy") ||
+        isActive("/terms-conditions");
+    const serviceActive = isActive("/services") || isActive("/service-single");
+    const myAccountActive =
+        isActive("/signin") ||
+        isActive("/signup") ||
+        isActive("/forgot-password");
+    const blogActive = isActive("/blog") || isActive("/blog-single");
 
     return (
         <div
@@ -59,7 +92,7 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <a
                                     href="javascript:void(0)"
-                                    className="dropdown-toggle nav-link active"
+                                    className={`dropdown-toggle nav-link ${isActive("/") ? "active" : ""}`}
                                 >
                                     Home
                                 </a>
@@ -67,7 +100,7 @@ const Navbar = () => {
                                     <li className="nav-item">
                                         <Link
                                             href="/"
-                                            className="nav-link active"
+                                            className={`nav-link ${isActive("/") ? "active" : ""}`}
                                         >
                                             Creative Agency
                                         </Link>
@@ -141,20 +174,23 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <a
                                     href="javascript:void(0)"
-                                    className="dropdown-toggle nav-link"
+                                    className={`dropdown-toggle nav-link ${worksActive ? "active" : ""}`}
                                 >
                                     Works
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <Link href="works" className="nav-link">
+                                        <Link
+                                            href="works"
+                                            className={`nav-link ${isActive("/works") ? "active" : ""}`}
+                                        >
                                             Works
                                         </Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link
                                             href="work-single"
-                                            className="nav-link"
+                                            className={`nav-link ${isActive("/work-single") ? "active" : ""}`}
                                         >
                                             Work Single
                                         </Link>
@@ -164,7 +200,7 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <a
                                     href="javascript:void(0)"
-                                    className="dropdown-toggle nav-link"
+                                    className={`dropdown-toggle nav-link ${careerActive ? "active" : ""}`}
                                 >
                                     Careers
                                 </a>
@@ -172,7 +208,7 @@ const Navbar = () => {
                                     <li className="nav-item">
                                         <Link
                                             href="careers"
-                                            className="nav-link"
+                                            className={`nav-link ${isActive("/careers") ? "active" : ""}`}
                                         >
                                             Careers
                                         </Link>
@@ -180,7 +216,7 @@ const Navbar = () => {
                                     <li className="nav-item">
                                         <Link
                                             href="career-single"
-                                            className="nav-link"
+                                            className={`nav-link ${isActive("/career-single") ? "active" : ""}`}
                                         >
                                             Career Single
                                         </Link>
@@ -190,25 +226,31 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <a
                                     href="javascript:void(0)"
-                                    className="dropdown-toggle nav-link"
+                                    className={`dropdown-toggle nav-link ${pagesActive ? "active" : ""}`}
                                 >
                                     Pages
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <Link href="about" className="nav-link">
+                                        <Link
+                                            href="about"
+                                            className={`nav-link ${isActive("/about") ? "active" : ""}`}
+                                        >
                                             About Us
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link href="team" className="nav-link">
+                                        <Link
+                                            href="team"
+                                            className={`nav-link ${isActive("/team") ? "active" : ""}`}
+                                        >
                                             Team
                                         </Link>
                                     </li>
                                     <li className="nav-item">
                                         <a
                                             href="javascript:void(0)"
-                                            className="dropdown-toggle nav-link"
+                                            className={`dropdown-toggle nav-link ${serviceActive ? "active" : ""}`}
                                         >
                                             Services
                                         </a>
@@ -216,7 +258,7 @@ const Navbar = () => {
                                             <li className="nav-item">
                                                 <Link
                                                     href="services"
-                                                    className="nav-link"
+                                                    className={`nav-link ${isActive("/services") ? "active" : ""}`}
                                                 >
                                                     Services
                                                 </Link>
@@ -224,7 +266,7 @@ const Navbar = () => {
                                             <li className="nav-item">
                                                 <Link
                                                     href="service-single"
-                                                    className="nav-link"
+                                                    className={`nav-link ${isActive("/service-single") ? "active" : ""}`}
                                                 >
                                                     Service Single
                                                 </Link>
@@ -234,7 +276,7 @@ const Navbar = () => {
                                     <li className="nav-item">
                                         <Link
                                             href="pricing"
-                                            className="nav-link"
+                                            className={`nav-link ${isActive("/pricing") ? "active" : ""}`}
                                         >
                                             Pricing
                                         </Link>
@@ -242,7 +284,7 @@ const Navbar = () => {
                                     <li className="nav-item">
                                         <Link
                                             href="book-a-call"
-                                            className="nav-link"
+                                            className={`nav-link ${isActive("/book-a-call") ? "active" : ""}`}
                                         >
                                             Book A Call
                                         </Link>
@@ -250,7 +292,7 @@ const Navbar = () => {
                                     <li className="nav-item">
                                         <a
                                             href="javascript:void(0)"
-                                            className="dropdown-toggle nav-link"
+                                            className={`dropdown-toggle nav-link ${myAccountActive ? "active" : ""}`}
                                         >
                                             My Account
                                         </a>
@@ -258,7 +300,7 @@ const Navbar = () => {
                                             <li className="nav-item">
                                                 <Link
                                                     href={"signin"}
-                                                    className="nav-link"
+                                                    className={`nav-link ${isActive("/signin") ? "active" : ""}`}
                                                 >
                                                     Signin
                                                 </Link>
@@ -266,7 +308,7 @@ const Navbar = () => {
                                             <li className="nav-item">
                                                 <Link
                                                     href="signup"
-                                                    className="nav-link"
+                                                    className={`nav-link ${isActive("/signup") ? "active" : ""}`}
                                                 >
                                                     Signup
                                                 </Link>
@@ -274,7 +316,7 @@ const Navbar = () => {
                                             <li className="nav-item">
                                                 <Link
                                                     href="forgot-password"
-                                                    className="nav-link"
+                                                    className={`nav-link ${isActive("/forgot-password") ? "active" : ""}`}
                                                 >
                                                     Forgot Password?
                                                 </Link>
@@ -282,14 +324,17 @@ const Navbar = () => {
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <Link href="faq" className="nav-link">
+                                        <Link
+                                            href="faq"
+                                            className={`nav-link ${isActive("/faq") ? "active" : ""}`}
+                                        >
                                             FAQ
                                         </Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link
                                             href="privacy-policy"
-                                            className="nav-link"
+                                            className={`nav-link ${isActive("/privacy-policy") ? "active" : ""}`}
                                         >
                                             Privacy Policy
                                         </Link>
@@ -297,7 +342,7 @@ const Navbar = () => {
                                     <li className="nav-item">
                                         <Link
                                             href="terms-conditions"
-                                            className="nav-link"
+                                            className={`nav-link ${isActive("/terms-conditions") ? "active" : ""}`}
                                         >
                                             Terms &amp; Conditions
                                         </Link>
@@ -312,20 +357,23 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <a
                                     href="javascript:void(0)"
-                                    className="dropdown-toggle nav-link"
+                                    className={`dropdown-toggle  nav-link ${blogActive ? "active" : ""}`}
                                 >
                                     Blogs
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <Link href="blog" className="nav-link">
+                                        <Link
+                                            href="blog"
+                                            className={`nav-link ${isActive("/blog") ? "active" : ""}`}
+                                        >
                                             Blog
                                         </Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link
                                             href="blog-single"
-                                            className="nav-link"
+                                            className={`nav-link ${isActive("/blog-single") ? "active" : ""}`}
                                         >
                                             Blog Single
                                         </Link>

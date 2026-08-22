@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 interface Props {
@@ -10,9 +11,18 @@ interface Props {
 
 export default function MenuPopup({ isOpen, onClose }: Props) {
     const [openMenu, setOpenMenu] = useState<string | null>(null);
+    const pathname = usePathname();
     console.log("isOpen", isOpen);
 
     if (!isOpen) return null;
+
+    const isActive = (href: string) => {
+        if (href === "/") {
+            return pathname === "/";
+        }
+
+        return pathname === href;
+    };
 
     return (
         <div

@@ -22,20 +22,23 @@ export default function RootLayout({
             <head>
                 <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
 
-                <link rel="stylesheet" href="assets/css/remixicon.css" />
-                <link rel="stylesheet" href="assets/css/odometer.min.css" />
+                <link rel="stylesheet" href="/assets/css/remixicon.css" />
+                <link rel="stylesheet" href="/assets/css/odometer.min.css" />
                 <link
                     rel="stylesheet"
-                    href="assets/css/swiper-bundle.min.css"
+                    href="/assets/css/swiper-bundle.min.css"
                 />
                 <link
                     rel="stylesheet"
-                    href="assets/css/magnific-popup.min.css"
+                    href="/assets/css/magnific-popup.min.css"
                 />
-                <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
                 <link
                     rel="stylesheet"
-                    href="assets/css/owl.theme.default.min.css"
+                    href="/assets/css/owl.carousel.min.css"
+                />
+                <link
+                    rel="stylesheet"
+                    href="/assets/css/owl.theme.default.min.css"
                 />
                 <link rel="stylesheet" href="/assets/css/style.css" />
                 <link rel="stylesheet" href="/assets/css/responsive.css" />
