@@ -1,0 +1,2094 @@
+import SlideInUp from "@/components/common/SlideInUp";
+import Navbar6 from "@/components/navbars/Navbar6";
+
+const page = () => {
+    return (
+        <div className="bg-f8f9fd">
+            <Navbar6 />
+
+            <div>
+                {/* Hero Banner Area */}
+                <div className="hero_banner_area position-relative z-1 overflow-hidden">
+                    <div className="container-fluid">
+                        <SlideInUp selector=".hero_banner_content">
+                            <div
+                                className="hero_banner_content text-center mx-auto position-relative z-1"
+                                data-cues="slideInUp"
+                                data-group="hero_banner_content"
+                            >
+                                <h1 className="fw-bold">
+                                    Comprehensive Branding Agency for Your
+                                    Business{" "}
+                                    <img
+                                        src="assets/images/banners/girls_with_laptop.jpg"
+                                        alt="girls-with-laptop"
+                                    />{" "}
+                                    Needs
+                                </h1>
+                                <a
+                                    href="pricing.html"
+                                    className="btn primary_btn"
+                                >
+                                    <span className="d-inline-block position-relative">
+                                        Get a Free SEO Audit{" "}
+                                        <i className="ri-arrow-right-up-line" />
+                                    </span>
+                                </a>
+                            </div>
+                        </SlideInUp>
+                        <div className="hero_banner_image position-relative z-1">
+                            <div
+                                className="row"
+                                data-cues="slideInUp"
+                                data-group="hero_banner_image"
+                            >
+                                <div className="col-lg-4 col-md-6 order-1 order-lg-1">
+                                    <div className="left_image">
+                                        <img
+                                            src="assets/images/banners/visitors.jpg"
+                                            alt="visitors"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 order-3 order-lg-2">
+                                    <div className="center_image text-center position-relative">
+                                        <img
+                                            src="assets/images/banners/hero_banner1.png"
+                                            alt="hero_banner1"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 col-md-6 order-2 order-lg-3">
+                                    <div className="right_image">
+                                        <img
+                                            src="assets/images/banners/audiences.jpg"
+                                            alt="audiences"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="object2">
+                                <img
+                                    src="assets/images/objects/object2.svg"
+                                    alt="object2"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="scroll_text_area overflow-hidden position-relative z-1">
+                        <div className="container-fluid px-0">
+                            <div className="scroll_text_marquee d-flex align-items-center justify-content-center">
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    HOW IT WORKS
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    DOCUMENTATION
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    JOIN THE COMMUNITY
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    IDEAS INTO REALITY
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    HOW IT WORKS
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    DOCUMENTATION
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    JOIN THE COMMUNITY
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    IDEAS INTO REALITY
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    HOW IT WORKS
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    DOCUMENTATION
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    JOIN THE COMMUNITY
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    HOW IT WORKS
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    DOCUMENTATION
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
+                                    JOIN THE COMMUNITY
+                                </h3>
+                                <img
+                                    src="assets/images/icons/bolt.svg"
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End Hero Banner Area */}
+                {/* About Us Area */}
+                <div className="about_us_area ptb-150">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-3">
+                                <div
+                                    className="about_us_title d-inline-block"
+                                    data-cue="slideInUp"
+                                >
+                                    <span className="d-flex align-items-center text-uppercase">
+                                        ABOUT US
+                                        <img
+                                            src="assets/images/icons/arrow_long_right.svg"
+                                            alt="arrow_long_right"
+                                        />
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="col-lg-9">
+                                <div className="about_us_content">
+                                    <h2 className="on_scroll_color_change fw-semibold text-uppercase">
+                                        We believe that the surest measure of
+                                        success is when a client partners with
+                                        us more than half our clients stay with
+                                        us for longer than a single project.
+                                    </h2>
+                                    <div
+                                        className="row"
+                                        data-cues="slideInUp"
+                                        data-group="about_us_content"
+                                    >
+                                        <div className="col-lg-4">
+                                            <div className="about_us_text">
+                                                <div className="number lh-1 position-relative fw-medium d-inline-block">
+                                                    <div className="text_animation counter_number">
+                                                        25
+                                                    </div>
+                                                    <span className="text_animation">
+                                                        M
+                                                    </span>
+                                                </div>
+                                                <p>
+                                                    Lunex is a creative agency
+                                                    offering marketing,
+                                                    development, design, and a
+                                                    range of digital solutions.
+                                                    We’ve secured over $15M in
+                                                    funding.
+                                                </p>
+                                                <a
+                                                    href="about.html"
+                                                    className="btn primary_btn"
+                                                >
+                                                    <span className="d-inline-block position-relative">
+                                                        Know More{" "}
+                                                        <i className="ri-arrow-right-up-line" />
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-8">
+                                            <div className="about_us_image text-center">
+                                                <img
+                                                    src="assets/images/abouts/about6.jpg"
+                                                    alt="about"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End About Us Area */}
+                {/* Trusted Partner Area */}
+                <div className="trusted_partner_area">
+                    <div className="container">
+                        <div className="trusted_partner_inner position-relative">
+                            <span className="title1 d-inline-block fw-medium text-uppercase text_animation">
+                                Our Trusted Partner
+                            </span>
+                            <div className="trusted_partner_slides owl-carousel owl-theme">
+                                <div className="text-center">
+                                    <img
+                                        src="assets/images/partners/partner1.svg"
+                                        className="d-inline-block w-auto"
+                                        alt="partner"
+                                    />
+                                </div>
+                                <div className="text-center">
+                                    <img
+                                        src="assets/images/partners/partner2.svg"
+                                        className="d-inline-block w-auto"
+                                        alt="partner"
+                                    />
+                                </div>
+                                <div className="text-center">
+                                    <img
+                                        src="assets/images/partners/partner3.svg"
+                                        className="d-inline-block w-auto"
+                                        alt="partner"
+                                    />
+                                </div>
+                                <div className="text-center">
+                                    <img
+                                        src="assets/images/partners/partner4.svg"
+                                        className="d-inline-block w-auto"
+                                        alt="partner"
+                                    />
+                                </div>
+                                <div className="text-center">
+                                    <img
+                                        src="assets/images/partners/partner5.svg"
+                                        className="d-inline-block w-auto"
+                                        alt="partner"
+                                    />
+                                </div>
+                                <div className="text-center">
+                                    <img
+                                        src="assets/images/partners/partner6.svg"
+                                        className="d-inline-block w-auto"
+                                        alt="partner"
+                                    />
+                                </div>
+                            </div>
+                            <span className="title2 d-inline-block fw-medium text-uppercase text_animation">
+                                Almost 20+ Partner we have
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {/* End Trusted Partner Area */}
+                {/* Services Area */}
+                <div className="services_area bg_image">
+                    <div className="white_top_rectangle bg_f8f9fd" />
+                    <div className="ptb-150 overflow-hidden">
+                        <div className="container">
+                            <div className="section_title white_color style_two text_animation">
+                                <div className="sub_title d-inline-block">
+                                    <span className="d-flex align-items-center text-uppercase">
+                                        Our Approach
+                                        <img
+                                            src="assets/images/icons/white_arrow_long_right.svg"
+                                            alt="white_arrow_long_right"
+                                        />
+                                    </span>
+                                </div>
+                                <div className="row align-items-center">
+                                    <div className="col-lg-7">
+                                        <h2 className="mb-0 fw-bold">
+                                            We Offer a Wide Range of Design
+                                            Services
+                                        </h2>
+                                    </div>
+                                    <div className="col-lg-5">
+                                        <p>
+                                            Our agency powers growth and success
+                                            in the fast-paced digital marketing
+                                            space. Let’s turn your vision into
+                                            reality.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="container-fluid">
+                            <div
+                                className="services_slides position-relative owl-carousel owl-theme"
+                                data-cue="slideInUp"
+                            >
+                                <div className="service_box position-relative">
+                                    <h3 className="fw-bold">
+                                        <a href="service-single.html">
+                                            Digital Advertising
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incidid unt ut labore et dolore magna.
+                                    </p>
+                                    <a
+                                        href="service-single.html"
+                                        className="details_link_btn"
+                                    >
+                                        <i className="ri-arrow-right-up-line" />
+                                    </a>
+                                    <img
+                                        src="assets/images/icons/megaphone.svg"
+                                        className="icon d-block w-auto"
+                                        alt="megaphone"
+                                    />
+                                </div>
+                                <div className="service_box position-relative">
+                                    <h3 className="fw-bold">
+                                        <a href="service-single.html">
+                                            Social Media Graphics
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incidid unt ut labore et dolore magna.
+                                    </p>
+                                    <a
+                                        href="service-single.html"
+                                        className="details_link_btn"
+                                    >
+                                        <i className="ri-arrow-right-up-line" />
+                                    </a>
+                                    <img
+                                        src="assets/images/icons/media_target.svg"
+                                        className="icon d-block w-auto"
+                                        alt="media_target"
+                                    />
+                                </div>
+                                <div className="service_box position-relative">
+                                    <h3 className="fw-bold">
+                                        <a href="service-single.html">
+                                            Web Design
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incidid unt ut labore et dolore magna.
+                                    </p>
+                                    <a
+                                        href="service-single.html"
+                                        className="details_link_btn"
+                                    >
+                                        <i className="ri-arrow-right-up-line" />
+                                    </a>
+                                    <img
+                                        src="assets/images/icons/search_chart.svg"
+                                        className="icon d-block w-auto"
+                                        alt="search_chart"
+                                    />
+                                </div>
+                                <div className="service_box position-relative">
+                                    <h3 className="fw-bold">
+                                        <a href="service-single.html">
+                                            Mobile Design
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incidid unt ut labore et dolore magna.
+                                    </p>
+                                    <a
+                                        href="service-single.html"
+                                        className="details_link_btn"
+                                    >
+                                        <i className="ri-arrow-right-up-line" />
+                                    </a>
+                                    <img
+                                        src="assets/images/icons/mobile_design.svg"
+                                        className="icon d-block w-auto"
+                                        alt="mobile_design"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="container">
+                            <div
+                                className="browse_all_services_btn text-center"
+                                data-cue="slideInUp"
+                            >
+                                <a href="services.html">
+                                    Browse all services{" "}
+                                    <i className="ri-arrow-right-up-line" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="white_bottom_rectangle bg_white" />
+                </div>
+                {/* End Services Area */}
+                {/* Features Area */}
+                <div className="features_area bg_white pb-150">
+                    <div className="container">
+                        <div className="section_title style_two text_animation">
+                            <div className="sub_title d-inline-block">
+                                <span className="d-flex align-items-center text-uppercase">
+                                    Features
+                                    <img
+                                        src="assets/images/icons/arrow_long_right.svg"
+                                        alt="arrow_long_right"
+                                    />
+                                </span>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-7">
+                                    <h2 className="mb-0 fw-bold">
+                                        Unlocking the Potential of Digital
+                                        Branding
+                                    </h2>
+                                </div>
+                                <div className="col-lg-5">
+                                    <p>
+                                        Our agency powers growth and success in
+                                        the fast-paced digital marketing space.
+                                        Let’s turn your vision into reality.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        className="features_list"
+                        data-cues="slideInUp"
+                        data-group="features_list"
+                    >
+                        <div className="item">
+                            <div className="container position-relative">
+                                <h3 className="mb-0 fw-normal text-uppercase">
+                                    <span className="fw-bold">01.</span>{" "}
+                                    <strong className="fw-bold">
+                                        Grow Your
+                                    </strong>{" "}
+                                    Business
+                                </h3>
+                                <div className="box">
+                                    <img
+                                        src="assets/images/features/feature1.png"
+                                        alt="feature"
+                                    />
+                                    <a
+                                        href="https://www.youtube.com/watch?v=ObKsCs5mYGQ"
+                                        className="video_btn popup_video popup-youtube"
+                                    >
+                                        <img
+                                            src="assets/images/objects/play_now.png"
+                                            alt="play-now"
+                                        />
+                                        <i className="ri-play-large-line" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="container position-relative">
+                                <h3 className="mb-0 fw-normal text-uppercase">
+                                    <span className="fw-bold">02.</span>{" "}
+                                    <strong className="fw-bold">
+                                        Increase Your
+                                    </strong>{" "}
+                                    Revenue
+                                </h3>
+                                <div className="box">
+                                    <img
+                                        src="assets/images/features/feature2.png"
+                                        alt="feature"
+                                    />
+                                    <a
+                                        href="https://www.youtube.com/watch?v=ObKsCs5mYGQ"
+                                        className="video_btn popup_video popup-youtube"
+                                    >
+                                        <img
+                                            src="assets/images/objects/play_now.png"
+                                            alt="play-now"
+                                        />
+                                        <i className="ri-play-large-line" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="container position-relative">
+                                <h3 className="mb-0 fw-normal text-uppercase">
+                                    <span className="fw-bold">03.</span>{" "}
+                                    <strong className="fw-bold">
+                                        Boost Brand
+                                    </strong>{" "}
+                                    Awareness
+                                </h3>
+                                <div className="box">
+                                    <img
+                                        src="assets/images/features/feature3.png"
+                                        alt="feature"
+                                    />
+                                    <a
+                                        href="https://www.youtube.com/watch?v=ObKsCs5mYGQ"
+                                        className="video_btn popup_video popup-youtube"
+                                    >
+                                        <img
+                                            src="assets/images/objects/play_now.png"
+                                            alt="play-now"
+                                        />
+                                        <i className="ri-play-large-line" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="container position-relative">
+                                <h3 className="mb-0 fw-normal text-uppercase">
+                                    <span className="fw-bold">04.</span>{" "}
+                                    <strong className="fw-bold">
+                                        Expand Market
+                                    </strong>{" "}
+                                    Share
+                                </h3>
+                                <div className="box">
+                                    <img
+                                        src="assets/images/features/feature4.png"
+                                        alt="feature"
+                                    />
+                                    <a
+                                        href="https://www.youtube.com/watch?v=ObKsCs5mYGQ"
+                                        className="video_btn popup_video popup-youtube"
+                                    >
+                                        <img
+                                            src="assets/images/objects/play_now.png"
+                                            alt="play-now"
+                                        />
+                                        <i className="ri-play-large-line" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End Features Area */}
+                {/* Our Process Area */}
+                <div className="our_process_area pt-150">
+                    <div className="container">
+                        <div className="section_title text-center mx-auto">
+                            <div className="sub_title d-inline-block">
+                                <span className="d-flex align-items-center text-uppercase">
+                                    Our Process
+                                    <img
+                                        src="assets/images/icons/arrow_long_right.svg"
+                                        alt="arrow_long_right"
+                                    />
+                                </span>
+                            </div>
+                            <h2 className="mb-0 text_animation fw-bold">
+                                A Step-by-Step Approach to Digital Branding
+                            </h2>
+                        </div>
+                        <div
+                            className="our_process_inner_box position-relative z-1"
+                            data-cue="slideInUp"
+                        >
+                            <div className="row align-items-center gx-0">
+                                <div className="col-lg-6">
+                                    <div className="image text-center">
+                                        <img
+                                            src="assets/images/process_group_meeting.jpg"
+                                            alt="process_group_meeting"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="content">
+                                        <div className="box position-relative z-1">
+                                            <h3 className="fw-semibold">
+                                                Come up With a Blue Print
+                                            </h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed
+                                                do eiusmod tempor incidid labore
+                                                et dolore.
+                                            </p>
+                                            <a
+                                                href="pricing.html"
+                                                className="link_btn"
+                                            >
+                                                <i className="ri-arrow-right-up-line" />
+                                            </a>
+                                        </div>
+                                        <div
+                                            className="box position-relative z-1"
+                                            style={{
+                                                backgroundImage:
+                                                    "url(assets/images/bg_image/bg_image1.jpg)",
+                                            }}
+                                        >
+                                            <h3 className="fw-semibold">
+                                                Execute to Achieve
+                                            </h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed
+                                                do eiusmod tempor incidid labore
+                                                et dolore.
+                                            </p>
+                                            <a
+                                                href="pricing.html"
+                                                className="link_btn"
+                                            >
+                                                <i className="ri-arrow-right-up-line" />
+                                            </a>
+                                        </div>
+                                        <div className="box position-relative z-1">
+                                            <h3 className="fw-semibold">
+                                                Monitor &amp; Report
+                                            </h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed
+                                                do eiusmod tempor incidid labore
+                                                et dolore.
+                                            </p>
+                                            <a
+                                                href="pricing.html"
+                                                className="link_btn"
+                                            >
+                                                <i className="ri-arrow-right-up-line" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End Our Process Area */}
+                {/* Funfacts & Why Choose Us Area */}
+                <div className="funfacts_why_choose_us_area">
+                    <div className="white_top_rectangle bg_f8f9fd" />
+                    {/* Funfacts */}
+                    <div className="funfacts_area pt-150 pb-125">
+                        <div className="container">
+                            <div
+                                className="row"
+                                data-cues="slideInUp"
+                                data-group="funfacts_list"
+                            >
+                                <div className="col-sm-6">
+                                    <div className="funfact_box">
+                                        <div className="number lh-1 fw-bold text-white">
+                                            <span className="counter_number">
+                                                25
+                                            </span>
+                                            +
+                                        </div>
+                                        <div className="quote text-white fw-medium lh-1">
+                                            {`//`}
+                                        </div>
+                                        <div className="title text-lg-end text-uppercase text-white fw-medium">
+                                            Awards &amp; Recognitions
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-sm-6">
+                                    <div className="funfact_box">
+                                        <div className="number lh-1 fw-bold text-white">
+                                            <span className="counter_number">
+                                                98
+                                            </span>
+                                            %
+                                        </div>
+                                        <div className="quote text-white fw-medium lh-1">
+                                            {`//`}
+                                        </div>
+                                        <div className="title text-lg-end text-uppercase text-white fw-medium">
+                                            Clients Satisfaction
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-sm-6">
+                                    <div className="funfact_box">
+                                        <div className="number lh-1 fw-bold text-white">
+                                            <span className="counter_number">
+                                                15
+                                            </span>
+                                            +
+                                        </div>
+                                        <div className="quote text-white fw-medium lh-1">
+                                            {`//`}
+                                        </div>
+                                        <div className="title text-lg-end text-uppercase text-white fw-medium">
+                                            Years of experience in particular
+                                            field
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-sm-6">
+                                    <div className="funfact_box">
+                                        <div className="number lh-1 fw-bold text-white">
+                                            <span className="counter_number">
+                                                12
+                                            </span>
+                                            K
+                                        </div>
+                                        <div className="quote text-white fw-medium lh-1">
+                                            {`//`}
+                                        </div>
+                                        <div className="title text-lg-end text-uppercase text-white fw-medium">
+                                            Cases overseen
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* End Funfacts */}
+                    {/* Why Choose Us Area */}
+                    <div className="why_choose_us_area pb-150">
+                        <div className="container">
+                            <div className="section_title white_color style_two text_animation">
+                                <div className="sub_title d-inline-block">
+                                    <span className="d-flex align-items-center text-uppercase">
+                                        Why Choose Us
+                                        <img
+                                            src="assets/images/icons/white_arrow_long_right.svg"
+                                            alt="white_arrow_long_right"
+                                        />
+                                    </span>
+                                </div>
+                                <div className="row align-items-center">
+                                    <div className="col-lg-7">
+                                        <h2 className="mb-0 fw-bold">
+                                            Effective Branding at a Price You
+                                            Can Afford
+                                        </h2>
+                                    </div>
+                                    <div className="col-lg-5">
+                                        <p>
+                                            Our agency powers growth and success
+                                            in the fast-paced digital marketing
+                                            space. Let’s turn your vision into
+                                            reality.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-6">
+                                    <div className="why_choose_us_content">
+                                        <div
+                                            className="accordion"
+                                            id="whyChooseUsAccordion"
+                                            data-cues="slideInUp"
+                                            data-group="why_choose_us_content"
+                                        >
+                                            <div className="accordion-item rounded-0 bg-transparent">
+                                                <button
+                                                    className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#wCUCollapseOne"
+                                                    aria-expanded="true"
+                                                    aria-controls="wCUCollapseOne"
+                                                >
+                                                    <span>01</span> Expertise
+                                                    Teams
+                                                </button>
+                                                <div
+                                                    id="wCUCollapseOne"
+                                                    className="accordion-collapse collapse show"
+                                                    data-bs-parent="#whyChooseUsAccordion"
+                                                >
+                                                    <div className="accordion-body pb-0">
+                                                        <p>
+                                                            Lorem ipsum dolor
+                                                            sit amet,
+                                                            consectetur
+                                                            adipiscing elit, sed
+                                                            do eiusmod tempor
+                                                            incidid unt ut labo
+                                                            magna.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="accordion-item rounded-0 bg-transparent">
+                                                <button
+                                                    className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#wCUCollapseTwo"
+                                                    aria-expanded="false"
+                                                    aria-controls="wCUCollapseTwo"
+                                                >
+                                                    <span>02</span> Tailored
+                                                    Solutions
+                                                </button>
+                                                <div
+                                                    id="wCUCollapseTwo"
+                                                    className="accordion-collapse collapse"
+                                                    data-bs-parent="#whyChooseUsAccordion"
+                                                >
+                                                    <div className="accordion-body pb-0">
+                                                        <p>
+                                                            Lorem ipsum dolor
+                                                            sit amet,
+                                                            consectetur
+                                                            adipiscing elit, sed
+                                                            do eiusmod tempor
+                                                            incidid unt ut labo
+                                                            magna.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="accordion-item rounded-0 bg-transparent">
+                                                <button
+                                                    className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#wCUCollapseThree"
+                                                    aria-expanded="false"
+                                                    aria-controls="wCUCollapseThree"
+                                                >
+                                                    <span>03</span> Client
+                                                    Centric Approach
+                                                </button>
+                                                <div
+                                                    id="wCUCollapseThree"
+                                                    className="accordion-collapse collapse"
+                                                    data-bs-parent="#whyChooseUsAccordion"
+                                                >
+                                                    <div className="accordion-body pb-0">
+                                                        <p>
+                                                            Lorem ipsum dolor
+                                                            sit amet,
+                                                            consectetur
+                                                            adipiscing elit, sed
+                                                            do eiusmod tempor
+                                                            incidid unt ut labo
+                                                            magna.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="accordion-item rounded-0 bg-transparent">
+                                                <button
+                                                    className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#wCUCollapseFour"
+                                                    aria-expanded="false"
+                                                    aria-controls="wCUCollapseFour"
+                                                >
+                                                    <span>04</span> 24/7
+                                                    Customer Support
+                                                </button>
+                                                <div
+                                                    id="wCUCollapseFour"
+                                                    className="accordion-collapse collapse"
+                                                    data-bs-parent="#whyChooseUsAccordion"
+                                                >
+                                                    <div className="accordion-body pb-0">
+                                                        <p>
+                                                            Lorem ipsum dolor
+                                                            sit amet,
+                                                            consectetur
+                                                            adipiscing elit, sed
+                                                            do eiusmod tempor
+                                                            incidid unt ut labo
+                                                            magna.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div
+                                        className="why_choose_us_image text-center"
+                                        data-cue="slideInUp"
+                                    >
+                                        <img
+                                            src="assets/images/why_choose_us.jpg"
+                                            alt="why-choose-us"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* End Why Choose Us Area */}
+                    <div className="white_bottom_rectangle bg_f8f9fd" />
+                </div>
+                {/* End Funfacts & Why Choose Us Area */}
+                {/* Case Studies Area */}
+                <div className="case_studies_area pb-150">
+                    <div className="container">
+                        <div className="section_title style_two text_animation">
+                            <div className="sub_title d-inline-block">
+                                <span className="d-flex align-items-center text-uppercase">
+                                    Our Case Study
+                                    <img
+                                        src="assets/images/icons/arrow_long_right.svg"
+                                        alt="arrow_long_right"
+                                    />
+                                </span>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-7">
+                                    <h2 className="mb-0 fw-bold">
+                                        Highlights from Our Most Recent Projects
+                                    </h2>
+                                </div>
+                                <div className="col-lg-5">
+                                    <p>
+                                        Our agency powers growth and success in
+                                        the fast-paced digital marketing space.
+                                        Let’s turn your vision into reality.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="container-fluid px-0">
+                        <div
+                            className="case_studies_slides owl-carousel owl-theme"
+                            data-cue="slideInUp"
+                        >
+                            <div className="case_study_box">
+                                <div className="image overflow-hidden position-relative">
+                                    <img
+                                        src="assets/images/case-studies/case_study1.jpg"
+                                        alt="case-study"
+                                    />
+                                    <a
+                                        href="work-single.html"
+                                        className="details_link_btn"
+                                    >
+                                        <i className="ri-arrow-right-up-line" />
+                                    </a>
+                                </div>
+                                <div className="content">
+                                    <span className="sub_title d-inline-block">
+                                        Social
+                                    </span>
+                                    <h3 className="mb-0 fw-semibold">
+                                        <a href="work-single.html">
+                                            Social Media Solutions Tailored for
+                                            Lunex
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div className="case_study_box">
+                                <div className="image overflow-hidden position-relative">
+                                    <img
+                                        src="assets/images/case-studies/case_study2.jpg"
+                                        alt="case-study"
+                                    />
+                                    <a
+                                        href="work-single.html"
+                                        className="details_link_btn"
+                                    >
+                                        <i className="ri-arrow-right-up-line" />
+                                    </a>
+                                </div>
+                                <div className="content">
+                                    <span className="sub_title d-inline-block">
+                                        Lunex
+                                    </span>
+                                    <h3 className="mb-0 fw-semibold">
+                                        <a href="work-single.html">
+                                            How We Boosted Online Sales by 150%
+                                            with Lunex
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div className="case_study_box">
+                                <div className="image overflow-hidden position-relative">
+                                    <img
+                                        src="assets/images/case-studies/case_study3.jpg"
+                                        alt="case-study"
+                                    />
+                                    <a
+                                        href="work-single.html"
+                                        className="details_link_btn"
+                                    >
+                                        <i className="ri-arrow-right-up-line" />
+                                    </a>
+                                </div>
+                                <div className="content">
+                                    <span className="sub_title d-inline-block">
+                                        Marketing
+                                    </span>
+                                    <h3 className="mb-0 fw-semibold">
+                                        <a href="work-single.html">
+                                            Email Marketing Strategies for
+                                            eCommerce Success
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div className="case_study_box">
+                                <div className="image overflow-hidden position-relative">
+                                    <img
+                                        src="assets/images/case-studies/case_study4.jpg"
+                                        alt="case-study"
+                                    />
+                                    <a
+                                        href="work-single.html"
+                                        className="details_link_btn"
+                                    >
+                                        <i className="ri-arrow-right-up-line" />
+                                    </a>
+                                </div>
+                                <div className="content">
+                                    <span className="sub_title d-inline-block">
+                                        SaaS
+                                    </span>
+                                    <h3 className="mb-0 fw-semibold">
+                                        <a href="work-single.html">
+                                            Global Fintech SaaS Ads Campaign
+                                            Strategy
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div className="case_study_box">
+                                <div className="image overflow-hidden position-relative">
+                                    <img
+                                        src="assets/images/case-studies/case_study5.jpg"
+                                        alt="case-study"
+                                    />
+                                    <a
+                                        href="work-single.html"
+                                        className="details_link_btn"
+                                    >
+                                        <i className="ri-arrow-right-up-line" />
+                                    </a>
+                                </div>
+                                <div className="content">
+                                    <span className="sub_title d-inline-block">
+                                        Marketing
+                                    </span>
+                                    <h3 className="mb-0 fw-semibold">
+                                        <a href="work-single.html">
+                                            Fueling Growth Through Marketing for
+                                            Lunex
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End Case Studies Area */}
+                {/* Feedback Area */}
+                <div className="feedback_area bg_white ptb-150">
+                    <div className="container">
+                        <div className="section_title style_two text_animation">
+                            <div className="sub_title d-inline-block">
+                                <span className="d-flex align-items-center text-uppercase">
+                                    Clients Feedback
+                                    <img
+                                        src="assets/images/icons/arrow_long_right.svg"
+                                        alt="arrow_long_right"
+                                    />
+                                </span>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-7">
+                                    <h2 className="mb-0 fw-bold">
+                                        Take a Look at What <br />
+                                        Our Clients Say
+                                    </h2>
+                                </div>
+                                <div className="col-lg-5">
+                                    <p>
+                                        Our agency powers growth and success in
+                                        the fast-paced digital marketing space.
+                                        Let’s turn your vision into reality.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            className="feedback_slides owl-carousel owl-theme mx-auto"
+                            data-cue="slideInUp"
+                        >
+                            <div className="feedback_item position-relative z-1">
+                                <p>
+                                    Sed ut perspiciatis unde omnis iste natus
+                                    error sit voluptatem accusantium doloremque
+                                    laudantium totam rem aperiam, eaqu psa quae
+                                    ab illo inventore veritatis et quasi
+                                    architecto beatae vitae. Sed ut perspiciatis
+                                    unde omnis iste natus error sit volupta tem
+                                    accusantium doloremque laudantium.
+                                </p>
+                                <div className="reviewer d-flex align-items-center">
+                                    <img
+                                        src="assets/images/users/user1.jpg"
+                                        alt="user"
+                                    />
+                                    <div>
+                                        <h4 className="fw-semibold">
+                                            Mason Logan
+                                        </h4>
+                                        <span className="d-block">
+                                            Manager at Business
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="feedback_item position-relative z-1">
+                                <p>
+                                    Sed ut perspiciatis unde omnis iste natus
+                                    error sit voluptatem accusantium doloremque
+                                    laudantium totam rem aperiam, et quasi
+                                    architecto beatae vitae. Sed ut perspiciatis
+                                    unde omnis iste natus error sit volupta tem
+                                    accusantium doloremque laudantium eaqu psa
+                                    quae ab illo inventore veritatis.
+                                </p>
+                                <div className="reviewer d-flex align-items-center">
+                                    <img
+                                        src="assets/images/users/user2.jpg"
+                                        alt="user"
+                                    />
+                                    <div>
+                                        <h4 className="fw-semibold">
+                                            Aelira Evangelle
+                                        </h4>
+                                        <span className="d-block">
+                                            Developer at Marketing
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End Feedback Area */}
+                {/* Team Area */}
+                <div className="team_area pt-150">
+                    <div className="container">
+                        <div className="section_title text-center mx-auto text_animation">
+                            <div className="sub_title d-inline-block">
+                                <span className="d-flex align-items-center text-uppercase">
+                                    Branding Agency People
+                                    <img
+                                        src="assets/images/icons/arrow_long_right.svg"
+                                        alt="arrow_long_right"
+                                    />
+                                </span>
+                            </div>
+                            <h2 className="mb-0 fw-bold">
+                                Leading Digital Minds Working for Your Success
+                            </h2>
+                        </div>
+                    </div>
+                    <div className="container-fluid">
+                        <div
+                            className="row align-items-center justify-content-center"
+                            data-cues="slideInUp"
+                            data-group="team_list"
+                        >
+                            <div className="col-lg-4 col-sm-6">
+                                <div className="team_member position-relative">
+                                    <img
+                                        src="assets/images/team-two/team1.jpg"
+                                        alt="team"
+                                    />
+                                    <div className="content">
+                                        <span className="d-block text-white">
+                                            Founder
+                                        </span>
+                                        <h3 className="mb-0 text-white fw-semibold">
+                                            Megan Wilson
+                                        </h3>
+                                    </div>
+                                    <div className="socials lh-1 d-flex align-items-center">
+                                        <a href="#" target="_blank">
+                                            <i className="ri-facebook-fill" />
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <i className="ri-instagram-line" />
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <i className="ri-twitter-x-line" />
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <i className="ri-linkedin-fill" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-8">
+                                <div className="row">
+                                    <div className="col-lg-6 col-sm-6">
+                                        <div className="row">
+                                            <div className="col-lg-12">
+                                                <div className="team_member position-relative">
+                                                    <img
+                                                        src="assets/images/team-two/team2.jpg"
+                                                        alt="team"
+                                                    />
+                                                    <div className="content">
+                                                        <span className="d-block text-white">
+                                                            Co-founder
+                                                        </span>
+                                                        <h3 className="mb-0 text-white fw-semibold">
+                                                            Zylen Orion
+                                                        </h3>
+                                                    </div>
+                                                    <div className="socials lh-1 d-flex align-items-center">
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-facebook-fill" />
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-instagram-line" />
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-twitter-x-line" />
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-linkedin-fill" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-12">
+                                                <div className="team_member position-relative">
+                                                    <img
+                                                        src="assets/images/team-two/team3.jpg"
+                                                        alt="team"
+                                                    />
+                                                    <div className="content">
+                                                        <span className="d-block text-white">
+                                                            Manager
+                                                        </span>
+                                                        <h3 className="mb-0 text-white fw-semibold">
+                                                            Veyron Lorien
+                                                        </h3>
+                                                    </div>
+                                                    <div className="socials lh-1 d-flex align-items-center">
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-facebook-fill" />
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-instagram-line" />
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-twitter-x-line" />
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-linkedin-fill" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-sm-6">
+                                        <div className="row">
+                                            <div className="col-lg-12">
+                                                <div className="team_member position-relative">
+                                                    <img
+                                                        src="assets/images/team-two/team4.jpg"
+                                                        alt="team"
+                                                    />
+                                                    <div className="content">
+                                                        <span className="d-block text-white">
+                                                            Web Developer
+                                                        </span>
+                                                        <h3 className="mb-0 text-white fw-semibold">
+                                                            Nyxelle Daxel
+                                                        </h3>
+                                                    </div>
+                                                    <div className="socials lh-1 d-flex align-items-center">
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-facebook-fill" />
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-instagram-line" />
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-twitter-x-line" />
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-linkedin-fill" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-12">
+                                                <div className="team_member position-relative">
+                                                    <img
+                                                        src="assets/images/team-two/team5.jpg"
+                                                        alt="team"
+                                                    />
+                                                    <div className="content">
+                                                        <span className="d-block text-white">
+                                                            Web Designer
+                                                        </span>
+                                                        <h3 className="mb-0 text-white fw-semibold">
+                                                            Serenya Fenrir
+                                                        </h3>
+                                                    </div>
+                                                    <div className="socials lh-1 d-flex align-items-center">
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-facebook-fill" />
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-instagram-line" />
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-twitter-x-line" />
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            target="_blank"
+                                                        >
+                                                            <i className="ri-linkedin-fill" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End Team Area */}
+                {/* FAQ Area */}
+                <div className="faq_area bg_image">
+                    <div className="white_top_rectangle bg_f8f9fd" />
+                    <div className="container ptb-150">
+                        <div className="row align-items-center">
+                            <div className="col-lg-6">
+                                <div className="faq_content">
+                                    <div className="sub_title d-inline-block text-white">
+                                        <span className="d-flex align-items-center text-uppercase">
+                                            FAQ
+                                            <img
+                                                src="assets/images/icons/white_arrow_long_right.svg"
+                                                alt="white_arrow_long_right"
+                                            />
+                                        </span>
+                                    </div>
+                                    <h2 className="text-white text_animation fw-bold">
+                                        Have Questions? We’ve got Answers
+                                    </h2>
+                                    <div
+                                        className="accordion"
+                                        id="faqAccordion"
+                                        data-cues="slideInUp"
+                                        data-group="faq_content"
+                                    >
+                                        <div className="accordion-item rounded-0 bg-transparent">
+                                            <button
+                                                className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne"
+                                                aria-expanded="true"
+                                                aria-controls="collapseOne"
+                                            >
+                                                What is the difference between
+                                                SEO and PPC?
+                                            </button>
+                                            <div
+                                                id="collapseOne"
+                                                className="accordion-collapse collapse show"
+                                                data-bs-parent="#faqAccordion"
+                                            >
+                                                <div className="accordion-body px-0 pb-0">
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet, consectetur
+                                                        adipiscing elit, sed do
+                                                        eiusmod tempor incidid
+                                                        unt ut labo magna.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="accordion-item rounded-0 bg-transparent">
+                                            <button
+                                                className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTwo"
+                                                aria-expanded="false"
+                                                aria-controls="collapseTwo"
+                                            >
+                                                What is included in your SEO
+                                                services?
+                                            </button>
+                                            <div
+                                                id="collapseTwo"
+                                                className="accordion-collapse collapse"
+                                                data-bs-parent="#faqAccordion"
+                                            >
+                                                <div className="accordion-body px-0 pb-0">
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet, consectetur
+                                                        adipiscing elit, sed do
+                                                        eiusmod tempor incidid
+                                                        unt ut labo magna.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="accordion-item rounded-0 bg-transparent">
+                                            <button
+                                                className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree"
+                                                aria-expanded="false"
+                                                aria-controls="collapseThree"
+                                            >
+                                                Do you provide support after the
+                                                campaign ends?
+                                            </button>
+                                            <div
+                                                id="collapseThree"
+                                                className="accordion-collapse collapse"
+                                                data-bs-parent="#faqAccordion"
+                                            >
+                                                <div className="accordion-body px-0 pb-0">
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet, consectetur
+                                                        adipiscing elit, sed do
+                                                        eiusmod tempor incidid
+                                                        unt ut labo magna.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div
+                                    className="faq_image position-relative z-1"
+                                    data-cue="slideInUp"
+                                >
+                                    <img
+                                        src="assets/images/faq.jpg"
+                                        alt="faq-image"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="white_bottom_rectangle bg_f8f9fd" />
+                </div>
+                {/* End FAQ Area */}
+                {/* Text Slider Area */}
+                <div className="text_slider_area overflow-hidden">
+                    <div className="container-fluid px-0" data-cue="slideInUp">
+                        <div className="scroll_text_marquee d-flex align-items-center justify-content-center">
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                HOW IT WORKS
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                DOCUMENTATION
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                JOIN THE COMMUNITY
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                IDEAS INTO REALITY
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                HOW IT WORKS
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                DOCUMENTATION
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                JOIN THE COMMUNITY
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                IDEAS INTO REALITY
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                HOW IT WORKS
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                DOCUMENTATION
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                JOIN THE COMMUNITY
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                HOW IT WORKS
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                DOCUMENTATION
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                JOIN THE COMMUNITY
+                            </h3>
+                            <img
+                                src="assets/images/icons/bolt.svg"
+                                className="w-auto d-inline-block"
+                                alt="bolt"
+                            />
+                        </div>
+                    </div>
+                </div>
+                {/* End Text Slider Area */}
+                {/* Blog Area */}
+                <div className="blog_area pt-150">
+                    <div className="container">
+                        <div className="section_title style_two text_animation">
+                            <div className="sub_title d-inline-block">
+                                <span className="d-flex align-items-center text-uppercase">
+                                    Read Articles
+                                    <img
+                                        src="assets/images/icons/arrow_long_right.svg"
+                                        alt="arrow_long_right"
+                                    />
+                                </span>
+                            </div>
+                            <div className="row align-items-center">
+                                <div className="col-lg-7">
+                                    <h2 className="mb-0 fw-bold">
+                                        Dive Into Our Branding &amp; Growth
+                                        Articles
+                                    </h2>
+                                </div>
+                                <div className="col-lg-5">
+                                    <p>
+                                        Our agency powers growth and success in
+                                        the fast-paced digital marketing space.
+                                        Let’s turn your vision into reality.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            className="blog_articles_posts"
+                            data-cues="slideInUp"
+                            data-group="blog_articles_posts"
+                        >
+                            <div className="blog_article_post">
+                                <div
+                                    className="inner position-relative z-1"
+                                    style={{
+                                        backgroundImage:
+                                            "url(assets/images/blogs-two/blog1.jpg)",
+                                    }}
+                                >
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-3">
+                                            <div className="fw-medium date">
+                                                September 22, 2025
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-3">
+                                            <a
+                                                href="blog-single.html"
+                                                className="title fw-semibold d-inline-block"
+                                            >
+                                                Optimizing Search Algorithms to
+                                                Boost Regional Reach
+                                            </a>
+                                        </div>
+                                        <div className="col-lg-3 text-lg-end">
+                                            <span className="author fw-medium">
+                                                By{" "}
+                                                <a href="blog.html">
+                                                    Maximus Archer
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div className="col-lg-3 text-lg-end">
+                                            <a
+                                                href="blog-single.html"
+                                                className="details_link_btn d-inline-block position-relative"
+                                            >
+                                                <span className="d-inline-block position-relative">
+                                                    Read More
+                                                </span>
+                                                <i className="ri-arrow-right-up-line" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="blog_article_post">
+                                <div
+                                    className="inner position-relative z-1"
+                                    style={{
+                                        backgroundImage:
+                                            "url(assets/images/blogs-two/blog2.jpg)",
+                                    }}
+                                >
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-3">
+                                            <div className="fw-medium date">
+                                                September 21, 2025
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-3">
+                                            <a
+                                                href="blog-single.html"
+                                                className="title fw-semibold d-inline-block"
+                                            >
+                                                Using Cold Emails to Drive
+                                                Business Growth
+                                            </a>
+                                        </div>
+                                        <div className="col-lg-3 text-lg-end">
+                                            <span className="author fw-medium">
+                                                By{" "}
+                                                <a href="blog.html">
+                                                    Daxel Fenrir
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div className="col-lg-3 text-lg-end">
+                                            <a
+                                                href="blog-single.html"
+                                                className="details_link_btn d-inline-block position-relative"
+                                            >
+                                                <span className="d-inline-block position-relative">
+                                                    Read More
+                                                </span>
+                                                <i className="ri-arrow-right-up-line" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="blog_article_post">
+                                <div
+                                    className="inner position-relative z-1"
+                                    style={{
+                                        backgroundImage:
+                                            "url(assets/images/blogs-two/blog3.jpg)",
+                                    }}
+                                >
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-3">
+                                            <div className="fw-medium date">
+                                                September 20, 2025
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-3">
+                                            <a
+                                                href="blog-single.html"
+                                                className="title fw-semibold d-inline-block"
+                                            >
+                                                Find Engaging Ideas for Your
+                                                Social Media Posts
+                                            </a>
+                                        </div>
+                                        <div className="col-lg-3 text-lg-end">
+                                            <span className="author fw-medium">
+                                                By{" "}
+                                                <a href="blog.html">
+                                                    Vespera Solenne
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div className="col-lg-3 text-lg-end">
+                                            <a
+                                                href="blog-single.html"
+                                                className="details_link_btn d-inline-block position-relative"
+                                            >
+                                                <span className="d-inline-block position-relative">
+                                                    Read More
+                                                </span>
+                                                <i className="ri-arrow-right-up-line" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End Blog Area */}
+                {/* Footer Area */}
+                <footer className="footer_area">
+                    <div className="white_top_rectangle bg_f8f9fd" />
+                    <div className="container pt-150">
+                        <div className="footer_content">
+                            <h2 className="text-white text_animation fw-bold">
+                                Have an Idea?
+                            </h2>
+                            <h2 className="text-white text_animation fw-bold">
+                                Let&apos;s Work Together!
+                            </h2>
+                            <a
+                                href="contact.html"
+                                className="btn primary_btn"
+                                data-cue="slideInUp"
+                            >
+                                <span className="d-inline-block position-relative">
+                                    Get Started for Free{" "}
+                                    <i className="ri-arrow-right-up-line" />
+                                </span>
+                            </a>
+                        </div>
+                        <div className="pt-150" />
+                        <div className="footer_inner_box" data-cue="slideInUp">
+                            <div className="row">
+                                <div className="col-lg-4">
+                                    <div className="footer_logo_widget">
+                                        <a
+                                            href="index.html"
+                                            className="d-inline-block"
+                                        >
+                                            <img
+                                                src="assets/images/white-logo.svg"
+                                                alt="logo"
+                                            />
+                                        </a>
+                                        <div className="newsletter_box">
+                                            <h4 className="fw-semibold text-white">
+                                                Follow the Newest Trends
+                                            </h4>
+                                            <form>
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    placeholder="Email address"
+                                                />
+                                                <button type="button">
+                                                    Subscribe
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-8">
+                                    <div className="footer_widgets_list">
+                                        <div className="row">
+                                            <div className="col-sm-4">
+                                                <div className="footer_widget">
+                                                    <h3 className="text-white fw-semibold">
+                                                        Quick links
+                                                    </h3>
+                                                    <ul className="links p-0 mb-0 list-unstyled">
+                                                        <li>
+                                                            <a href="index.html">
+                                                                Home
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="about.html">
+                                                                About Us
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">
+                                                                Blog
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="services.html">
+                                                                Services
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="contact.html">
+                                                                Contact Us
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="col-sm-4">
+                                                <div className="footer_widget">
+                                                    <h3 className="text-white fw-semibold">
+                                                        Utility Pages
+                                                    </h3>
+                                                    <ul className="links p-0 mb-0 list-unstyled">
+                                                        <li>
+                                                            <a href="privacy-policy.html">
+                                                                Privacy Policy
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="terms-conditions.html">
+                                                                Terms &amp;
+                                                                Conditions
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="privacy-policy.html">
+                                                                Cookie Policy
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="terms-conditions.html">
+                                                                Refund Policy
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="privacy-policy.html">
+                                                                Disclaimer
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="col-sm-4">
+                                                <div className="footer_widget">
+                                                    <h3 className="text-white fw-semibold">
+                                                        Contact Info
+                                                    </h3>
+                                                    <ul className="links p-0 mb-0 list-unstyled">
+                                                        <li>
+                                                            <a href="tel:+024(453)-5432">
+                                                                +024(453)-5432
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="contact.html">
+                                                                Reach Us
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="mailto:lunex@example.com">
+                                                                lunex@example.com
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="copyright_footer">
+                            <div className="row align-items-center">
+                                <div className="col-md-5">
+                                    <div className="socials d-flex align-items-center">
+                                        <a
+                                            href="#"
+                                            target="_blank"
+                                            className="d-block"
+                                        >
+                                            <i className="ri-twitter-x-line" />
+                                        </a>
+                                        <a
+                                            href="#"
+                                            target="_blank"
+                                            className="d-block"
+                                        >
+                                            <i className="ri-facebook-fill" />
+                                        </a>
+                                        <a
+                                            href="#"
+                                            target="_blank"
+                                            className="d-block"
+                                        >
+                                            <i className="ri-linkedin-fill" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="col-md-7 text-md-end">
+                                    <p className="text-uppercase">
+                                        ©{" "}
+                                        <span className="fw-semibold">
+                                            Lunex
+                                        </span>
+                                        . All Rights Reserved.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                {/* End Footer Area */}
+                {/* Back To Top */}
+                <div className="back_to_top position-fixed text-center rounded-circle">
+                    <i className="ri-arrow-up-s-line" />
+                </div>
+                {/* End Back To Top */}
+            </div>
+        </div>
+    );
+};
+
+export default page;

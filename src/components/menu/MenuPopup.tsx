@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
 
 interface Props {
     isOpen: boolean;
@@ -10,9 +9,7 @@ interface Props {
 }
 
 export default function MenuPopup({ isOpen, onClose }: Props) {
-    const [openMenu, setOpenMenu] = useState<string | null>(null);
     const pathname = usePathname();
-    console.log("isOpen", isOpen);
 
     if (!isOpen) return null;
 
@@ -23,6 +20,36 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
 
         return pathname === href;
     };
+
+    const homeActive =
+        isActive("/") ||
+        isActive("/index-2") ||
+        isActive("/index-3") ||
+        isActive("/index-4") ||
+        isActive("/index-5") ||
+        isActive("/index-6") ||
+        isActive("/index-7");
+    const workActive = isActive("/works") || isActive("/work-single");
+    const careerActive = isActive("/careers") || isActive("/career-single");
+    const pageActive =
+        isActive("/about") ||
+        isActive("/team") ||
+        isActive("/services") ||
+        isActive("/service-single") ||
+        isActive("/pricing") ||
+        isActive("/book-a-call") ||
+        isActive("/signin") ||
+        isActive("/signup") ||
+        isActive("/forgot-password") ||
+        isActive("/faq") ||
+        isActive("/privacy-policy") ||
+        isActive("/terms-conditions");
+    const serviceActive = isActive("/services") || isActive("/service-single");
+    const myAccountActive =
+        isActive("/signin") ||
+        isActive("/signup") ||
+        isActive("/forgot-password");
+    const blogActive = isActive("/blog") || isActive("/blog-single");
 
     return (
         <div
@@ -40,7 +67,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                     >
                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                             <button
-                                                className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed active"
+                                                className={`accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed ${homeActive ? "active" : ""} `}
                                                 type="button"
                                                 data-bs-toggle="collapse"
                                                 data-bs-target="#navbarCollapseOne"
@@ -58,7 +85,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                     <div className="accordion">
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                className="accordion-link fw-semibold text-decoration-none active"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/") ? "active" : ""}`}
                                                                 href="/"
                                                             >
                                                                 Creative Agency
@@ -66,7 +93,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-2") ? "active" : ""} `}
                                                                 href="index-2"
                                                             >
                                                                 Digital Agency
@@ -74,7 +101,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-3") ? "active" : ""}`}
                                                                 href="index-3"
                                                             >
                                                                 Development
@@ -83,7 +110,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-4") ? "active" : ""}`}
                                                                 href="index-4"
                                                             >
                                                                 Digital
@@ -92,7 +119,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-5") ? "active" : ""}`}
                                                                 href="index-5"
                                                             >
                                                                 UI/UX Design
@@ -101,7 +128,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-6") ? "active" : ""}`}
                                                                 href="index-6"
                                                             >
                                                                 Branding Agency
@@ -109,7 +136,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-7") ? "active" : ""}`}
                                                                 href="index-7"
                                                             >
                                                                 Content Creation
@@ -118,7 +145,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-8") ? "active" : ""}`}
                                                                 href="index-8"
                                                             >
                                                                 SEO Agency
@@ -126,7 +153,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-9") ? "active" : ""}`}
                                                                 href="index-9"
                                                             >
                                                                 Cyber Security
@@ -139,7 +166,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                         </div>
                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                             <button
-                                                className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed"
+                                                className={`accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed ${workActive ? "active" : ""}`}
                                                 type="button"
                                                 data-bs-toggle="collapse"
                                                 data-bs-target="#navbarCollapseTwo"
@@ -158,7 +185,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="works"
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/works") ? "active" : ""}`}
                                                             >
                                                                 Works
                                                             </Link>
@@ -166,7 +193,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="work-single"
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/work-single") ? "active" : ""}`}
                                                             >
                                                                 Work Single
                                                             </Link>
@@ -177,7 +204,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                         </div>
                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                             <button
-                                                className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed"
+                                                className={`accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed ${careerActive ? "active" : ""}`}
                                                 type="button"
                                                 data-bs-toggle="collapse"
                                                 data-bs-target="#navbarCollapseThree"
@@ -196,7 +223,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="careers"
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/careers") ? "active" : ""}`}
                                                             >
                                                                 Careers
                                                             </Link>
@@ -204,7 +231,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="career-single"
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/career-single") ? "active" : ""}`}
                                                             >
                                                                 Career Single
                                                             </Link>
@@ -215,7 +242,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                         </div>
                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                             <button
-                                                className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed"
+                                                className={`accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed ${pageActive ? "active" : ""}`}
                                                 type="button"
                                                 data-bs-toggle="collapse"
                                                 data-bs-target="#navbarCollapseFour"
@@ -237,7 +264,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="about"
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/about") ? "active" : ""}`}
                                                             >
                                                                 About Us
                                                             </Link>
@@ -245,14 +272,14 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="team"
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/team") ? "active" : ""}`}
                                                             >
                                                                 Team
                                                             </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <button
-                                                                className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed"
+                                                                className={`accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed ${serviceActive ? "active" : ""}`}
                                                                 type="button"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#navbarCollapseOne1"
@@ -270,7 +297,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                     <div className="accordion">
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                                             <Link
-                                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/services") ? "active" : ""}`}
                                                                                 href="services"
                                                                             >
                                                                                 Services
@@ -278,7 +305,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                         </div>
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                                             <Link
-                                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/service-single") ? "active" : ""}`}
                                                                                 href="service-single"
                                                                             >
                                                                                 Service
@@ -292,7 +319,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="pricing"
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/pricing") ? "active" : ""}`}
                                                             >
                                                                 Pricing
                                                             </Link>
@@ -300,14 +327,14 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="book-a-call"
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/book-a-call") ? "active" : ""}`}
                                                             >
                                                                 Book A Call
                                                             </Link>
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <button
-                                                                className="accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed"
+                                                                className={`accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold collapsed ${myAccountActive ? "active" : ""}`}
                                                                 type="button"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#navbarCollapseOne2"
@@ -325,7 +352,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                     <div className="accordion">
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                                             <Link
-                                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/signin") ? "active" : ""}`}
                                                                                 href="signin"
                                                                             >
                                                                                 Signin
@@ -333,7 +360,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                         </div>
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                                             <Link
-                                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/signup") ? "active" : ""}`}
                                                                                 href="signup"
                                                                             >
                                                                                 Signup
@@ -341,7 +368,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                         </div>
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                                             <Link
-                                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/forgot-password") ? "active" : ""}`}
                                                                                 href="forgot-password"
                                                                             >
                                                                                 Forgot
@@ -355,7 +382,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="faq"
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/faq") ? "active" : ""}`}
                                                             >
                                                                 FAQ
                                                             </Link>
@@ -363,7 +390,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="privacy-policy"
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/privacy-policy") ? "active" : ""}`}
                                                             >
                                                                 Privacy Policy
                                                             </Link>
@@ -371,7 +398,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="terms-conditions"
-                                                                className="accordion-link fw-semibold text-decoration-none"
+                                                                className={`accordion-link fw-semibold text-decoration-none ${isActive("/terms-conditions") ? "active" : ""}`}
                                                             >
                                                                 Terms &amp;
                                                                 Conditions
