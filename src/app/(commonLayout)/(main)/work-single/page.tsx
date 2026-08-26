@@ -351,14 +351,6 @@ const page = () => {
                 </div>
             </div>
             {/* End Impact Area */}
-
-            {/* LTR / RTL */}
-            <button
-                id="toggleBootstrapDirection"
-                className="ltr-rtl-btn border-0 position-fixed d-inline-block text-uppercase fw-semibold"
-            >
-                <span className="d-block">LTR / RTL</span>
-            </button>
         </div>
     );
 };

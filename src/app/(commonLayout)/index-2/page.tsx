@@ -1597,15 +1597,6 @@ export default function page() {
                     />
                 </div>
                 {/* End Back to Top */}
-                {/* LTR / RTL */}
-                <button
-                    id="toggleBootstrapDirection"
-                    className="ltr-rtl-btn border-0 position-fixed d-inline-block text-uppercase fw-semibold"
-                >
-                    <span className="d-block">LTR / RTL</span>
-                </button>
-                {/* End LTR / RTL */}
-                {/* Link of JS files */}
             </div>
         </div>
     );

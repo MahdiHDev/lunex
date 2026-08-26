@@ -86,6 +86,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/") ? "active" : ""}`}
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 href="/"
                                                             >
                                                                 Creative Agency
@@ -94,6 +97,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-2") ? "active" : ""} `}
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 href="index-2"
                                                             >
                                                                 Digital Agency
@@ -102,6 +108,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-3") ? "active" : ""}`}
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 href="index-3"
                                                             >
                                                                 Development
@@ -111,6 +120,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-4") ? "active" : ""}`}
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 href="index-4"
                                                             >
                                                                 Digital
@@ -120,6 +132,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-5") ? "active" : ""}`}
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 href="index-5"
                                                             >
                                                                 UI/UX Design
@@ -129,6 +144,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-6") ? "active" : ""}`}
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 href="index-6"
                                                             >
                                                                 Branding Agency
@@ -137,6 +155,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-7") ? "active" : ""}`}
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 href="index-7"
                                                             >
                                                                 Content Creation
@@ -146,6 +167,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-8") ? "active" : ""}`}
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 href="index-8"
                                                             >
                                                                 SEO Agency
@@ -154,6 +178,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/index-9") ? "active" : ""}`}
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 href="index-9"
                                                             >
                                                                 Cyber Security
@@ -185,6 +212,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="works"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/works") ? "active" : ""}`}
                                                             >
                                                                 Works
@@ -193,6 +223,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="work-single"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/work-single") ? "active" : ""}`}
                                                             >
                                                                 Work Single
@@ -223,6 +256,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="careers"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/careers") ? "active" : ""}`}
                                                             >
                                                                 Careers
@@ -231,6 +267,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="career-single"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/career-single") ? "active" : ""}`}
                                                             >
                                                                 Career Single
@@ -264,6 +303,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="about"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/about") ? "active" : ""}`}
                                                             >
                                                                 About Us
@@ -272,6 +314,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="team"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/team") ? "active" : ""}`}
                                                             >
                                                                 Team
@@ -298,6 +343,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                                             <Link
                                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/services") ? "active" : ""}`}
+                                                                                onClick={
+                                                                                    onClose
+                                                                                }
                                                                                 href="services"
                                                                             >
                                                                                 Services
@@ -306,6 +354,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                                             <Link
                                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/service-single") ? "active" : ""}`}
+                                                                                onClick={
+                                                                                    onClose
+                                                                                }
                                                                                 href="service-single"
                                                                             >
                                                                                 Service
@@ -319,6 +370,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="pricing"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/pricing") ? "active" : ""}`}
                                                             >
                                                                 Pricing
@@ -327,6 +381,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="book-a-call"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/book-a-call") ? "active" : ""}`}
                                                             >
                                                                 Book A Call
@@ -353,6 +410,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                                             <Link
                                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/signin") ? "active" : ""}`}
+                                                                                onClick={
+                                                                                    onClose
+                                                                                }
                                                                                 href="signin"
                                                                             >
                                                                                 Signin
@@ -361,6 +421,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                                             <Link
                                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/signup") ? "active" : ""}`}
+                                                                                onClick={
+                                                                                    onClose
+                                                                                }
                                                                                 href="signup"
                                                                             >
                                                                                 Signup
@@ -369,6 +432,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                                             <Link
                                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/forgot-password") ? "active" : ""}`}
+                                                                                onClick={
+                                                                                    onClose
+                                                                                }
                                                                                 href="forgot-password"
                                                                             >
                                                                                 Forgot
@@ -382,6 +448,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="faq"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/faq") ? "active" : ""}`}
                                                             >
                                                                 FAQ
@@ -390,6 +459,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="privacy-policy"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/privacy-policy") ? "active" : ""}`}
                                                             >
                                                                 Privacy Policy
@@ -398,6 +470,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="terms-conditions"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className={`accordion-link fw-semibold text-decoration-none ${isActive("/terms-conditions") ? "active" : ""}`}
                                                             >
                                                                 Terms &amp;
@@ -407,6 +482,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="error"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 404 Error Page
@@ -437,6 +515,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="blog"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Blog
@@ -445,6 +526,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="blog-single"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Blog Single
@@ -475,6 +559,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="contact"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Contact Style 1
@@ -483,6 +570,9 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
                                                                 href="contact-2"
+                                                                onClick={
+                                                                    onClose
+                                                                }
                                                                 className="accordion-link fw-semibold text-decoration-none"
                                                             >
                                                                 Contact Style 2
