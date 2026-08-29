@@ -1,3 +1,4 @@
+import ScrollColorChange from "@/components/common/ScrollColorChange";
 import SlideInUp from "@/components/common/SlideInUp";
 import Navbar6 from "@/components/navbars/Navbar6";
 
@@ -5,12 +6,13 @@ const page = () => {
     return (
         <div className="bg-f8f9fd">
             <Navbar6 />
+            <ScrollColorChange />
 
             <div>
                 {/* Hero Banner Area */}
                 <div className="hero_banner_area position-relative z-1 overflow-hidden">
                     <div className="container-fluid">
-                        <SlideInUp selector=".hero_banner_content">
+                        <SlideInUp selector=".hero_banner_content, h1">
                             <div
                                 className="hero_banner_content text-center mx-auto position-relative z-1"
                                 data-cues="slideInUp"
@@ -36,44 +38,46 @@ const page = () => {
                                 </a>
                             </div>
                         </SlideInUp>
-                        <div className="hero_banner_image position-relative z-1">
-                            <div
-                                className="row"
-                                data-cues="slideInUp"
-                                data-group="hero_banner_image"
-                            >
-                                <div className="col-lg-4 col-md-6 order-1 order-lg-1">
-                                    <div className="left_image">
-                                        <img
-                                            src="assets/images/banners/visitors.jpg"
-                                            alt="visitors"
-                                        />
+                        <SlideInUp selector=".left_image, .center_image, .right_image">
+                            <div className="hero_banner_image position-relative z-1">
+                                <div
+                                    className="row"
+                                    data-cues="slideInUp"
+                                    data-group="hero_banner_image"
+                                >
+                                    <div className="col-lg-4 col-md-6 order-1 order-lg-1">
+                                        <div className="left_image">
+                                            <img
+                                                src="assets/images/banners/visitors.jpg"
+                                                alt="visitors"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4 order-3 order-lg-2">
+                                        <div className="center_image text-center position-relative">
+                                            <img
+                                                src="assets/images/banners/hero_banner1.png"
+                                                alt="hero_banner1"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4 col-md-6 order-2 order-lg-3">
+                                        <div className="right_image">
+                                            <img
+                                                src="assets/images/banners/audiences.jpg"
+                                                alt="audiences"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4 order-3 order-lg-2">
-                                    <div className="center_image text-center position-relative">
-                                        <img
-                                            src="assets/images/banners/hero_banner1.png"
-                                            alt="hero_banner1"
-                                        />
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 order-2 order-lg-3">
-                                    <div className="right_image">
-                                        <img
-                                            src="assets/images/banners/audiences.jpg"
-                                            alt="audiences"
-                                        />
-                                    </div>
+                                <div className="object2">
+                                    <img
+                                        src="assets/images/objects/object2.svg"
+                                        alt="object2"
+                                    />
                                 </div>
                             </div>
-                            <div className="object2">
-                                <img
-                                    src="assets/images/objects/object2.svg"
-                                    alt="object2"
-                                />
-                            </div>
-                        </div>
+                        </SlideInUp>
                     </div>
                     <div className="scroll_text_area overflow-hidden position-relative z-1">
                         <div className="container-fluid px-0">
@@ -200,18 +204,20 @@ const page = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-3">
-                                <div
-                                    className="about_us_title d-inline-block"
-                                    data-cue="slideInUp"
-                                >
-                                    <span className="d-flex align-items-center text-uppercase">
-                                        ABOUT US
-                                        <img
-                                            src="assets/images/icons/arrow_long_right.svg"
-                                            alt="arrow_long_right"
-                                        />
-                                    </span>
-                                </div>
+                                <SlideInUp selector=".about_us_title">
+                                    <div
+                                        className="about_us_title d-inline-block"
+                                        data-cue="slideInUp"
+                                    >
+                                        <span className="d-flex align-items-center text-uppercase">
+                                            ABOUT US
+                                            <img
+                                                src="assets/images/icons/arrow_long_right.svg"
+                                                alt="arrow_long_right"
+                                            />
+                                        </span>
+                                    </div>
+                                </SlideInUp>
                             </div>
                             <div className="col-lg-9">
                                 <div className="about_us_content">

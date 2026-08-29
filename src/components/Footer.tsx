@@ -1,9 +1,8 @@
 import Image from "next/image";
 import mapMarker from "public/assets/images/icons/map-marker.svg";
-import upArrow from "public/assets/images/icons/up-arrow.svg";
 import WhiteRightTopArrow from "public/assets/images/icons/white-right-top-arrow.svg";
-import whiteUpArrow from "public/assets/images/icons/white-up-arrow.svg";
 import user1 from "public/assets/images/users/user1.jpg";
+import GoTop from "./common/GoTop";
 import ScrambleText from "./common/ScrambleText";
 import SlideInUp from "./common/SlideInUp";
 
@@ -167,10 +166,11 @@ const Footer = () => {
                         </a>
                         . All rights reserved.
                     </p>
-                    <div className="go-top rounded-circle">
+                    {/* <div className="go-top rounded-circle">
                         <Image src={upArrow} alt="up-arrow" />
                         <Image src={whiteUpArrow} alt="white-up-arrow" />
-                    </div>
+                    </div> */}
+                    <GoTop />
                 </div>
             </div>
         </footer>
