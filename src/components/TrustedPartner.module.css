@@ -1,0 +1,52 @@
+.marqueeWrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    touch-action: pan-y; /* allow vertical page scroll, but capture horizontal drag */
+}
+
+.marqueeTrack {
+    display: flex;
+    width: max-content;
+    gap: 25px;
+    user-select: none;
+    will-change: transform;
+}
+
+.marqueeItem {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+}
+
+.marqueeItem img {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.marqueeItem:hover img {
+    opacity: 1;
+}
+
+@media (min-width: 576px) {
+    .marqueeItem {
+        width: 150px;
+    }
+}
+@media (min-width: 768px) {
+    .marqueeItem {
+        width: 160px;
+    }
+}
+@media (min-width: 992px) {
+    .marqueeItem {
+        width: 170px;
+    }
+}
+@media (min-width: 1200px) {
+    .marqueeItem {
+        width: 220px;
+    }
+}

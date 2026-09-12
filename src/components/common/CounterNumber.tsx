@@ -13,7 +13,7 @@ export default function CounterNumber({
     className = "counter_number",
     duration = 2000,
 }: CounterNumberProps) {
-    const ref = useRef<HTMLSpanElement>(null);
+    const ref = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const el = ref.current;
@@ -54,8 +54,8 @@ export default function CounterNumber({
     }, [value, duration]);
 
     return (
-        <span ref={ref} className={className}>
+        <div ref={ref} className={className}>
             0
-        </span>
+        </div>
     );
 }

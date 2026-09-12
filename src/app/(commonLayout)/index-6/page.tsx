@@ -1,6 +1,17 @@
+import CounterNumber from "@/components/common/CounterNumber";
 import ScrollColorChange from "@/components/common/ScrollColorChange";
 import SlideInUp from "@/components/common/SlideInUp";
+import TextAnimation from "@/components/common/TextAnimation";
+import ServiceSlider from "@/components/index6/ServiceSlider";
+import TrustedPartner from "@/components/index6/TrustedPartner";
 import Navbar6 from "@/components/navbars/Navbar6";
+import Image from "next/image";
+import Link from "next/link";
+
+// image imports
+import girlsWithLaptop from "public/assets/images/banners/girls_with_laptop.jpg";
+import heroBanner1 from "public/assets/images/banners/hero_banner1.png";
+import visitors from "public/assets/images/banners/visitors.jpg";
 
 const page = () => {
     return (
@@ -12,7 +23,7 @@ const page = () => {
                 {/* Hero Banner Area */}
                 <div className="hero_banner_area position-relative z-1 overflow-hidden">
                     <div className="container-fluid">
-                        <SlideInUp selector=".hero_banner_content, h1">
+                        <SlideInUp selector=".hero_banner_content, .seo-button">
                             <div
                                 className="hero_banner_content text-center mx-auto position-relative z-1"
                                 data-cues="slideInUp"
@@ -21,21 +32,23 @@ const page = () => {
                                 <h1 className="fw-bold">
                                     Comprehensive Branding Agency for Your
                                     Business{" "}
-                                    <img
-                                        src="assets/images/banners/girls_with_laptop.jpg"
+                                    <Image
+                                        src={girlsWithLaptop}
                                         alt="girls-with-laptop"
                                     />{" "}
                                     Needs
                                 </h1>
-                                <a
-                                    href="pricing.html"
-                                    className="btn primary_btn"
-                                >
-                                    <span className="d-inline-block position-relative">
-                                        Get a Free SEO Audit{" "}
-                                        <i className="ri-arrow-right-up-line" />
-                                    </span>
-                                </a>
+                                <div className="seo-button">
+                                    <a
+                                        href="pricing.html"
+                                        className="btn primary_btn"
+                                    >
+                                        <span className="d-inline-block position-relative">
+                                            Get a Free SEO Audit{" "}
+                                            <i className="ri-arrow-right-up-line" />
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </SlideInUp>
                         <SlideInUp selector=".left_image, .center_image, .right_image">
@@ -47,16 +60,16 @@ const page = () => {
                                 >
                                     <div className="col-lg-4 col-md-6 order-1 order-lg-1">
                                         <div className="left_image">
-                                            <img
-                                                src="assets/images/banners/visitors.jpg"
+                                            <Image
+                                                src={visitors}
                                                 alt="visitors"
                                             />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 order-3 order-lg-2">
                                         <div className="center_image text-center position-relative">
-                                            <img
-                                                src="assets/images/banners/hero_banner1.png"
+                                            <Image
+                                                src={heroBanner1}
                                                 alt="hero_banner1"
                                             />
                                         </div>
@@ -227,49 +240,52 @@ const page = () => {
                                         us more than half our clients stay with
                                         us for longer than a single project.
                                     </h2>
-                                    <div
-                                        className="row"
-                                        data-cues="slideInUp"
-                                        data-group="about_us_content"
-                                    >
-                                        <div className="col-lg-4">
-                                            <div className="about_us_text">
-                                                <div className="number lh-1 position-relative fw-medium d-inline-block">
-                                                    <div className="text_animation counter_number">
-                                                        25
+                                    <SlideInUp selector=".row">
+                                        <div
+                                            className="row"
+                                            data-cues="slideInUp"
+                                            data-group="about_us_content"
+                                        >
+                                            <div className="col-lg-4">
+                                                <div className="about_us_text">
+                                                    <div className="number lh-1 position-relative fw-medium d-inline-block">
+                                                        <CounterNumber
+                                                            value={25}
+                                                        />
+                                                        <span className="text_animation">
+                                                            M
+                                                        </span>
                                                     </div>
-                                                    <span className="text_animation">
-                                                        M
-                                                    </span>
+                                                    <p>
+                                                        Lunex is a creative
+                                                        agency offering
+                                                        marketing, development,
+                                                        design, and a range of
+                                                        digital solutions. We’ve
+                                                        secured over $15M in
+                                                        funding.
+                                                    </p>
+                                                    <a
+                                                        href="about.html"
+                                                        className="btn primary_btn"
+                                                    >
+                                                        <span className="d-inline-block position-relative">
+                                                            Know More{" "}
+                                                            <i className="ri-arrow-right-up-line" />
+                                                        </span>
+                                                    </a>
                                                 </div>
-                                                <p>
-                                                    Lunex is a creative agency
-                                                    offering marketing,
-                                                    development, design, and a
-                                                    range of digital solutions.
-                                                    We’ve secured over $15M in
-                                                    funding.
-                                                </p>
-                                                <a
-                                                    href="about.html"
-                                                    className="btn primary_btn"
-                                                >
-                                                    <span className="d-inline-block position-relative">
-                                                        Know More{" "}
-                                                        <i className="ri-arrow-right-up-line" />
-                                                    </span>
-                                                </a>
+                                            </div>
+                                            <div className="col-lg-8">
+                                                <div className="about_us_image text-center">
+                                                    <img
+                                                        src="assets/images/abouts/about6.jpg"
+                                                        alt="about"
+                                                    />
+                                                </div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-8">
-                                            <div className="about_us_image text-center">
-                                                <img
-                                                    src="assets/images/abouts/about6.jpg"
-                                                    alt="about"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </SlideInUp>
                                 </div>
                             </div>
                         </div>
@@ -277,7 +293,7 @@ const page = () => {
                 </div>
                 {/* End About Us Area */}
                 {/* Trusted Partner Area */}
-                <div className="trusted_partner_area">
+                {/* <div className="trusted_partner_area">
                     <div className="container">
                         <div className="trusted_partner_inner position-relative">
                             <span className="title1 d-inline-block fw-medium text-uppercase text_animation">
@@ -332,14 +348,18 @@ const page = () => {
                             </span>
                         </div>
                     </div>
-                </div>
+                </div> */}
+                <TrustedPartner />
                 {/* End Trusted Partner Area */}
                 {/* Services Area */}
                 <div className="services_area bg_image">
                     <div className="white_top_rectangle bg_f8f9fd" />
                     <div className="ptb-150 overflow-hidden">
                         <div className="container">
-                            <div className="section_title white_color style_two text_animation">
+                            <TextAnimation
+                                as="div"
+                                className="section_title white_color style_two text_animation"
+                            >
                                 <div className="sub_title d-inline-block">
                                     <span className="d-flex align-items-center text-uppercase">
                                         Our Approach
@@ -365,9 +385,9 @@ const page = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </TextAnimation>
                         </div>
-                        <div className="container-fluid">
+                        {/* <div className="container-fluid">
                             <div
                                 className="services_slides position-relative owl-carousel owl-theme"
                                 data-cue="slideInUp"
@@ -465,17 +485,20 @@ const page = () => {
                                     />
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
+                        <ServiceSlider />
                         <div className="container">
-                            <div
-                                className="browse_all_services_btn text-center"
-                                data-cue="slideInUp"
-                            >
-                                <a href="services.html">
-                                    Browse all services{" "}
-                                    <i className="ri-arrow-right-up-line" />
-                                </a>
-                            </div>
+                            <SlideInUp selector=".browse_all_services_btn">
+                                <div
+                                    className="browse_all_services_btn text-center"
+                                    data-cue="slideInUp"
+                                >
+                                    <Link href="services">
+                                        Browse all services{" "}
+                                        <i className="ri-arrow-right-up-line" />
+                                    </Link>
+                                </div>
+                            </SlideInUp>
                         </div>
                     </div>
                     <div className="white_bottom_rectangle bg_white" />
