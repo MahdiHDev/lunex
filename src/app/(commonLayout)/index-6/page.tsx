@@ -2,6 +2,10 @@ import CounterNumber from "@/components/common/CounterNumber";
 import ScrollColorChange from "@/components/common/ScrollColorChange";
 import SlideInUp from "@/components/common/SlideInUp";
 import TextAnimation from "@/components/common/TextAnimation";
+import BackToTop from "@/components/index6/BackToTop";
+import CaseStudiesSlider from "@/components/index6/Casestudiessection";
+import FeaturesList from "@/components/index6/FeaturesList";
+import FeedbackSlider from "@/components/index6/Feedbackslider";
 import ServiceSlider from "@/components/index6/ServiceSlider";
 import TrustedPartner from "@/components/index6/TrustedPartner";
 import Navbar6 from "@/components/navbars/Navbar6";
@@ -9,9 +13,24 @@ import Image from "next/image";
 import Link from "next/link";
 
 // image imports
+import about6 from "public/assets/images/abouts/about6.jpg";
+import audiences from "public/assets/images/banners/audiences.jpg";
 import girlsWithLaptop from "public/assets/images/banners/girls_with_laptop.jpg";
 import heroBanner1 from "public/assets/images/banners/hero_banner1.png";
 import visitors from "public/assets/images/banners/visitors.jpg";
+import faqImage from "public/assets/images/faq.jpg";
+import arrowLongRight from "public/assets/images/icons/arrow_long_right.svg";
+import bolt from "public/assets/images/icons/bolt.svg";
+import whiteArrowLongRight from "public/assets/images/icons/white_arrow_long_right.svg";
+import object2 from "public/assets/images/objects/object2.svg";
+import processGroupMeeting from "public/assets/images/process_group_meeting.jpg";
+import team1 from "public/assets/images/team-two/team1.jpg";
+import team2 from "public/assets/images/team-two/team2.jpg";
+import team3 from "public/assets/images/team-two/team3.jpg";
+import team4 from "public/assets/images/team-two/team4.jpg";
+import team5 from "public/assets/images/team-two/team5.jpg";
+import whiteLogo from "public/assets/images/white-logo.svg";
+import whyChooseUse from "public/assets/images/why_choose_us.jpg";
 
 const page = () => {
     return (
@@ -76,18 +95,15 @@ const page = () => {
                                     </div>
                                     <div className="col-lg-4 col-md-6 order-2 order-lg-3">
                                         <div className="right_image">
-                                            <img
-                                                src="assets/images/banners/audiences.jpg"
+                                            <Image
+                                                src={audiences}
                                                 alt="audiences"
                                             />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="object2">
-                                    <img
-                                        src="assets/images/objects/object2.svg"
-                                        alt="object2"
-                                    />
+                                    <Image src={object2} alt="object2" />
                                 </div>
                             </div>
                         </SlideInUp>
@@ -98,112 +114,112 @@ const page = () => {
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     HOW IT WORKS
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     DOCUMENTATION
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     JOIN THE COMMUNITY
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     IDEAS INTO REALITY
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     HOW IT WORKS
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     DOCUMENTATION
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     JOIN THE COMMUNITY
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     IDEAS INTO REALITY
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     HOW IT WORKS
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     DOCUMENTATION
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     JOIN THE COMMUNITY
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     HOW IT WORKS
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     DOCUMENTATION
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
                                 <h3 className="mb-0 text-uppercase fw-semibold text-white lh-1">
                                     JOIN THE COMMUNITY
                                 </h3>
-                                <img
-                                    src="assets/images/icons/bolt.svg"
+                                <Image
+                                    src={bolt}
                                     className="w-auto d-inline-block"
                                     alt="bolt"
                                 />
@@ -224,8 +240,8 @@ const page = () => {
                                     >
                                         <span className="d-flex align-items-center text-uppercase">
                                             ABOUT US
-                                            <img
-                                                src="assets/images/icons/arrow_long_right.svg"
+                                            <Image
+                                                src={arrowLongRight}
                                                 alt="arrow_long_right"
                                             />
                                         </span>
@@ -278,8 +294,8 @@ const page = () => {
                                             </div>
                                             <div className="col-lg-8">
                                                 <div className="about_us_image text-center">
-                                                    <img
-                                                        src="assets/images/abouts/about6.jpg"
+                                                    <Image
+                                                        src={about6}
                                                         alt="about"
                                                     />
                                                 </div>
@@ -293,62 +309,6 @@ const page = () => {
                 </div>
                 {/* End About Us Area */}
                 {/* Trusted Partner Area */}
-                {/* <div className="trusted_partner_area">
-                    <div className="container">
-                        <div className="trusted_partner_inner position-relative">
-                            <span className="title1 d-inline-block fw-medium text-uppercase text_animation">
-                                Our Trusted Partner
-                            </span>
-                            <div className="trusted_partner_slides owl-carousel owl-theme">
-                                <div className="text-center">
-                                    <img
-                                        src="assets/images/partners/partner1.svg"
-                                        className="d-inline-block w-auto"
-                                        alt="partner"
-                                    />
-                                </div>
-                                <div className="text-center">
-                                    <img
-                                        src="assets/images/partners/partner2.svg"
-                                        className="d-inline-block w-auto"
-                                        alt="partner"
-                                    />
-                                </div>
-                                <div className="text-center">
-                                    <img
-                                        src="assets/images/partners/partner3.svg"
-                                        className="d-inline-block w-auto"
-                                        alt="partner"
-                                    />
-                                </div>
-                                <div className="text-center">
-                                    <img
-                                        src="assets/images/partners/partner4.svg"
-                                        className="d-inline-block w-auto"
-                                        alt="partner"
-                                    />
-                                </div>
-                                <div className="text-center">
-                                    <img
-                                        src="assets/images/partners/partner5.svg"
-                                        className="d-inline-block w-auto"
-                                        alt="partner"
-                                    />
-                                </div>
-                                <div className="text-center">
-                                    <img
-                                        src="assets/images/partners/partner6.svg"
-                                        className="d-inline-block w-auto"
-                                        alt="partner"
-                                    />
-                                </div>
-                            </div>
-                            <span className="title2 d-inline-block fw-medium text-uppercase text_animation">
-                                Almost 20+ Partner we have
-                            </span>
-                        </div>
-                    </div>
-                </div> */}
                 <TrustedPartner />
                 {/* End Trusted Partner Area */}
                 {/* Services Area */}
@@ -363,8 +323,8 @@ const page = () => {
                                 <div className="sub_title d-inline-block">
                                     <span className="d-flex align-items-center text-uppercase">
                                         Our Approach
-                                        <img
-                                            src="assets/images/icons/white_arrow_long_right.svg"
+                                        <Image
+                                            src={whiteArrowLongRight}
                                             alt="white_arrow_long_right"
                                         />
                                     </span>
@@ -387,105 +347,6 @@ const page = () => {
                                 </div>
                             </TextAnimation>
                         </div>
-                        {/* <div className="container-fluid">
-                            <div
-                                className="services_slides position-relative owl-carousel owl-theme"
-                                data-cue="slideInUp"
-                            >
-                                <div className="service_box position-relative">
-                                    <h3 className="fw-bold">
-                                        <a href="service-single.html">
-                                            Digital Advertising
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incidid unt ut labore et dolore magna.
-                                    </p>
-                                    <a
-                                        href="service-single.html"
-                                        className="details_link_btn"
-                                    >
-                                        <i className="ri-arrow-right-up-line" />
-                                    </a>
-                                    <img
-                                        src="assets/images/icons/megaphone.svg"
-                                        className="icon d-block w-auto"
-                                        alt="megaphone"
-                                    />
-                                </div>
-                                <div className="service_box position-relative">
-                                    <h3 className="fw-bold">
-                                        <a href="service-single.html">
-                                            Social Media Graphics
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incidid unt ut labore et dolore magna.
-                                    </p>
-                                    <a
-                                        href="service-single.html"
-                                        className="details_link_btn"
-                                    >
-                                        <i className="ri-arrow-right-up-line" />
-                                    </a>
-                                    <img
-                                        src="assets/images/icons/media_target.svg"
-                                        className="icon d-block w-auto"
-                                        alt="media_target"
-                                    />
-                                </div>
-                                <div className="service_box position-relative">
-                                    <h3 className="fw-bold">
-                                        <a href="service-single.html">
-                                            Web Design
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incidid unt ut labore et dolore magna.
-                                    </p>
-                                    <a
-                                        href="service-single.html"
-                                        className="details_link_btn"
-                                    >
-                                        <i className="ri-arrow-right-up-line" />
-                                    </a>
-                                    <img
-                                        src="assets/images/icons/search_chart.svg"
-                                        className="icon d-block w-auto"
-                                        alt="search_chart"
-                                    />
-                                </div>
-                                <div className="service_box position-relative">
-                                    <h3 className="fw-bold">
-                                        <a href="service-single.html">
-                                            Mobile Design
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incidid unt ut labore et dolore magna.
-                                    </p>
-                                    <a
-                                        href="service-single.html"
-                                        className="details_link_btn"
-                                    >
-                                        <i className="ri-arrow-right-up-line" />
-                                    </a>
-                                    <img
-                                        src="assets/images/icons/mobile_design.svg"
-                                        className="icon d-block w-auto"
-                                        alt="mobile_design"
-                                    />
-                                </div>
-                            </div>
-                        </div> */}
                         <ServiceSlider />
                         <div className="container">
                             <SlideInUp selector=".browse_all_services_btn">
@@ -507,12 +368,15 @@ const page = () => {
                 {/* Features Area */}
                 <div className="features_area bg_white pb-150">
                     <div className="container">
-                        <div className="section_title style_two text_animation">
+                        <TextAnimation
+                            as="div"
+                            className="section_title style_two text_animation"
+                        >
                             <div className="sub_title d-inline-block">
                                 <span className="d-flex align-items-center text-uppercase">
                                     Features
-                                    <img
-                                        src="assets/images/icons/arrow_long_right.svg"
+                                    <Image
+                                        src={arrowLongRight}
                                         alt="arrow_long_right"
                                     />
                                 </span>
@@ -532,122 +396,9 @@ const page = () => {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </TextAnimation>
                     </div>
-                    <div
-                        className="features_list"
-                        data-cues="slideInUp"
-                        data-group="features_list"
-                    >
-                        <div className="item">
-                            <div className="container position-relative">
-                                <h3 className="mb-0 fw-normal text-uppercase">
-                                    <span className="fw-bold">01.</span>{" "}
-                                    <strong className="fw-bold">
-                                        Grow Your
-                                    </strong>{" "}
-                                    Business
-                                </h3>
-                                <div className="box">
-                                    <img
-                                        src="assets/images/features/feature1.png"
-                                        alt="feature"
-                                    />
-                                    <a
-                                        href="https://www.youtube.com/watch?v=ObKsCs5mYGQ"
-                                        className="video_btn popup_video popup-youtube"
-                                    >
-                                        <img
-                                            src="assets/images/objects/play_now.png"
-                                            alt="play-now"
-                                        />
-                                        <i className="ri-play-large-line" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="container position-relative">
-                                <h3 className="mb-0 fw-normal text-uppercase">
-                                    <span className="fw-bold">02.</span>{" "}
-                                    <strong className="fw-bold">
-                                        Increase Your
-                                    </strong>{" "}
-                                    Revenue
-                                </h3>
-                                <div className="box">
-                                    <img
-                                        src="assets/images/features/feature2.png"
-                                        alt="feature"
-                                    />
-                                    <a
-                                        href="https://www.youtube.com/watch?v=ObKsCs5mYGQ"
-                                        className="video_btn popup_video popup-youtube"
-                                    >
-                                        <img
-                                            src="assets/images/objects/play_now.png"
-                                            alt="play-now"
-                                        />
-                                        <i className="ri-play-large-line" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="container position-relative">
-                                <h3 className="mb-0 fw-normal text-uppercase">
-                                    <span className="fw-bold">03.</span>{" "}
-                                    <strong className="fw-bold">
-                                        Boost Brand
-                                    </strong>{" "}
-                                    Awareness
-                                </h3>
-                                <div className="box">
-                                    <img
-                                        src="assets/images/features/feature3.png"
-                                        alt="feature"
-                                    />
-                                    <a
-                                        href="https://www.youtube.com/watch?v=ObKsCs5mYGQ"
-                                        className="video_btn popup_video popup-youtube"
-                                    >
-                                        <img
-                                            src="assets/images/objects/play_now.png"
-                                            alt="play-now"
-                                        />
-                                        <i className="ri-play-large-line" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="container position-relative">
-                                <h3 className="mb-0 fw-normal text-uppercase">
-                                    <span className="fw-bold">04.</span>{" "}
-                                    <strong className="fw-bold">
-                                        Expand Market
-                                    </strong>{" "}
-                                    Share
-                                </h3>
-                                <div className="box">
-                                    <img
-                                        src="assets/images/features/feature4.png"
-                                        alt="feature"
-                                    />
-                                    <a
-                                        href="https://www.youtube.com/watch?v=ObKsCs5mYGQ"
-                                        className="video_btn popup_video popup-youtube"
-                                    >
-                                        <img
-                                            src="assets/images/objects/play_now.png"
-                                            alt="play-now"
-                                        />
-                                        <i className="ri-play-large-line" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <FeaturesList />
                 </div>
                 {/* End Features Area */}
                 {/* Our Process Area */}
@@ -657,92 +408,94 @@ const page = () => {
                             <div className="sub_title d-inline-block">
                                 <span className="d-flex align-items-center text-uppercase">
                                     Our Process
-                                    <img
-                                        src="assets/images/icons/arrow_long_right.svg"
+                                    <Image
+                                        src={arrowLongRight}
                                         alt="arrow_long_right"
                                     />
                                 </span>
                             </div>
-                            <h2 className="mb-0 text_animation fw-bold">
+                            <TextAnimation className="mb-0 text_animation fw-bold">
                                 A Step-by-Step Approach to Digital Branding
-                            </h2>
+                            </TextAnimation>
                         </div>
-                        <div
-                            className="our_process_inner_box position-relative z-1"
-                            data-cue="slideInUp"
-                        >
-                            <div className="row align-items-center gx-0">
-                                <div className="col-lg-6">
-                                    <div className="image text-center">
-                                        <img
-                                            src="assets/images/process_group_meeting.jpg"
-                                            alt="process_group_meeting"
-                                        />
+                        <SlideInUp selector=".our_process_inner_box">
+                            <div
+                                className="our_process_inner_box position-relative z-1"
+                                data-cue="slideInUp"
+                            >
+                                <div className="row align-items-center gx-0">
+                                    <div className="col-lg-6">
+                                        <div className="image text-center">
+                                            <Image
+                                                src={processGroupMeeting}
+                                                alt="process_group_meeting"
+                                            />
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="content">
-                                        <div className="box position-relative z-1">
-                                            <h3 className="fw-semibold">
-                                                Come up With a Blue Print
-                                            </h3>
-                                            <p>
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit, sed
-                                                do eiusmod tempor incidid labore
-                                                et dolore.
-                                            </p>
-                                            <a
-                                                href="pricing.html"
-                                                className="link_btn"
+                                    <div className="col-lg-6">
+                                        <div className="content">
+                                            <div className="box position-relative z-1">
+                                                <h3 className="fw-semibold">
+                                                    Come up With a Blue Print
+                                                </h3>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet,
+                                                    consectetur adipiscing elit,
+                                                    sed do eiusmod tempor
+                                                    incidid labore et dolore.
+                                                </p>
+                                                <a
+                                                    href="pricing.html"
+                                                    className="link_btn"
+                                                >
+                                                    <i className="ri-arrow-right-up-line" />
+                                                </a>
+                                            </div>
+                                            <div
+                                                className="box position-relative z-1"
+                                                style={{
+                                                    backgroundImage:
+                                                        "url(assets/images/bg_image/bg_image1.jpg)",
+                                                }}
                                             >
-                                                <i className="ri-arrow-right-up-line" />
-                                            </a>
-                                        </div>
-                                        <div
-                                            className="box position-relative z-1"
-                                            style={{
-                                                backgroundImage:
-                                                    "url(assets/images/bg_image/bg_image1.jpg)",
-                                            }}
-                                        >
-                                            <h3 className="fw-semibold">
-                                                Execute to Achieve
-                                            </h3>
-                                            <p>
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit, sed
-                                                do eiusmod tempor incidid labore
-                                                et dolore.
-                                            </p>
-                                            <a
-                                                href="pricing.html"
-                                                className="link_btn"
-                                            >
-                                                <i className="ri-arrow-right-up-line" />
-                                            </a>
-                                        </div>
-                                        <div className="box position-relative z-1">
-                                            <h3 className="fw-semibold">
-                                                Monitor &amp; Report
-                                            </h3>
-                                            <p>
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit, sed
-                                                do eiusmod tempor incidid labore
-                                                et dolore.
-                                            </p>
-                                            <a
-                                                href="pricing.html"
-                                                className="link_btn"
-                                            >
-                                                <i className="ri-arrow-right-up-line" />
-                                            </a>
+                                                <h3 className="fw-semibold">
+                                                    Execute to Achieve
+                                                </h3>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet,
+                                                    consectetur adipiscing elit,
+                                                    sed do eiusmod tempor
+                                                    incidid labore et dolore.
+                                                </p>
+                                                <a
+                                                    href="pricing.html"
+                                                    className="link_btn"
+                                                >
+                                                    <i className="ri-arrow-right-up-line" />
+                                                </a>
+                                            </div>
+                                            <div className="box position-relative z-1">
+                                                <h3 className="fw-semibold">
+                                                    Monitor &amp; Report
+                                                </h3>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet,
+                                                    consectetur adipiscing elit,
+                                                    sed do eiusmod tempor
+                                                    incidid labore et dolore.
+                                                </p>
+                                                <a
+                                                    href="pricing.html"
+                                                    className="link_btn"
+                                                >
+                                                    <i className="ri-arrow-right-up-line" />
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </SlideInUp>
                     </div>
                 </div>
                 {/* End Our Process Area */}
@@ -751,7 +504,10 @@ const page = () => {
                     <div className="white_top_rectangle bg_f8f9fd" />
                     {/* Funfacts */}
                     <div className="funfacts_area pt-150 pb-125">
-                        <div className="container">
+                        <SlideInUp
+                            selector=".funfact_box"
+                            className="container"
+                        >
                             <div
                                 className="row"
                                 data-cues="slideInUp"
@@ -760,9 +516,11 @@ const page = () => {
                                 <div className="col-sm-6">
                                     <div className="funfact_box">
                                         <div className="number lh-1 fw-bold text-white">
-                                            <span className="counter_number">
-                                                25
-                                            </span>
+                                            <CounterNumber
+                                                value={25}
+                                                className="counter_number"
+                                                as="span"
+                                            />
                                             +
                                         </div>
                                         <div className="quote text-white fw-medium lh-1">
@@ -776,9 +534,11 @@ const page = () => {
                                 <div className="col-sm-6">
                                     <div className="funfact_box">
                                         <div className="number lh-1 fw-bold text-white">
-                                            <span className="counter_number">
-                                                98
-                                            </span>
+                                            <CounterNumber
+                                                value={98}
+                                                as="span"
+                                                className="counter_number"
+                                            />
                                             %
                                         </div>
                                         <div className="quote text-white fw-medium lh-1">
@@ -792,9 +552,11 @@ const page = () => {
                                 <div className="col-sm-6">
                                     <div className="funfact_box">
                                         <div className="number lh-1 fw-bold text-white">
-                                            <span className="counter_number">
-                                                15
-                                            </span>
+                                            <CounterNumber
+                                                value={15}
+                                                as="span"
+                                                className="counter_number"
+                                            />
                                             +
                                         </div>
                                         <div className="quote text-white fw-medium lh-1">
@@ -809,9 +571,11 @@ const page = () => {
                                 <div className="col-sm-6">
                                     <div className="funfact_box">
                                         <div className="number lh-1 fw-bold text-white">
-                                            <span className="counter_number">
-                                                12
-                                            </span>
+                                            <CounterNumber
+                                                value={12}
+                                                as="span"
+                                                className="counter_number"
+                                            />
                                             K
                                         </div>
                                         <div className="quote text-white fw-medium lh-1">
@@ -823,18 +587,21 @@ const page = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </SlideInUp>
                     </div>
                     {/* End Funfacts */}
                     {/* Why Choose Us Area */}
                     <div className="why_choose_us_area pb-150">
                         <div className="container">
-                            <div className="section_title white_color style_two text_animation">
+                            <TextAnimation
+                                as="div"
+                                className="section_title white_color style_two text_animation"
+                            >
                                 <div className="sub_title d-inline-block">
                                     <span className="d-flex align-items-center text-uppercase">
                                         Why Choose Us
-                                        <img
-                                            src="assets/images/icons/white_arrow_long_right.svg"
+                                        <Image
+                                            src={whiteArrowLongRight}
                                             alt="white_arrow_long_right"
                                         />
                                     </span>
@@ -855,10 +622,13 @@ const page = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </TextAnimation>
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
-                                    <div className="why_choose_us_content">
+                                    <SlideInUp
+                                        selector=".accordion-item"
+                                        className="why_choose_us_content"
+                                    >
                                         <div
                                             className="accordion"
                                             id="whyChooseUsAccordion"
@@ -986,18 +756,20 @@ const page = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </SlideInUp>
                                 </div>
                                 <div className="col-lg-6">
-                                    <div
-                                        className="why_choose_us_image text-center"
-                                        data-cue="slideInUp"
-                                    >
-                                        <img
-                                            src="assets/images/why_choose_us.jpg"
-                                            alt="why-choose-us"
-                                        />
-                                    </div>
+                                    <SlideInUp selector=".why_choose_us_image">
+                                        <div
+                                            className="why_choose_us_image text-center"
+                                            data-cue="slideInUp"
+                                        >
+                                            <Image
+                                                src={whyChooseUse}
+                                                alt="why-choose-us"
+                                            />
+                                        </div>
+                                    </SlideInUp>
                                 </div>
                             </div>
                         </div>
@@ -1009,12 +781,15 @@ const page = () => {
                 {/* Case Studies Area */}
                 <div className="case_studies_area pb-150">
                     <div className="container">
-                        <div className="section_title style_two text_animation">
+                        <TextAnimation
+                            as="div"
+                            className="section_title style_two text_animation"
+                        >
                             <div className="sub_title d-inline-block">
                                 <span className="d-flex align-items-center text-uppercase">
                                     Our Case Study
-                                    <img
-                                        src="assets/images/icons/arrow_long_right.svg"
+                                    <Image
+                                        src={arrowLongRight}
                                         alt="arrow_long_right"
                                     />
                                 </span>
@@ -1033,151 +808,23 @@ const page = () => {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </TextAnimation>
                     </div>
-                    <div className="container-fluid px-0">
-                        <div
-                            className="case_studies_slides owl-carousel owl-theme"
-                            data-cue="slideInUp"
-                        >
-                            <div className="case_study_box">
-                                <div className="image overflow-hidden position-relative">
-                                    <img
-                                        src="assets/images/case-studies/case_study1.jpg"
-                                        alt="case-study"
-                                    />
-                                    <a
-                                        href="work-single.html"
-                                        className="details_link_btn"
-                                    >
-                                        <i className="ri-arrow-right-up-line" />
-                                    </a>
-                                </div>
-                                <div className="content">
-                                    <span className="sub_title d-inline-block">
-                                        Social
-                                    </span>
-                                    <h3 className="mb-0 fw-semibold">
-                                        <a href="work-single.html">
-                                            Social Media Solutions Tailored for
-                                            Lunex
-                                        </a>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div className="case_study_box">
-                                <div className="image overflow-hidden position-relative">
-                                    <img
-                                        src="assets/images/case-studies/case_study2.jpg"
-                                        alt="case-study"
-                                    />
-                                    <a
-                                        href="work-single.html"
-                                        className="details_link_btn"
-                                    >
-                                        <i className="ri-arrow-right-up-line" />
-                                    </a>
-                                </div>
-                                <div className="content">
-                                    <span className="sub_title d-inline-block">
-                                        Lunex
-                                    </span>
-                                    <h3 className="mb-0 fw-semibold">
-                                        <a href="work-single.html">
-                                            How We Boosted Online Sales by 150%
-                                            with Lunex
-                                        </a>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div className="case_study_box">
-                                <div className="image overflow-hidden position-relative">
-                                    <img
-                                        src="assets/images/case-studies/case_study3.jpg"
-                                        alt="case-study"
-                                    />
-                                    <a
-                                        href="work-single.html"
-                                        className="details_link_btn"
-                                    >
-                                        <i className="ri-arrow-right-up-line" />
-                                    </a>
-                                </div>
-                                <div className="content">
-                                    <span className="sub_title d-inline-block">
-                                        Marketing
-                                    </span>
-                                    <h3 className="mb-0 fw-semibold">
-                                        <a href="work-single.html">
-                                            Email Marketing Strategies for
-                                            eCommerce Success
-                                        </a>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div className="case_study_box">
-                                <div className="image overflow-hidden position-relative">
-                                    <img
-                                        src="assets/images/case-studies/case_study4.jpg"
-                                        alt="case-study"
-                                    />
-                                    <a
-                                        href="work-single.html"
-                                        className="details_link_btn"
-                                    >
-                                        <i className="ri-arrow-right-up-line" />
-                                    </a>
-                                </div>
-                                <div className="content">
-                                    <span className="sub_title d-inline-block">
-                                        SaaS
-                                    </span>
-                                    <h3 className="mb-0 fw-semibold">
-                                        <a href="work-single.html">
-                                            Global Fintech SaaS Ads Campaign
-                                            Strategy
-                                        </a>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div className="case_study_box">
-                                <div className="image overflow-hidden position-relative">
-                                    <img
-                                        src="assets/images/case-studies/case_study5.jpg"
-                                        alt="case-study"
-                                    />
-                                    <a
-                                        href="work-single.html"
-                                        className="details_link_btn"
-                                    >
-                                        <i className="ri-arrow-right-up-line" />
-                                    </a>
-                                </div>
-                                <div className="content">
-                                    <span className="sub_title d-inline-block">
-                                        Marketing
-                                    </span>
-                                    <h3 className="mb-0 fw-semibold">
-                                        <a href="work-single.html">
-                                            Fueling Growth Through Marketing for
-                                            Lunex
-                                        </a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <CaseStudiesSlider />
                 </div>
                 {/* End Case Studies Area */}
                 {/* Feedback Area */}
                 <div className="feedback_area bg_white ptb-150">
                     <div className="container">
-                        <div className="section_title style_two text_animation">
+                        <TextAnimation
+                            as="div"
+                            className="section_title style_two text_animation"
+                        >
                             <div className="sub_title d-inline-block">
                                 <span className="d-flex align-items-center text-uppercase">
                                     Clients Feedback
-                                    <img
-                                        src="assets/images/icons/arrow_long_right.svg"
+                                    <Image
+                                        src={arrowLongRight}
                                         alt="arrow_long_right"
                                     />
                                 </span>
@@ -1197,74 +844,23 @@ const page = () => {
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            className="feedback_slides owl-carousel owl-theme mx-auto"
-                            data-cue="slideInUp"
-                        >
-                            <div className="feedback_item position-relative z-1">
-                                <p>
-                                    Sed ut perspiciatis unde omnis iste natus
-                                    error sit voluptatem accusantium doloremque
-                                    laudantium totam rem aperiam, eaqu psa quae
-                                    ab illo inventore veritatis et quasi
-                                    architecto beatae vitae. Sed ut perspiciatis
-                                    unde omnis iste natus error sit volupta tem
-                                    accusantium doloremque laudantium.
-                                </p>
-                                <div className="reviewer d-flex align-items-center">
-                                    <img
-                                        src="assets/images/users/user1.jpg"
-                                        alt="user"
-                                    />
-                                    <div>
-                                        <h4 className="fw-semibold">
-                                            Mason Logan
-                                        </h4>
-                                        <span className="d-block">
-                                            Manager at Business
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="feedback_item position-relative z-1">
-                                <p>
-                                    Sed ut perspiciatis unde omnis iste natus
-                                    error sit voluptatem accusantium doloremque
-                                    laudantium totam rem aperiam, et quasi
-                                    architecto beatae vitae. Sed ut perspiciatis
-                                    unde omnis iste natus error sit volupta tem
-                                    accusantium doloremque laudantium eaqu psa
-                                    quae ab illo inventore veritatis.
-                                </p>
-                                <div className="reviewer d-flex align-items-center">
-                                    <img
-                                        src="assets/images/users/user2.jpg"
-                                        alt="user"
-                                    />
-                                    <div>
-                                        <h4 className="fw-semibold">
-                                            Aelira Evangelle
-                                        </h4>
-                                        <span className="d-block">
-                                            Developer at Marketing
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </TextAnimation>
+                        <FeedbackSlider />
                     </div>
                 </div>
                 {/* End Feedback Area */}
                 {/* Team Area */}
                 <div className="team_area pt-150">
                     <div className="container">
-                        <div className="section_title text-center mx-auto text_animation">
+                        <TextAnimation
+                            as="div"
+                            className="section_title text-center mx-auto text_animation"
+                        >
                             <div className="sub_title d-inline-block">
                                 <span className="d-flex align-items-center text-uppercase">
                                     Branding Agency People
-                                    <img
-                                        src="assets/images/icons/arrow_long_right.svg"
+                                    <Image
+                                        src={arrowLongRight}
                                         alt="arrow_long_right"
                                     />
                                 </span>
@@ -1272,225 +868,224 @@ const page = () => {
                             <h2 className="mb-0 fw-bold">
                                 Leading Digital Minds Working for Your Success
                             </h2>
-                        </div>
+                        </TextAnimation>
                     </div>
                     <div className="container-fluid">
-                        <div
-                            className="row align-items-center justify-content-center"
-                            data-cues="slideInUp"
-                            data-group="team_list"
-                        >
-                            <div className="col-lg-4 col-sm-6">
-                                <div className="team_member position-relative">
-                                    <img
-                                        src="assets/images/team-two/team1.jpg"
-                                        alt="team"
-                                    />
-                                    <div className="content">
-                                        <span className="d-block text-white">
-                                            Founder
-                                        </span>
-                                        <h3 className="mb-0 text-white fw-semibold">
-                                            Megan Wilson
-                                        </h3>
-                                    </div>
-                                    <div className="socials lh-1 d-flex align-items-center">
-                                        <a href="#" target="_blank">
-                                            <i className="ri-facebook-fill" />
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i className="ri-instagram-line" />
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i className="ri-twitter-x-line" />
-                                        </a>
-                                        <a href="#" target="_blank">
-                                            <i className="ri-linkedin-fill" />
-                                        </a>
+                        <SlideInUp selector=".row">
+                            <div
+                                className="row align-items-center justify-content-center"
+                                data-cues="slideInUp"
+                                data-group="team_list"
+                            >
+                                <div className="col-lg-4 col-sm-6">
+                                    <div className="team_member position-relative">
+                                        <Image src={team1} alt="team" />
+                                        <div className="content">
+                                            <span className="d-block text-white">
+                                                Founder
+                                            </span>
+                                            <h3 className="mb-0 text-white fw-semibold">
+                                                Megan Wilson
+                                            </h3>
+                                        </div>
+                                        <div className="socials lh-1 d-flex align-items-center">
+                                            <a href="#" target="_blank">
+                                                <i className="ri-facebook-fill" />
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i className="ri-instagram-line" />
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i className="ri-twitter-x-line" />
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <i className="ri-linkedin-fill" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-lg-8">
-                                <div className="row">
-                                    <div className="col-lg-6 col-sm-6">
-                                        <div className="row">
-                                            <div className="col-lg-12">
-                                                <div className="team_member position-relative">
-                                                    <img
-                                                        src="assets/images/team-two/team2.jpg"
-                                                        alt="team"
-                                                    />
-                                                    <div className="content">
-                                                        <span className="d-block text-white">
-                                                            Co-founder
-                                                        </span>
-                                                        <h3 className="mb-0 text-white fw-semibold">
-                                                            Zylen Orion
-                                                        </h3>
+                                <div className="col-lg-8">
+                                    <div className="row">
+                                        <div className="col-lg-6 col-sm-6">
+                                            <div className="row">
+                                                <div className="col-lg-12">
+                                                    <div className="team_member position-relative">
+                                                        <Image
+                                                            src={team2}
+                                                            alt="team"
+                                                        />
+                                                        <div className="content">
+                                                            <span className="d-block text-white">
+                                                                Co-founder
+                                                            </span>
+                                                            <h3 className="mb-0 text-white fw-semibold">
+                                                                Zylen Orion
+                                                            </h3>
+                                                        </div>
+                                                        <div className="socials lh-1 d-flex align-items-center">
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-facebook-fill" />
+                                                            </a>
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-instagram-line" />
+                                                            </a>
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-twitter-x-line" />
+                                                            </a>
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-linkedin-fill" />
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                    <div className="socials lh-1 d-flex align-items-center">
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-facebook-fill" />
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-instagram-line" />
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-twitter-x-line" />
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-linkedin-fill" />
-                                                        </a>
+                                                </div>
+                                                <div className="col-lg-12">
+                                                    <div className="team_member position-relative">
+                                                        <Image
+                                                            src={team3}
+                                                            alt="team"
+                                                        />
+                                                        <div className="content">
+                                                            <span className="d-block text-white">
+                                                                Manager
+                                                            </span>
+                                                            <h3 className="mb-0 text-white fw-semibold">
+                                                                Veyron Lorien
+                                                            </h3>
+                                                        </div>
+                                                        <div className="socials lh-1 d-flex align-items-center">
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-facebook-fill" />
+                                                            </a>
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-instagram-line" />
+                                                            </a>
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-twitter-x-line" />
+                                                            </a>
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-linkedin-fill" />
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="col-lg-12">
-                                                <div className="team_member position-relative">
-                                                    <img
-                                                        src="assets/images/team-two/team3.jpg"
-                                                        alt="team"
-                                                    />
-                                                    <div className="content">
-                                                        <span className="d-block text-white">
-                                                            Manager
-                                                        </span>
-                                                        <h3 className="mb-0 text-white fw-semibold">
-                                                            Veyron Lorien
-                                                        </h3>
+                                        </div>
+                                        <div className="col-lg-6 col-sm-6">
+                                            <div className="row">
+                                                <div className="col-lg-12">
+                                                    <div className="team_member position-relative">
+                                                        <Image
+                                                            src={team4}
+                                                            alt="team"
+                                                        />
+                                                        <div className="content">
+                                                            <span className="d-block text-white">
+                                                                Web Developer
+                                                            </span>
+                                                            <h3 className="mb-0 text-white fw-semibold">
+                                                                Nyxelle Daxel
+                                                            </h3>
+                                                        </div>
+                                                        <div className="socials lh-1 d-flex align-items-center">
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-facebook-fill" />
+                                                            </a>
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-instagram-line" />
+                                                            </a>
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-twitter-x-line" />
+                                                            </a>
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-linkedin-fill" />
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                    <div className="socials lh-1 d-flex align-items-center">
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-facebook-fill" />
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-instagram-line" />
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-twitter-x-line" />
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-linkedin-fill" />
-                                                        </a>
+                                                </div>
+                                                <div className="col-lg-12">
+                                                    <div className="team_member position-relative">
+                                                        <Image
+                                                            src={team5}
+                                                            alt="team"
+                                                        />
+                                                        <div className="content">
+                                                            <span className="d-block text-white">
+                                                                Web Designer
+                                                            </span>
+                                                            <h3 className="mb-0 text-white fw-semibold">
+                                                                Serenya Fenrir
+                                                            </h3>
+                                                        </div>
+                                                        <div className="socials lh-1 d-flex align-items-center">
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-facebook-fill" />
+                                                            </a>
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-instagram-line" />
+                                                            </a>
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-twitter-x-line" />
+                                                            </a>
+                                                            <a
+                                                                href="#"
+                                                                target="_blank"
+                                                            >
+                                                                <i className="ri-linkedin-fill" />
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-6 col-sm-6">
-                                        <div className="row">
-                                            <div className="col-lg-12">
-                                                <div className="team_member position-relative">
-                                                    <img
-                                                        src="assets/images/team-two/team4.jpg"
-                                                        alt="team"
-                                                    />
-                                                    <div className="content">
-                                                        <span className="d-block text-white">
-                                                            Web Developer
-                                                        </span>
-                                                        <h3 className="mb-0 text-white fw-semibold">
-                                                            Nyxelle Daxel
-                                                        </h3>
-                                                    </div>
-                                                    <div className="socials lh-1 d-flex align-items-center">
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-facebook-fill" />
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-instagram-line" />
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-twitter-x-line" />
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-linkedin-fill" />
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-12">
-                                                <div className="team_member position-relative">
-                                                    <img
-                                                        src="assets/images/team-two/team5.jpg"
-                                                        alt="team"
-                                                    />
-                                                    <div className="content">
-                                                        <span className="d-block text-white">
-                                                            Web Designer
-                                                        </span>
-                                                        <h3 className="mb-0 text-white fw-semibold">
-                                                            Serenya Fenrir
-                                                        </h3>
-                                                    </div>
-                                                    <div className="socials lh-1 d-flex align-items-center">
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-facebook-fill" />
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-instagram-line" />
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-twitter-x-line" />
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            target="_blank"
-                                                        >
-                                                            <i className="ri-linkedin-fill" />
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </SlideInUp>
                     </div>
                 </div>
                 {/* End Team Area */}
@@ -1504,106 +1099,117 @@ const page = () => {
                                     <div className="sub_title d-inline-block text-white">
                                         <span className="d-flex align-items-center text-uppercase">
                                             FAQ
-                                            <img
-                                                src="assets/images/icons/white_arrow_long_right.svg"
+                                            <Image
+                                                src={whiteArrowLongRight}
                                                 alt="white_arrow_long_right"
                                             />
                                         </span>
                                     </div>
-                                    <h2 className="text-white text_animation fw-bold">
+                                    <TextAnimation className="text-white text_animation fw-bold">
                                         Have Questions? We’ve got Answers
-                                    </h2>
-                                    <div
-                                        className="accordion"
-                                        id="faqAccordion"
-                                        data-cues="slideInUp"
-                                        data-group="faq_content"
+                                    </TextAnimation>
+                                    <SlideInUp
+                                        selector=".accordion"
+                                        delay={0.3}
                                     >
-                                        <div className="accordion-item rounded-0 bg-transparent">
-                                            <button
-                                                className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none"
-                                                type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne"
-                                                aria-expanded="true"
-                                                aria-controls="collapseOne"
-                                            >
-                                                What is the difference between
-                                                SEO and PPC?
-                                            </button>
-                                            <div
-                                                id="collapseOne"
-                                                className="accordion-collapse collapse show"
-                                                data-bs-parent="#faqAccordion"
-                                            >
-                                                <div className="accordion-body px-0 pb-0">
-                                                    <p>
-                                                        Lorem ipsum dolor sit
-                                                        amet, consectetur
-                                                        adipiscing elit, sed do
-                                                        eiusmod tempor incidid
-                                                        unt ut labo magna.
-                                                    </p>
+                                        <div
+                                            className="accordion"
+                                            id="faqAccordion"
+                                            data-cues="slideInUp"
+                                            data-group="faq_content"
+                                        >
+                                            <div className="accordion-item rounded-0 bg-transparent">
+                                                <button
+                                                    className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne"
+                                                    aria-expanded="true"
+                                                    aria-controls="collapseOne"
+                                                >
+                                                    What is the difference
+                                                    between SEO and PPC?
+                                                </button>
+                                                <div
+                                                    id="collapseOne"
+                                                    className="accordion-collapse collapse show"
+                                                    data-bs-parent="#faqAccordion"
+                                                >
+                                                    <div className="accordion-body px-0 pb-0">
+                                                        <p>
+                                                            Lorem ipsum dolor
+                                                            sit amet,
+                                                            consectetur
+                                                            adipiscing elit, sed
+                                                            do eiusmod tempor
+                                                            incidid unt ut labo
+                                                            magna.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="accordion-item rounded-0 bg-transparent">
+                                                <button
+                                                    className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwo"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapseTwo"
+                                                >
+                                                    What is included in your SEO
+                                                    services?
+                                                </button>
+                                                <div
+                                                    id="collapseTwo"
+                                                    className="accordion-collapse collapse"
+                                                    data-bs-parent="#faqAccordion"
+                                                >
+                                                    <div className="accordion-body px-0 pb-0">
+                                                        <p>
+                                                            Lorem ipsum dolor
+                                                            sit amet,
+                                                            consectetur
+                                                            adipiscing elit, sed
+                                                            do eiusmod tempor
+                                                            incidid unt ut labo
+                                                            magna.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="accordion-item rounded-0 bg-transparent">
+                                                <button
+                                                    className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapseThree"
+                                                >
+                                                    Do you provide support after
+                                                    the campaign ends?
+                                                </button>
+                                                <div
+                                                    id="collapseThree"
+                                                    className="accordion-collapse collapse"
+                                                    data-bs-parent="#faqAccordion"
+                                                >
+                                                    <div className="accordion-body px-0 pb-0">
+                                                        <p>
+                                                            Lorem ipsum dolor
+                                                            sit amet,
+                                                            consectetur
+                                                            adipiscing elit, sed
+                                                            do eiusmod tempor
+                                                            incidid unt ut labo
+                                                            magna.
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="accordion-item rounded-0 bg-transparent">
-                                            <button
-                                                className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none collapsed"
-                                                type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseTwo"
-                                                aria-expanded="false"
-                                                aria-controls="collapseTwo"
-                                            >
-                                                What is included in your SEO
-                                                services?
-                                            </button>
-                                            <div
-                                                id="collapseTwo"
-                                                className="accordion-collapse collapse"
-                                                data-bs-parent="#faqAccordion"
-                                            >
-                                                <div className="accordion-body px-0 pb-0">
-                                                    <p>
-                                                        Lorem ipsum dolor sit
-                                                        amet, consectetur
-                                                        adipiscing elit, sed do
-                                                        eiusmod tempor incidid
-                                                        unt ut labo magna.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="accordion-item rounded-0 bg-transparent">
-                                            <button
-                                                className="accordion-button d-block text-start p-0 fw-semibold bg-transparent shadow-none collapsed"
-                                                type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseThree"
-                                                aria-expanded="false"
-                                                aria-controls="collapseThree"
-                                            >
-                                                Do you provide support after the
-                                                campaign ends?
-                                            </button>
-                                            <div
-                                                id="collapseThree"
-                                                className="accordion-collapse collapse"
-                                                data-bs-parent="#faqAccordion"
-                                            >
-                                                <div className="accordion-body px-0 pb-0">
-                                                    <p>
-                                                        Lorem ipsum dolor sit
-                                                        amet, consectetur
-                                                        adipiscing elit, sed do
-                                                        eiusmod tempor incidid
-                                                        unt ut labo magna.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </SlideInUp>
                                 </div>
                             </div>
                             <div className="col-lg-6">
@@ -1611,10 +1217,7 @@ const page = () => {
                                     className="faq_image position-relative z-1"
                                     data-cue="slideInUp"
                                 >
-                                    <img
-                                        src="assets/images/faq.jpg"
-                                        alt="faq-image"
-                                    />
+                                    <Image src={faqImage} alt="faq-image" />
                                 </div>
                             </div>
                         </div>
@@ -1624,133 +1227,141 @@ const page = () => {
                 {/* End FAQ Area */}
                 {/* Text Slider Area */}
                 <div className="text_slider_area overflow-hidden">
-                    <div className="container-fluid px-0" data-cue="slideInUp">
-                        <div className="scroll_text_marquee d-flex align-items-center justify-content-center">
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                HOW IT WORKS
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                DOCUMENTATION
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                JOIN THE COMMUNITY
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                IDEAS INTO REALITY
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                HOW IT WORKS
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                DOCUMENTATION
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                JOIN THE COMMUNITY
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                IDEAS INTO REALITY
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                HOW IT WORKS
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                DOCUMENTATION
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                JOIN THE COMMUNITY
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                HOW IT WORKS
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                DOCUMENTATION
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
-                            <h3 className="mb-0 text-uppercase fw-semibold lh-1">
-                                JOIN THE COMMUNITY
-                            </h3>
-                            <img
-                                src="assets/images/icons/bolt.svg"
-                                className="w-auto d-inline-block"
-                                alt="bolt"
-                            />
+                    <SlideInUp selector=".scroll_text_marquee" individual>
+                        <div
+                            className="container-fluid px-0"
+                            data-cue="slideInUp"
+                        >
+                            <div className="scroll_text_marquee d-flex align-items-center justify-content-center">
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    HOW IT WORKS
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    DOCUMENTATION
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    JOIN THE COMMUNITY
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    IDEAS INTO REALITY
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    HOW IT WORKS
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    DOCUMENTATION
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    JOIN THE COMMUNITY
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    IDEAS INTO REALITY
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    HOW IT WORKS
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    DOCUMENTATION
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    JOIN THE COMMUNITY
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    HOW IT WORKS
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    DOCUMENTATION
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                                <h3 className="mb-0 text-uppercase fw-semibold lh-1">
+                                    JOIN THE COMMUNITY
+                                </h3>
+                                <Image
+                                    src={bolt}
+                                    className="w-auto d-inline-block"
+                                    alt="bolt"
+                                />
+                            </div>
                         </div>
-                    </div>
+                    </SlideInUp>
                 </div>
                 {/* End Text Slider Area */}
                 {/* Blog Area */}
                 <div className="blog_area pt-150">
                     <div className="container">
-                        <div className="section_title style_two text_animation">
+                        <TextAnimation
+                            as="div"
+                            className="section_title style_two text_animation"
+                        >
                             <div className="sub_title d-inline-block">
                                 <span className="d-flex align-items-center text-uppercase">
                                     Read Articles
-                                    <img
-                                        src="assets/images/icons/arrow_long_right.svg"
+                                    <Image
+                                        src={arrowLongRight}
                                         alt="arrow_long_right"
                                     />
                                 </span>
@@ -1770,148 +1381,150 @@ const page = () => {
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            className="blog_articles_posts"
-                            data-cues="slideInUp"
-                            data-group="blog_articles_posts"
-                        >
-                            <div className="blog_article_post">
-                                <div
-                                    className="inner position-relative z-1"
-                                    style={{
-                                        backgroundImage:
-                                            "url(assets/images/blogs-two/blog1.jpg)",
-                                    }}
-                                >
-                                    <div className="row align-items-center">
-                                        <div className="col-lg-3">
-                                            <div className="fw-medium date">
-                                                September 22, 2025
+                        </TextAnimation>
+                        <SlideInUp selector=".blog_article_post">
+                            <div
+                                className="blog_articles_posts"
+                                data-cues="slideInUp"
+                                data-group="blog_articles_posts"
+                            >
+                                <div className="blog_article_post">
+                                    <div
+                                        className="inner position-relative z-1"
+                                        style={{
+                                            backgroundImage:
+                                                "url(assets/images/blogs-two/blog1.jpg)",
+                                        }}
+                                    >
+                                        <div className="row align-items-center">
+                                            <div className="col-lg-3">
+                                                <div className="fw-medium date">
+                                                    September 22, 2025
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-3">
+                                                <a
+                                                    href="blog-single.html"
+                                                    className="title fw-semibold d-inline-block"
+                                                >
+                                                    Optimizing Search Algorithms
+                                                    to Boost Regional Reach
+                                                </a>
+                                            </div>
+                                            <div className="col-lg-3 text-lg-end">
+                                                <span className="author fw-medium">
+                                                    By{" "}
+                                                    <a href="blog.html">
+                                                        Maximus Archer
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div className="col-lg-3 text-lg-end">
+                                                <a
+                                                    href="blog-single.html"
+                                                    className="details_link_btn d-inline-block position-relative"
+                                                >
+                                                    <span className="d-inline-block position-relative">
+                                                        Read More
+                                                    </span>
+                                                    <i className="ri-arrow-right-up-line" />
+                                                </a>
                                             </div>
                                         </div>
-                                        <div className="col-lg-3">
-                                            <a
-                                                href="blog-single.html"
-                                                className="title fw-semibold d-inline-block"
-                                            >
-                                                Optimizing Search Algorithms to
-                                                Boost Regional Reach
-                                            </a>
-                                        </div>
-                                        <div className="col-lg-3 text-lg-end">
-                                            <span className="author fw-medium">
-                                                By{" "}
-                                                <a href="blog.html">
-                                                    Maximus Archer
+                                    </div>
+                                </div>
+                                <div className="blog_article_post">
+                                    <div
+                                        className="inner position-relative z-1"
+                                        style={{
+                                            backgroundImage:
+                                                "url(assets/images/blogs-two/blog2.jpg)",
+                                        }}
+                                    >
+                                        <div className="row align-items-center">
+                                            <div className="col-lg-3">
+                                                <div className="fw-medium date">
+                                                    September 21, 2025
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-3">
+                                                <a
+                                                    href="blog-single.html"
+                                                    className="title fw-semibold d-inline-block"
+                                                >
+                                                    Using Cold Emails to Drive
+                                                    Business Growth
                                                 </a>
-                                            </span>
-                                        </div>
-                                        <div className="col-lg-3 text-lg-end">
-                                            <a
-                                                href="blog-single.html"
-                                                className="details_link_btn d-inline-block position-relative"
-                                            >
-                                                <span className="d-inline-block position-relative">
-                                                    Read More
+                                            </div>
+                                            <div className="col-lg-3 text-lg-end">
+                                                <span className="author fw-medium">
+                                                    By{" "}
+                                                    <a href="blog.html">
+                                                        Daxel Fenrir
+                                                    </a>
                                                 </span>
-                                                <i className="ri-arrow-right-up-line" />
-                                            </a>
+                                            </div>
+                                            <div className="col-lg-3 text-lg-end">
+                                                <a
+                                                    href="blog-single.html"
+                                                    className="details_link_btn d-inline-block position-relative"
+                                                >
+                                                    <span className="d-inline-block position-relative">
+                                                        Read More
+                                                    </span>
+                                                    <i className="ri-arrow-right-up-line" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="blog_article_post">
+                                    <div
+                                        className="inner position-relative z-1"
+                                        style={{
+                                            backgroundImage:
+                                                "url(assets/images/blogs-two/blog3.jpg)",
+                                        }}
+                                    >
+                                        <div className="row align-items-center">
+                                            <div className="col-lg-3">
+                                                <div className="fw-medium date">
+                                                    September 20, 2025
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-3">
+                                                <a
+                                                    href="blog-single.html"
+                                                    className="title fw-semibold d-inline-block"
+                                                >
+                                                    Find Engaging Ideas for Your
+                                                    Social Media Posts
+                                                </a>
+                                            </div>
+                                            <div className="col-lg-3 text-lg-end">
+                                                <span className="author fw-medium">
+                                                    By{" "}
+                                                    <a href="blog.html">
+                                                        Vespera Solenne
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div className="col-lg-3 text-lg-end">
+                                                <a
+                                                    href="blog-single.html"
+                                                    className="details_link_btn d-inline-block position-relative"
+                                                >
+                                                    <span className="d-inline-block position-relative">
+                                                        Read More
+                                                    </span>
+                                                    <i className="ri-arrow-right-up-line" />
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="blog_article_post">
-                                <div
-                                    className="inner position-relative z-1"
-                                    style={{
-                                        backgroundImage:
-                                            "url(assets/images/blogs-two/blog2.jpg)",
-                                    }}
-                                >
-                                    <div className="row align-items-center">
-                                        <div className="col-lg-3">
-                                            <div className="fw-medium date">
-                                                September 21, 2025
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-3">
-                                            <a
-                                                href="blog-single.html"
-                                                className="title fw-semibold d-inline-block"
-                                            >
-                                                Using Cold Emails to Drive
-                                                Business Growth
-                                            </a>
-                                        </div>
-                                        <div className="col-lg-3 text-lg-end">
-                                            <span className="author fw-medium">
-                                                By{" "}
-                                                <a href="blog.html">
-                                                    Daxel Fenrir
-                                                </a>
-                                            </span>
-                                        </div>
-                                        <div className="col-lg-3 text-lg-end">
-                                            <a
-                                                href="blog-single.html"
-                                                className="details_link_btn d-inline-block position-relative"
-                                            >
-                                                <span className="d-inline-block position-relative">
-                                                    Read More
-                                                </span>
-                                                <i className="ri-arrow-right-up-line" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="blog_article_post">
-                                <div
-                                    className="inner position-relative z-1"
-                                    style={{
-                                        backgroundImage:
-                                            "url(assets/images/blogs-two/blog3.jpg)",
-                                    }}
-                                >
-                                    <div className="row align-items-center">
-                                        <div className="col-lg-3">
-                                            <div className="fw-medium date">
-                                                September 20, 2025
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-3">
-                                            <a
-                                                href="blog-single.html"
-                                                className="title fw-semibold d-inline-block"
-                                            >
-                                                Find Engaging Ideas for Your
-                                                Social Media Posts
-                                            </a>
-                                        </div>
-                                        <div className="col-lg-3 text-lg-end">
-                                            <span className="author fw-medium">
-                                                By{" "}
-                                                <a href="blog.html">
-                                                    Vespera Solenne
-                                                </a>
-                                            </span>
-                                        </div>
-                                        <div className="col-lg-3 text-lg-end">
-                                            <a
-                                                href="blog-single.html"
-                                                className="details_link_btn d-inline-block position-relative"
-                                            >
-                                                <span className="d-inline-block position-relative">
-                                                    Read More
-                                                </span>
-                                                <i className="ri-arrow-right-up-line" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </SlideInUp>
                     </div>
                 </div>
                 {/* End Blog Area */}
@@ -1920,14 +1533,14 @@ const page = () => {
                     <div className="white_top_rectangle bg_f8f9fd" />
                     <div className="container pt-150">
                         <div className="footer_content">
-                            <h2 className="text-white text_animation fw-bold">
+                            <TextAnimation className="text-white text_animation fw-bold">
                                 Have an Idea?
-                            </h2>
-                            <h2 className="text-white text_animation fw-bold">
+                            </TextAnimation>
+                            <TextAnimation className="text-white text_animation fw-bold">
                                 Let&apos;s Work Together!
-                            </h2>
-                            <a
-                                href="contact.html"
+                            </TextAnimation>
+                            <Link
+                                href="contact"
                                 className="btn primary_btn"
                                 data-cue="slideInUp"
                             >
@@ -1935,140 +1548,148 @@ const page = () => {
                                     Get Started for Free{" "}
                                     <i className="ri-arrow-right-up-line" />
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                         <div className="pt-150" />
-                        <div className="footer_inner_box" data-cue="slideInUp">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="footer_logo_widget">
-                                        <a
-                                            href="index.html"
-                                            className="d-inline-block"
-                                        >
-                                            <img
-                                                src="assets/images/white-logo.svg"
-                                                alt="logo"
-                                            />
-                                        </a>
-                                        <div className="newsletter_box">
-                                            <h4 className="fw-semibold text-white">
-                                                Follow the Newest Trends
-                                            </h4>
-                                            <form>
-                                                <input
-                                                    type="text"
-                                                    className="form-control"
-                                                    placeholder="Email address"
+                        <SlideInUp selector=".footer_inner_box" individual>
+                            <div
+                                className="footer_inner_box"
+                                data-cue="slideInUp"
+                            >
+                                <div className="row">
+                                    <div className="col-lg-4">
+                                        <div className="footer_logo_widget">
+                                            <a
+                                                href="index.html"
+                                                className="d-inline-block"
+                                            >
+                                                <Image
+                                                    src={whiteLogo}
+                                                    alt="logo"
                                                 />
-                                                <button type="button">
-                                                    Subscribe
-                                                </button>
-                                            </form>
+                                            </a>
+                                            <div className="newsletter_box">
+                                                <h4 className="fw-semibold text-white">
+                                                    Follow the Newest Trends
+                                                </h4>
+                                                <form>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        placeholder="Email address"
+                                                    />
+                                                    <button type="button">
+                                                        Subscribe
+                                                    </button>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="footer_widgets_list">
-                                        <div className="row">
-                                            <div className="col-sm-4">
-                                                <div className="footer_widget">
-                                                    <h3 className="text-white fw-semibold">
-                                                        Quick links
-                                                    </h3>
-                                                    <ul className="links p-0 mb-0 list-unstyled">
-                                                        <li>
-                                                            <a href="index.html">
-                                                                Home
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="about.html">
-                                                                About Us
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="blog.html">
-                                                                Blog
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="services.html">
-                                                                Services
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="contact.html">
-                                                                Contact Us
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                                    <div className="col-lg-8">
+                                        <div className="footer_widgets_list">
+                                            <div className="row">
+                                                <div className="col-sm-4">
+                                                    <div className="footer_widget">
+                                                        <h3 className="text-white fw-semibold">
+                                                            Quick links
+                                                        </h3>
+                                                        <ul className="links p-0 mb-0 list-unstyled">
+                                                            <li>
+                                                                <a href="index.html">
+                                                                    Home
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="about.html">
+                                                                    About Us
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="blog.html">
+                                                                    Blog
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="services.html">
+                                                                    Services
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="contact.html">
+                                                                    Contact Us
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="col-sm-4">
-                                                <div className="footer_widget">
-                                                    <h3 className="text-white fw-semibold">
-                                                        Utility Pages
-                                                    </h3>
-                                                    <ul className="links p-0 mb-0 list-unstyled">
-                                                        <li>
-                                                            <a href="privacy-policy.html">
-                                                                Privacy Policy
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="terms-conditions.html">
-                                                                Terms &amp;
-                                                                Conditions
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="privacy-policy.html">
-                                                                Cookie Policy
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="terms-conditions.html">
-                                                                Refund Policy
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="privacy-policy.html">
-                                                                Disclaimer
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                                                <div className="col-sm-4">
+                                                    <div className="footer_widget">
+                                                        <h3 className="text-white fw-semibold">
+                                                            Utility Pages
+                                                        </h3>
+                                                        <ul className="links p-0 mb-0 list-unstyled">
+                                                            <li>
+                                                                <a href="privacy-policy.html">
+                                                                    Privacy
+                                                                    Policy
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="terms-conditions.html">
+                                                                    Terms &amp;
+                                                                    Conditions
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="privacy-policy.html">
+                                                                    Cookie
+                                                                    Policy
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="terms-conditions.html">
+                                                                    Refund
+                                                                    Policy
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="privacy-policy.html">
+                                                                    Disclaimer
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="col-sm-4">
-                                                <div className="footer_widget">
-                                                    <h3 className="text-white fw-semibold">
-                                                        Contact Info
-                                                    </h3>
-                                                    <ul className="links p-0 mb-0 list-unstyled">
-                                                        <li>
-                                                            <a href="tel:+024(453)-5432">
-                                                                +024(453)-5432
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="contact.html">
-                                                                Reach Us
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="mailto:lunex@example.com">
-                                                                lunex@example.com
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                                                <div className="col-sm-4">
+                                                    <div className="footer_widget">
+                                                        <h3 className="text-white fw-semibold">
+                                                            Contact Info
+                                                        </h3>
+                                                        <ul className="links p-0 mb-0 list-unstyled">
+                                                            <li>
+                                                                <a href="tel:+024(453)-5432">
+                                                                    +024(453)-5432
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="contact.html">
+                                                                    Reach Us
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="mailto:lunex@example.com">
+                                                                    lunex@example.com
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </SlideInUp>
                         <div className="copyright_footer">
                             <div className="row align-items-center">
                                 <div className="col-md-5">
@@ -2111,9 +1732,7 @@ const page = () => {
                 </footer>
                 {/* End Footer Area */}
                 {/* Back To Top */}
-                <div className="back_to_top position-fixed text-center rounded-circle">
-                    <i className="ri-arrow-up-s-line" />
-                </div>
+                <BackToTop />
                 {/* End Back To Top */}
             </div>
         </div>

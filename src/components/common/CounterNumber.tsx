@@ -6,14 +6,16 @@ interface CounterNumberProps {
     value: number;
     className?: string;
     duration?: number;
+    as?: "div" | "span";
 }
 
 export default function CounterNumber({
     value,
     className = "counter_number",
     duration = 2000,
+    as: Tag = "div",
 }: CounterNumberProps) {
-    const ref = useRef<HTMLDivElement>(null);
+    const ref = useRef<HTMLDivElement | HTMLSpanElement>(null);
 
     useEffect(() => {
         const el = ref.current;
@@ -54,8 +56,8 @@ export default function CounterNumber({
     }, [value, duration]);
 
     return (
-        <div ref={ref} className={className}>
+        <Tag ref={ref as React.Ref<never>} className={className}>
             0
-        </div>
+        </Tag>
     );
 }

@@ -30,7 +30,9 @@ const Navbar6 = () => {
     };
 
     return (
-        <div className="navbar-area style-four top-0 start-0 end-0 h-auto">
+        <div
+            className={`navbar-area style-four top-0 start-0 end-0 h-auto ${isSticky ? "is-sticky" : ""}`}
+        >
             <div className="container-fluid">
                 <nav className="navbar p-0 navbar-expand-lg">
                     <a className="navbar-brand" href="index.html">

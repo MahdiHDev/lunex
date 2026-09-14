@@ -20,7 +20,7 @@ const partners: Partner[] = [
     { id: 6, src: "/assets/images/partners/partner6.svg", alt: "partner" },
 ];
 
-const SPEED = 5; // px per frame — tune to match your old animation speed
+const SPEED = 2; // px per frame — tune to match your old animation speed
 
 export default function TrustedPartner() {
     const trackRef = useRef<HTMLDivElement>(null);
