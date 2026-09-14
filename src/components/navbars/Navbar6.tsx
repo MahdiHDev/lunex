@@ -3,6 +3,7 @@
 import useSticky from "@/hooks/useSticky";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import Link from "next/link";
 import rightTopArrow from "public/assets/images/icons/white-right-top-arrow.svg";
 import logo from "public/assets/images/logo.svg";
 import whiteLogo from "public/assets/images/white-logo.svg";
@@ -35,10 +36,10 @@ const Navbar6 = () => {
         >
             <div className="container-fluid">
                 <nav className="navbar p-0 navbar-expand-lg">
-                    <a className="navbar-brand" href="index.html">
+                    <Link className="navbar-brand" href="/">
                         <Image src={logo} alt="logo" className="black-logo" />
                         <Image src={whiteLogo} className="d-none" alt="logo" />
-                    </a>
+                    </Link>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -61,76 +62,73 @@ const Navbar6 = () => {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="index.html"
-                                            className="nav-link"
-                                        >
+                                        <Link href="/" className="nav-link">
                                             Creative Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-2.html"
+                                        <Link
+                                            href="/index-2"
                                             className="nav-link"
                                         >
                                             Digital Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-3.html"
+                                        <Link
+                                            href="/index-3"
                                             className="nav-link"
                                         >
                                             Development Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-4.html"
+                                        <Link
+                                            href="/index-4"
                                             className="nav-link"
                                         >
                                             Digital Marketing Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-5.html"
+                                        <Link
+                                            href="/index-5"
                                             className="nav-link"
                                         >
                                             UI/UX Design Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-6.html"
+                                        <Link
+                                            href="/index-6"
                                             className="nav-link active"
                                         >
                                             Branding Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-7.html"
+                                        <Link
+                                            href="/index-7"
                                             className="nav-link"
                                         >
                                             Content Creation Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-8.html"
+                                        <Link
+                                            href="/index-8"
                                             className="nav-link"
                                         >
                                             SEO Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="index-9.html"
+                                        <Link
+                                            href="/index-9"
                                             className="nav-link"
                                         >
                                             Cyber Security Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
@@ -143,20 +141,20 @@ const Navbar6 = () => {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="works.html"
+                                        <Link
+                                            href="/works"
                                             className="nav-link"
                                         >
                                             Works
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="work-single.html"
+                                        <Link
+                                            href="/work-single"
                                             className="nav-link"
                                         >
                                             Work Single
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
@@ -169,20 +167,20 @@ const Navbar6 = () => {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="careers.html"
+                                        <Link
+                                            href="/careers"
                                             className="nav-link"
                                         >
                                             Careers
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="career-single.html"
+                                        <Link
+                                            href="/career-single"
                                             className="nav-link"
                                         >
                                             Career Single
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
@@ -195,20 +193,17 @@ const Navbar6 = () => {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="about.html"
+                                        <Link
+                                            href="/about"
                                             className="nav-link"
                                         >
                                             About Us
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="team.html"
-                                            className="nav-link"
-                                        >
+                                        <Link href="/team" className="nav-link">
                                             Team
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
                                         <a
@@ -219,38 +214,38 @@ const Navbar6 = () => {
                                         </a>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
-                                                <a
-                                                    href="services.html"
+                                                <Link
+                                                    href="/services"
                                                     className="nav-link"
                                                 >
                                                     Services
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a
-                                                    href="service-single.html"
+                                                <Link
+                                                    href="/service-single"
                                                     className="nav-link"
                                                 >
                                                     Service Single
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="pricing.html"
+                                        <Link
+                                            href="/pricing"
                                             className="nav-link"
                                         >
                                             Pricing
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="book-a-call.html"
+                                        <Link
+                                            href="/book-a-call"
                                             className="nav-link"
                                         >
                                             Book A Call
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
                                         <a
@@ -261,59 +256,59 @@ const Navbar6 = () => {
                                         </a>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
-                                                <a
-                                                    href="signin.html"
+                                                <Link
+                                                    href="/signin"
                                                     className="nav-link"
                                                 >
                                                     Signin
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a
-                                                    href="signup.html"
+                                                <Link
+                                                    href="/signup"
                                                     className="nav-link"
                                                 >
                                                     Signup
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a
-                                                    href="forgot-password.html"
+                                                <Link
+                                                    href="/forgot-password"
                                                     className="nav-link"
                                                 >
                                                     Forgot Password?
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="faq.html" className="nav-link">
+                                        <Link href="/faq" className="nav-link">
                                             FAQ
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="privacy-policy.html"
+                                        <Link
+                                            href="/privacy-policy"
                                             className="nav-link"
                                         >
                                             Privacy Policy
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="terms-conditions.html"
+                                        <Link
+                                            href="/terms-conditions"
                                             className="nav-link"
                                         >
                                             Terms &amp; Conditions
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="error.html"
+                                        <Link
+                                            href="/error"
                                             className="nav-link"
                                         >
                                             404 Error Page
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
@@ -326,20 +321,17 @@ const Navbar6 = () => {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="blog.html"
-                                            className="nav-link"
-                                        >
+                                        <Link href="/blog" className="nav-link">
                                             Blog
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="blog-single.html"
+                                        <Link
+                                            href="/blog-single"
                                             className="nav-link"
                                         >
                                             Blog Single
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
@@ -352,20 +344,20 @@ const Navbar6 = () => {
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li className="nav-item">
-                                        <a
-                                            href="contact.html"
+                                        <Link
+                                            href="/contact"
                                             className="nav-link"
                                         >
                                             Contact Style 1
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a
-                                            href="contact-2.html"
+                                        <Link
+                                            href="/contact-2"
                                             className="nav-link"
                                         >
                                             Contact Style 2
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
@@ -383,8 +375,8 @@ const Navbar6 = () => {
                                     <i className="ri-sun-line" />
                                 )}
                             </button>
-                            <a
-                                href="contact.html"
+                            <Link
+                                href="/contact"
                                 className="link-btn fw-semibold d-flex align-items-center"
                             >
                                 <span>
@@ -394,7 +386,7 @@ const Navbar6 = () => {
                                     />
                                 </span>
                                 Talk to Us
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <MenuPopup
