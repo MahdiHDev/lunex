@@ -6,7 +6,7 @@ interface CounterNumberProps {
     value: number;
     className?: string;
     duration?: number;
-    as?: "div" | "span";
+    as?: "div" | "span" | "strong";
 }
 
 export default function CounterNumber({
