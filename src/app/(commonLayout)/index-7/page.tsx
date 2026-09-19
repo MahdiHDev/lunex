@@ -1,6 +1,7 @@
 import CounterNumber from "@/components/common/CounterNumber";
 import SlideInUp from "@/components/common/SlideInUp";
 import TextAnimation from "@/components/common/TextAnimation";
+import PartnersSection from "@/components/index7/PartnersSection";
 import TeamSection from "@/components/index7/TeamSection";
 import TestimonialsSection from "@/components/index7/TestimonialsSection";
 import WhyChooseUsModal from "@/components/index7/WhyChooseUsModal";
@@ -16,6 +17,9 @@ import heroBanner3 from "public/assets/images/banners/hero_banner3.jpg";
 import heroBanner4 from "public/assets/images/banners/hero_banner4.jpg";
 import heroBanner5 from "public/assets/images/banners/hero_banner5.jpg";
 import star from "public/assets/images/banners/star.svg";
+import blog4 from "public/assets/images/blogs-two/blog4.jpg";
+import blog5 from "public/assets/images/blogs-two/blog5.jpg";
+import blog6 from "public/assets/images/blogs-two/blog6.jpg";
 import blur from "public/assets/images/blur.png";
 import bolt from "public/assets/images/icons/bolt.svg";
 import vector from "public/assets/images/icons/vector.svg";
@@ -25,6 +29,11 @@ import portfolio2 from "public/assets/images/portfolio/portfolio2.jpg";
 import portfolio3 from "public/assets/images/portfolio/portfolio3.jpg";
 import portfolio4 from "public/assets/images/portfolio/portfolio4.jpg";
 import portfolio5 from "public/assets/images/portfolio/portfolio5.jpg";
+import service1 from "public/assets/images/services/service1.jpg";
+import service2 from "public/assets/images/services/service2.jpg";
+import service3 from "public/assets/images/services/service3.jpg";
+import service4 from "public/assets/images/services/service4.jpg";
+import service5 from "public/assets/images/services/service5.jpg";
 
 const page = () => {
     return (
@@ -425,8 +434,8 @@ const page = () => {
                                             </div>
                                         </div>
                                         <div className="image">
-                                            <img
-                                                src="assets/images/services/service1.jpg"
+                                            <Image
+                                                src={service1}
                                                 alt="service1"
                                             />
                                         </div>
@@ -472,8 +481,8 @@ const page = () => {
                                             </div>
                                         </div>
                                         <div className="image">
-                                            <img
-                                                src="assets/images/services/service2.jpg"
+                                            <Image
+                                                src={service2}
                                                 alt="service2"
                                             />
                                         </div>
@@ -519,8 +528,8 @@ const page = () => {
                                             </div>
                                         </div>
                                         <div className="image">
-                                            <img
-                                                src="assets/images/services/service3.jpg"
+                                            <Image
+                                                src={service3}
                                                 alt="service3"
                                             />
                                         </div>
@@ -566,8 +575,8 @@ const page = () => {
                                             </div>
                                         </div>
                                         <div className="image">
-                                            <img
-                                                src="assets/images/services/service4.jpg"
+                                            <Image
+                                                src={service4}
                                                 alt="service4"
                                             />
                                         </div>
@@ -613,8 +622,8 @@ const page = () => {
                                             </div>
                                         </div>
                                         <div className="image">
-                                            <img
-                                                src="assets/images/services/service5.jpg"
+                                            <Image
+                                                src={service5}
                                                 alt="service5"
                                             />
                                         </div>
@@ -1390,113 +1399,119 @@ const page = () => {
                 {/* Our Blog Area */}
                 <div className="blog_area pt-150 pb-125 position-relative z-1 ">
                     <div className="container-fluid max_w_1560px">
-                        <div className="section_title text-center mx-auto text_animation">
+                        <TextAnimation
+                            as="div"
+                            className="section_title text-center mx-auto text_animation"
+                        >
                             <h2 className="mb-0 text-uppercase fw-black">
                                 Discover Our Newest Articles
                             </h2>
-                        </div>
-                        <div
-                            className="row justify-content-center"
-                            data-cues="slideInUp"
-                            data-group="blog_list"
-                        >
-                            <div className="col-lg-4 col-sm-6">
-                                <div className="blog_single_article_post">
-                                    <div className="image position-relative">
-                                        <a
-                                            href="blog-single.html"
-                                            className="d-block overflow-hidden"
-                                        >
-                                            <img
-                                                src="assets/images/blogs-two/blog4.jpg"
-                                                alt="blog4"
-                                            />
-                                        </a>
-                                        <a
-                                            href="blog.html"
-                                            className="category d-inline-block"
-                                        >
-                                            App Design
-                                        </a>
+                        </TextAnimation>
+                        <SlideInUp selector=".col-lg-4, .col-sm-6">
+                            <div
+                                className="row justify-content-center"
+                                data-cues="slideInUp"
+                                data-group="blog_list"
+                            >
+                                <div className="col-lg-4 col-sm-6">
+                                    <div className="blog_single_article_post">
+                                        <div className="image position-relative">
+                                            <Link
+                                                href="/blog-single"
+                                                className="d-block overflow-hidden"
+                                            >
+                                                <Image
+                                                    src={blog4}
+                                                    alt="blog4"
+                                                />
+                                            </Link>
+                                            <Link
+                                                href="/blog"
+                                                className="category d-inline-block"
+                                            >
+                                                App Design
+                                            </Link>
+                                        </div>
+                                        <div className="content">
+                                            <span className="date d-block">
+                                                June 27, 2025
+                                            </span>
+                                            <h3 className="mb-0">
+                                                <Link href="/blog-single">
+                                                    10 Powerful Tips to Improve
+                                                    and Elevate Your Design
+                                                </Link>
+                                            </h3>
+                                        </div>
                                     </div>
-                                    <div className="content">
-                                        <span className="date d-block">
-                                            June 27, 2025
-                                        </span>
-                                        <h3 className="mb-0">
-                                            <a href="blog-single.html">
-                                                10 Powerful Tips to Improve and
-                                                Elevate Your Design
-                                            </a>
-                                        </h3>
+                                </div>
+                                <div className="col-lg-4 col-sm-6">
+                                    <div className="blog_single_article_post">
+                                        <div className="image position-relative">
+                                            <Link
+                                                href="/blog-single"
+                                                className="d-block overflow-hidden"
+                                            >
+                                                <Image
+                                                    src={blog5}
+                                                    alt="blog4"
+                                                />
+                                            </Link>
+                                            <Link
+                                                href="blog"
+                                                className="category d-inline-block"
+                                            >
+                                                Web Design
+                                            </Link>
+                                        </div>
+                                        <div className="content">
+                                            <span className="date d-block">
+                                                June 26, 2025
+                                            </span>
+                                            <h3 className="mb-0">
+                                                <Link href="/blog-single">
+                                                    What&apos;s the Best Design
+                                                    Tool to Choose in 2025?
+                                                </Link>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 col-sm-6">
+                                    <div className="blog_single_article_post">
+                                        <div className="image position-relative">
+                                            <Link
+                                                href="/blog-single"
+                                                className="d-block overflow-hidden"
+                                            >
+                                                <Image
+                                                    src={blog6}
+                                                    alt="blog4"
+                                                />
+                                            </Link>
+                                            <Link
+                                                href="/blog"
+                                                className="category d-inline-block"
+                                            >
+                                                Writing
+                                            </Link>
+                                        </div>
+                                        <div className="content">
+                                            <span className="date d-block">
+                                                June 25, 2025
+                                            </span>
+                                            <h3 className="mb-0">
+                                                <Link href="/blog-single">
+                                                    6 Effective Exercises to
+                                                    Help You Become a Great UX
+                                                    Designer
+                                                </Link>
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-sm-6">
-                                <div className="blog_single_article_post">
-                                    <div className="image position-relative">
-                                        <a
-                                            href="blog-single.html"
-                                            className="d-block overflow-hidden"
-                                        >
-                                            <img
-                                                src="assets/images/blogs-two/blog5.jpg"
-                                                alt="blog4"
-                                            />
-                                        </a>
-                                        <a
-                                            href="blog.html"
-                                            className="category d-inline-block"
-                                        >
-                                            Web Design
-                                        </a>
-                                    </div>
-                                    <div className="content">
-                                        <span className="date d-block">
-                                            June 26, 2025
-                                        </span>
-                                        <h3 className="mb-0">
-                                            <a href="blog-single.html">
-                                                What’s the Best Design Tool to
-                                                Choose in 2025?
-                                            </a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-sm-6">
-                                <div className="blog_single_article_post">
-                                    <div className="image position-relative">
-                                        <a
-                                            href="blog-single.html"
-                                            className="d-block overflow-hidden"
-                                        >
-                                            <img
-                                                src="assets/images/blogs-two/blog6.jpg"
-                                                alt="blog4"
-                                            />
-                                        </a>
-                                        <a
-                                            href="blog.html"
-                                            className="category d-inline-block"
-                                        >
-                                            Writing
-                                        </a>
-                                    </div>
-                                    <div className="content">
-                                        <span className="date d-block">
-                                            June 25, 2025
-                                        </span>
-                                        <h3 className="mb-0">
-                                            <a href="blog-single.html">
-                                                6 Effective Exercises to Help
-                                                You Become a Great UX Designer
-                                            </a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </SlideInUp>
                     </div>
                     <div className="border_lines">
                         <div className="line" />
@@ -1509,178 +1524,107 @@ const page = () => {
                 </div>
                 {/* End Our Blog Area */}
                 {/* Partners Area */}
-                <div className="partners_area position-relative z-1 ">
-                    <div className="container-fluid max_w_1560px">
-                        <div
-                            className="partners_slides owl-carousel owl-theme"
-                            data-cue="slideInUp"
-                        >
-                            <div className="partner_item text-center">
-                                <img
-                                    src="assets/images/partners/partner1.svg"
-                                    alt="partner1"
-                                />
-                            </div>
-                            <div className="partner_item text-center">
-                                <img
-                                    src="assets/images/partners/partner2.svg"
-                                    alt="partner2"
-                                />
-                            </div>
-                            <div className="partner_item text-center">
-                                <img
-                                    src="assets/images/partners/partner3.svg"
-                                    alt="partner3"
-                                />
-                            </div>
-                            <div className="partner_item text-center">
-                                <img
-                                    src="assets/images/partners/partner4.svg"
-                                    alt="partner4"
-                                />
-                            </div>
-                            <div className="partner_item text-center">
-                                <img
-                                    src="assets/images/partners/partner5.svg"
-                                    alt="partner5"
-                                />
-                            </div>
-                            <div className="partner_item text-center">
-                                <img
-                                    src="assets/images/partners/partner1.svg"
-                                    alt="partner1"
-                                />
-                            </div>
-                            <div className="partner_item text-center">
-                                <img
-                                    src="assets/images/partners/partner2.svg"
-                                    alt="partner2"
-                                />
-                            </div>
-                            <div className="partner_item text-center">
-                                <img
-                                    src="assets/images/partners/partner3.svg"
-                                    alt="partner3"
-                                />
-                            </div>
-                            <div className="partner_item text-center">
-                                <img
-                                    src="assets/images/partners/partner4.svg"
-                                    alt="partner4"
-                                />
-                            </div>
-                            <div className="partner_item text-center">
-                                <img
-                                    src="assets/images/partners/partner5.svg"
-                                    alt="partner5"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="border_lines">
-                        <div className="line" />
-                        <div className="line" />
-                        <div className="line" />
-                        <div className="line" />
-                        <div className="line" />
-                        <div className="line" />
-                    </div>
-                </div>
+                <PartnersSection />
                 {/* End Partners Area */}
                 {/* Footer Area */}
                 <footer className="footer_area_two pt-150 position-relative z-1">
                     <div className="container-fluid max_w_1560px">
-                        <div
-                            className="row"
-                            data-cues="slideInUp"
-                            data-group="footer_list"
-                        >
-                            <div className="col-lg-6">
-                                <div className="row">
-                                    <div className="col-sm-6">
-                                        <div className="footer_two_widget">
-                                            <h3>Quick links</h3>
-                                            <ul className="links p-0 mb-0 list-unstyled">
-                                                <li>
-                                                    <a href="index.html">
-                                                        Home
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="about.html">
-                                                        About Us
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog.html">Blog</a>
-                                                </li>
-                                                <li>
-                                                    <a href="services.html">
-                                                        Services
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="contact.html">
-                                                        Contact Us
-                                                    </a>
-                                                </li>
-                                            </ul>
+                        <SlideInUp selector=".col-lg-6">
+                            <div
+                                className="row"
+                                data-cues="slideInUp"
+                                data-group="footer_list"
+                            >
+                                <div className="col-lg-6">
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <div className="footer_two_widget">
+                                                <h3>Quick links</h3>
+                                                <ul className="links p-0 mb-0 list-unstyled">
+                                                    <li>
+                                                        <a href="index.html">
+                                                            Home
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="about.html">
+                                                            About Us
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="blog.html">
+                                                            Blog
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="services.html">
+                                                            Services
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="contact.html">
+                                                            Contact Us
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="col-sm-6">
-                                        <div className="footer_two_widget">
-                                            <h3>Utility Pages</h3>
-                                            <ul className="links p-0 mb-0 list-unstyled">
-                                                <li>
-                                                    <a href="privacy-policy.html">
-                                                        Privacy Policy
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="terms-conditions.html">
-                                                        Terms &amp; Conditions
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="privacy-policy.html">
-                                                        Cookie Policy
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="terms-conditions.html">
-                                                        Refund Policy
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="privacy-policy.html">
-                                                        Disclaimer
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                        <div className="col-sm-6">
+                                            <div className="footer_two_widget">
+                                                <h3>Utility Pages</h3>
+                                                <ul className="links p-0 mb-0 list-unstyled">
+                                                    <li>
+                                                        <a href="privacy-policy.html">
+                                                            Privacy Policy
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="terms-conditions.html">
+                                                            Terms &amp;
+                                                            Conditions
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="privacy-policy.html">
+                                                            Cookie Policy
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="terms-conditions.html">
+                                                            Refund Policy
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="privacy-policy.html">
+                                                            Disclaimer
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="footer_newsletter_box">
-                                    <h3>We’d Love to Hear from You</h3>
-                                    <form>
-                                        <input
-                                            type="text"
-                                            className="form-control shadow-none rounded-0 border-0 fw-medium"
-                                            placeholder="Type Your Email"
-                                        />
-                                        <button type="submit">
-                                            <i className="ri-send-plane-fill" />
-                                        </button>
-                                    </form>
-                                    <p>
-                                        Reach out and let’s craft something
-                                        remarkable together.
-                                    </p>
+                                <div className="col-lg-6">
+                                    <div className="footer_newsletter_box">
+                                        <h3>We’d Love to Hear from You</h3>
+                                        <form>
+                                            <input
+                                                type="text"
+                                                className="form-control shadow-none rounded-0 border-0 fw-medium"
+                                                placeholder="Type Your Email"
+                                            />
+                                            <button type="submit">
+                                                <i className="ri-send-plane-fill" />
+                                            </button>
+                                        </form>
+                                        <p>
+                                            Reach out and let’s craft something
+                                            remarkable together.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </SlideInUp>
                         <ul className="footer_socials row p-0 mx-0 mb-0 list-unstyled">
                             <li className="col-md-3 px-0">
                                 <a
@@ -1723,9 +1667,12 @@ const page = () => {
                                 </a>
                             </li>
                         </ul>
-                        <div className="footer_logo_text lh-1 fw-black text_animation">
+                        <TextAnimation
+                            as="div"
+                            className="footer_logo_text lh-1 fw-black text_animation"
+                        >
                             Lunex.
-                        </div>
+                        </TextAnimation>
                         <div className="copyright_area_two text-center">
                             <ul className="p-0 mb-0 list-unstyled">
                                 <li className="d-inline-block position-relative">
@@ -1745,11 +1692,7 @@ const page = () => {
                             </ul>
                         </div>
                     </div>
-                    <img
-                        src="assets/images/objects/blur.png"
-                        className="shape"
-                        alt="blur"
-                    />
+                    <Image src={blur} className="shape" alt="blur" />
                     <div className="border_lines">
                         <div className="line" />
                         <div className="line" />
