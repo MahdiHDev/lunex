@@ -380,15 +380,15 @@ const page = () => {
                                     </p>
                                 </div>
                                 <div className="col-lg-5 text-lg-end">
-                                    <a
-                                        href="services.html"
+                                    <Link
+                                        href="/services"
                                         className="btn black_btn style_two with_border"
                                     >
                                         <span className="d-inline-block position-relative">
                                             View All Services{" "}
                                             <i className="ri-arrow-right-up-line" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </TextAnimation>
@@ -424,12 +424,12 @@ const page = () => {
                                                         stay with us for longer
                                                         than a single project.
                                                     </p>
-                                                    <a
-                                                        href="service-single.html"
+                                                    <Link
+                                                        href="/service-single"
                                                         className="details_link_btn"
                                                     >
                                                         <i className="ri-arrow-right-up-line" />
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -440,8 +440,8 @@ const page = () => {
                                             />
                                         </div>
                                     </div>
-                                    <a
-                                        href="service-single.html"
+                                    <Link
+                                        href="/service-single"
                                         className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
                                     />
                                 </div>
@@ -471,12 +471,12 @@ const page = () => {
                                                         stay with us for longer
                                                         than a single project.
                                                     </p>
-                                                    <a
-                                                        href="service-single.html"
+                                                    <Link
+                                                        href="/service-single"
                                                         className="details_link_btn"
                                                     >
                                                         <i className="ri-arrow-right-up-line" />
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -487,8 +487,8 @@ const page = () => {
                                             />
                                         </div>
                                     </div>
-                                    <a
-                                        href="service-single.html"
+                                    <Link
+                                        href="/service-single"
                                         className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
                                     />
                                 </div>
@@ -518,12 +518,12 @@ const page = () => {
                                                         stay with us for longer
                                                         than a single project.
                                                     </p>
-                                                    <a
-                                                        href="service-single.html"
+                                                    <Link
+                                                        href="/service-single"
                                                         className="details_link_btn"
                                                     >
                                                         <i className="ri-arrow-right-up-line" />
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -534,8 +534,8 @@ const page = () => {
                                             />
                                         </div>
                                     </div>
-                                    <a
-                                        href="service-single.html"
+                                    <Link
+                                        href="/service-single"
                                         className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
                                     />
                                 </div>
@@ -565,12 +565,12 @@ const page = () => {
                                                         stay with us for longer
                                                         than a single project.
                                                     </p>
-                                                    <a
-                                                        href="service-single.html"
+                                                    <Link
+                                                        href="/service-single"
                                                         className="details_link_btn"
                                                     >
                                                         <i className="ri-arrow-right-up-line" />
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -581,8 +581,8 @@ const page = () => {
                                             />
                                         </div>
                                     </div>
-                                    <a
-                                        href="service-single.html"
+                                    <Link
+                                        href="/service-single"
                                         className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
                                     />
                                 </div>
@@ -612,12 +612,12 @@ const page = () => {
                                                         stay with us for longer
                                                         than a single project.
                                                     </p>
-                                                    <a
-                                                        href="service-single.html"
+                                                    <Link
+                                                        href="/service-single"
                                                         className="details_link_btn"
                                                     >
                                                         <i className="ri-arrow-right-up-line" />
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -628,8 +628,8 @@ const page = () => {
                                             />
                                         </div>
                                     </div>
-                                    <a
-                                        href="service-single.html"
+                                    <Link
+                                        href="/service-single"
                                         className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
                                     />
                                 </div>
@@ -989,8 +989,8 @@ const page = () => {
                                                     alt="portfolio2"
                                                 />
                                             </div>
-                                            <a
-                                                href="work-single.html"
+                                            <Link
+                                                href="/work-single"
                                                 className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
                                             />
                                         </div>
@@ -1007,8 +1007,8 @@ const page = () => {
                                                     alt="portfolio3"
                                                 />
                                             </div>
-                                            <a
-                                                href="work-single.html"
+                                            <Link
+                                                href="/work-single"
                                                 className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
                                             />
                                         </div>
@@ -1023,8 +1023,8 @@ const page = () => {
                                                     alt="portfolio4"
                                                 />
                                             </div>
-                                            <a
-                                                href="work-single.html"
+                                            <Link
+                                                href="/work-single"
                                                 className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
                                             />
                                         </div>
@@ -1041,8 +1041,8 @@ const page = () => {
                                                     alt="portfolio5"
                                                 />
                                             </div>
-                                            <a
-                                                href="work-single.html"
+                                            <Link
+                                                href="/work-single"
                                                 className="position-absolute z-1 start-0 end-0 top-0 bottom-0"
                                             />
                                         </div>
@@ -1458,7 +1458,7 @@ const page = () => {
                                                 />
                                             </Link>
                                             <Link
-                                                href="blog"
+                                                href="/blog"
                                                 className="category d-inline-block"
                                             >
                                                 Web Design
@@ -1542,29 +1542,29 @@ const page = () => {
                                                 <h3>Quick links</h3>
                                                 <ul className="links p-0 mb-0 list-unstyled">
                                                     <li>
-                                                        <a href="index.html">
+                                                        <Link href="/">
                                                             Home
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="about.html">
+                                                        <Link href="/about">
                                                             About Us
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="blog.html">
+                                                        <Link href="/blog">
                                                             Blog
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="services.html">
+                                                        <Link href="/services">
                                                             Services
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="contact.html">
+                                                        <Link href="/contact">
                                                             Contact Us
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1574,30 +1574,30 @@ const page = () => {
                                                 <h3>Utility Pages</h3>
                                                 <ul className="links p-0 mb-0 list-unstyled">
                                                     <li>
-                                                        <a href="privacy-policy.html">
+                                                        <Link href="/privacy-policy">
                                                             Privacy Policy
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="terms-conditions.html">
+                                                        <Link href="/terms-conditions">
                                                             Terms &amp;
                                                             Conditions
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="privacy-policy.html">
+                                                        <Link href="/privacy-policy">
                                                             Cookie Policy
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="terms-conditions.html">
+                                                        <Link href="/terms-conditions">
                                                             Refund Policy
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="privacy-policy.html">
+                                                        <Link href="/privacy-policy">
                                                             Disclaimer
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                 </ul>
                                             </div>
