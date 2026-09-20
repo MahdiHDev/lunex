@@ -194,10 +194,64 @@
     font-size: 25px;
 }
 
+/* If this isn't working: */
+.reviews_slides_wrapper .reviews_slides {
+    margin-left: 300px;
+}
+
+.review_wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.review_wrapper .review_prev,
+.review_wrapper .review_next {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.review_wrapper .review_prev i,
+.review_wrapper .review_next i {
+    font-size: 25px;
+}
+
+.review_wrapper .review_prev:hover,
+.review_wrapper .review_next:hover {
+    background-color: #5538ce;
+    border: 1px solid #5538ce;
+}
+
+[dir="rtl"] .review_prev i,
+[dir="rtl"] .review_next i {
+    transform: scaleX(-1);
+    display: inline-block;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .feedback_button {
         height: 70px;
         width: 70px;
+    }
+    .reviews_slides_wrapper .reviews_slides {
+        margin-left: 0;
+        padding-bottom: 120px;
+    }
+    .review_wrapper {
+        position: relative;
+        margin-top: -95px;
+        z-index: 10;
+        gap: 15px;
     }
 }
 
@@ -228,6 +282,27 @@
     }
     .testimonial_wrapper .testimonial_prev i,
     .testimonial_wrapper .testimonial_next i {
+        font-size: 22px;
+    }
+    .reviews_slides_wrapper .reviews_slides {
+        margin-left: 0;
+        padding-bottom: 110px;
+    }
+    .review_wrapper {
+        position: relative;
+        margin-top: -80px;
+        z-index: 10;
+        gap: 15px;
+    }
+
+    .review_wrapper .review_prev,
+    .review_wrapper .review_next {
+        width: 50px;
+        height: 50px;
+    }
+
+    .review_wrapper .review_prev i,
+    .review_wrapper .review_next i {
         font-size: 22px;
     }
 }
@@ -265,6 +340,25 @@
     }
     .testimonial_wrapper .testimonial_prev i,
     .testimonial_wrapper .testimonial_next i {
+        font-size: 22px;
+    }
+    .reviews_slides_wrapper .reviews_slides {
+        margin-left: 0;
+        padding-bottom: 90px;
+    }
+    .review_wrapper {
+        position: relative;
+        margin-top: -70px;
+        z-index: 10;
+        gap: 10px;
+    }
+    .review_wrapper .review_prev,
+    .review_wrapper .review_next {
+        width: 45px;
+        height: 45px;
+    }
+    .review_wrapper .review_prev i,
+    .review_wrapper .review_next i {
         font-size: 22px;
     }
 }

@@ -47,7 +47,7 @@ const ReviewsSection = () => {
                     </span>
                 </div>
 
-                <div className="reviews_slides_wrapper position-relative">
+                <div className="reviews_slides_wrapper position-relative display-block">
                     <Swiper
                         modules={[Navigation, Autoplay, EffectFade]}
                         className="reviews_slides"
@@ -97,10 +97,10 @@ const ReviewsSection = () => {
                     </Swiper>
 
                     <div className="review_wrapper">
-                        <div className="review_prev owl-nav-style">
+                        <div className="review_prev ">
                             <i className="ri-arrow-left-line" />
                         </div>
-                        <div className="review_next owl-nav-style">
+                        <div className="review_next ">
                             <i className="ri-arrow-right-line" />
                         </div>
                     </div>
