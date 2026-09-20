@@ -1,3 +1,9 @@
+.ltr-rtl-btn span {
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
 /* Fix navbar to not take up document flow space */
 .navbar-area {
     position: fixed;
