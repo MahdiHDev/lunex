@@ -1,3 +1,4 @@
+import BackToTop from "@/components/common/BackToTop";
 import OdometerClient2 from "@/components/common/OdometerClient2";
 import SlideInUp from "@/components/common/SlideInUp";
 import TestimonialSlider2 from "@/components/common/TestimonialsSlider2";
@@ -10,13 +11,6 @@ export default function page() {
     return (
         <div>
             <div>
-                {/* Preloader */}
-                {/* <div className="preloader-area position-fixed top-0 start-0 end-0 bottom-0 text-center">
-                    <div className="h-100 d-flex align-items-center justify-content-center">
-                        <div className="loader" />
-                    </div>
-                </div> */}
-                {/* End Preloader */}
                 {/* Start Navbar Area */}
                 <Navbar2 />
                 {/* End Navbar Area */}
@@ -1586,16 +1580,7 @@ export default function page() {
                 </footer>
                 {/* End Footer Area */}
                 {/* Back to Top */}
-                <div className="back-to-top rounded-circle position-fixed text-center rounded-circle">
-                    <img
-                        src="assets/images/icons/up-arrow.svg"
-                        alt="up-arrow"
-                    />
-                    <img
-                        src="assets/images/icons/white-up-arrow.svg"
-                        alt="white-up-arrow"
-                    />
-                </div>
+                <BackToTop isBottonShow={false} />
                 {/* End Back to Top */}
             </div>
         </div>

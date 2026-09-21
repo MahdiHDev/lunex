@@ -1,3 +1,4 @@
+import BackToTop from "@/components/common/BackToTop";
 import HeroReveal from "@/components/common/HeroReveal";
 import ScrambleText from "@/components/common/ScrambleText";
 import SlideInUp from "@/components/common/SlideInUp";
@@ -986,13 +987,7 @@ const page = () => {
             </footer>
             {/* End Footer Area */}
             {/* Back to Top */}
-            <div className="back-to-top rounded-circle position-fixed text-center rounded-circle">
-                <img src="assets/images/icons/up-arrow.svg" alt="up-arrow" />
-                <img
-                    src="assets/images/icons/white-up-arrow.svg"
-                    alt="white-up-arrow"
-                />
-            </div>
+            <BackToTop isBottonShow={false} />
             {/* End Back to Top */}
         </div>
     );

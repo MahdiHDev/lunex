@@ -1,6 +1,7 @@
 import CounterNumber from "@/components/common/CounterNumber";
 import SlideInUp from "@/components/common/SlideInUp";
 import TextAnimation from "@/components/common/TextAnimation";
+import BackToTop from "@/components/index6/BackToTop";
 import PartnersSection from "@/components/index7/PartnersSection";
 import TeamSection from "@/components/index7/TeamSection";
 import TestimonialsSection from "@/components/index7/TestimonialsSection";
@@ -1704,9 +1705,7 @@ const page = () => {
                 </footer>
                 {/* End Footer Area */}
                 {/* Back To Top */}
-                <div className="back_to_top position-fixed text-center rounded-circle">
-                    <i className="ri-arrow-up-s-line" />
-                </div>
+                <BackToTop />
                 {/* End Back To Top */}
             </div>
         </div>

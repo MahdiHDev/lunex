@@ -73,12 +73,7 @@ export default function PartnersSllider() {
                     {rowOneSlides.map((logo) => (
                         <SwiperSlide key={logo.id}>
                             <div className="partner-item">
-                                <Image
-                                    src={logo.uri}
-                                    alt="partner-image"
-                                    width={120}
-                                    height={60}
-                                />
+                                <Image src={logo.uri} alt="partner-image" />
                             </div>
                         </SwiperSlide>
                     ))}
@@ -102,12 +97,7 @@ export default function PartnersSllider() {
                     {rowTwoSlides.map((logo) => (
                         <SwiperSlide key={logo.id}>
                             <div className="partner-item">
-                                <Image
-                                    src={logo.uri}
-                                    alt="partner-image"
-                                    width={120}
-                                    height={60}
-                                />
+                                <Image src={logo.uri} alt="partner-image" />
                             </div>
                         </SwiperSlide>
                     ))}

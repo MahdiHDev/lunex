@@ -1,3 +1,4 @@
+import BackToTop from "@/components/common/BackToTop";
 import ScrambleText from "@/components/common/ScrambleText";
 import SlideInUp from "@/components/common/SlideInUp";
 import TextAnimation from "@/components/common/TextAnimation";
@@ -881,6 +882,8 @@ const page = () => {
                 {/* Start Footer Area  */}
                 <Footer2 />
                 {/* End Footer Area  */}
+
+                <BackToTop isBottonShow={false} />
             </div>
         </div>
     );
