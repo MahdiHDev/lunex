@@ -733,10 +733,10 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
     const panelClass = (key: MainKey) =>
         `acc-panel ${activeMain === key ? "acc-panel-open" : ""}`;
 
-    const subButtonClass = (key: PagesSubKey) =>
+    const subButtonClass = (key: PagesSubKey, extraActive: boolean = false) =>
         `accordion-button d-block w-100 shadow-none position-relative text-decoration-none bg-transparent fw-semibold ${
             activePagesSub === key ? "" : "collapsed"
-        }`;
+        } ${extraActive ? "active" : ""}`;
 
     const subPanelClass = (key: PagesSubKey) =>
         `acc-panel ${activePagesSub === key ? "acc-panel-open" : ""}`;
@@ -847,7 +847,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                 onClick={
                                                                     handleClose
                                                                 }
-                                                                href="index-7"
+                                                                href="/index-7"
                                                             >
                                                                 Content Creation
                                                                 Agency
@@ -859,7 +859,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                 onClick={
                                                                     handleClose
                                                                 }
-                                                                href="index-8"
+                                                                href="/index-8"
                                                             >
                                                                 SEO Agency
                                                             </Link>
@@ -870,7 +870,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                 onClick={
                                                                     handleClose
                                                                 }
-                                                                href="index-9"
+                                                                href="/index-9"
                                                             >
                                                                 Cyber Security
                                                                 Agency
@@ -905,7 +905,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                     <div className="accordion">
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="works"
+                                                                href="/works"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -916,7 +916,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="work-single"
+                                                                href="/work-single"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -956,7 +956,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                     <div className="accordion">
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="careers"
+                                                                href="/careers"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -967,7 +967,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="career-single"
+                                                                href="/career-single"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -1005,7 +1005,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                     <div className="accordion">
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="about"
+                                                                href="/about"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -1016,7 +1016,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="team"
+                                                                href="/team"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -1031,6 +1031,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                             <button
                                                                 className={subButtonClass(
                                                                     "services",
+                                                                    serviceActive,
                                                                 )}
                                                                 type="button"
                                                                 onClick={() =>
@@ -1062,7 +1063,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                                 onClick={
                                                                                     handleClose
                                                                                 }
-                                                                                href="services"
+                                                                                href="/services"
                                                                             >
                                                                                 Services
                                                                             </Link>
@@ -1073,7 +1074,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                                 onClick={
                                                                                     handleClose
                                                                                 }
-                                                                                href="service-single"
+                                                                                href="/service-single"
                                                                             >
                                                                                 Service
                                                                                 Single
@@ -1086,7 +1087,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
 
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="pricing"
+                                                                href="/pricing"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -1097,7 +1098,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="book-a-call"
+                                                                href="/book-a-call"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -1112,6 +1113,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                             <button
                                                                 className={subButtonClass(
                                                                     "myAccount",
+                                                                    myAccountActive,
                                                                 )}
                                                                 type="button"
                                                                 onClick={() =>
@@ -1143,7 +1145,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                                 onClick={
                                                                                     handleClose
                                                                                 }
-                                                                                href="signin"
+                                                                                href="/signin"
                                                                             >
                                                                                 Signin
                                                                             </Link>
@@ -1154,7 +1156,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                                 onClick={
                                                                                     handleClose
                                                                                 }
-                                                                                href="signup"
+                                                                                href="/signup"
                                                                             >
                                                                                 Signup
                                                                             </Link>
@@ -1165,7 +1167,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                                                 onClick={
                                                                                     handleClose
                                                                                 }
-                                                                                href="forgot-password"
+                                                                                href="/forgot-password"
                                                                             >
                                                                                 Forgot
                                                                                 Password?
@@ -1178,7 +1180,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
 
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="faq"
+                                                                href="/faq"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -1189,7 +1191,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="privacy-policy"
+                                                                href="/privacy-policy"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -1200,7 +1202,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="terms-conditions"
+                                                                href="/terms-conditions"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -1212,7 +1214,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="error"
+                                                                href="/error"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -1250,7 +1252,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                     <div className="accordion">
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="blog"
+                                                                href="/blog"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -1261,7 +1263,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="blog-single"
+                                                                href="/blog-single"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -1301,7 +1303,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                     <div className="accordion">
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="contact"
+                                                                href="/contact"
                                                                 onClick={
                                                                     handleClose
                                                                 }
@@ -1312,7 +1314,7 @@ export default function MenuPopup({ isOpen, onClose }: Props) {
                                                         </div>
                                                         <div className="accordion-item border-0 rounded-0 bg-transparent">
                                                             <Link
-                                                                href="contact-2"
+                                                                href="/contact-2"
                                                                 onClick={
                                                                     handleClose
                                                                 }

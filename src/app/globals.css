@@ -87,6 +87,10 @@
     color: #fff;
 }
 
+.menu-popup-area .meanu-popup-nav a.accordion-link.active {
+    color: #5538ce !important;
+}
+
 /* On small screens, pull nav below/beside content instead of overlapping text */
 @media (max-width: 1199px) {
     .awesome_testimonials_slides .owl-nav {
