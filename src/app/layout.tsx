@@ -6,14 +6,11 @@ import AnimationFailsafe from "@/components/common/AnimationFailsafe";
 import DirectionToggle from "@/components/common/DirectionToggle";
 import ThemeSettingsMenu from "@/components/common/ThemeSettingMenu";
 import { ThemeProvider } from "@/providers/ThemeProvider";
+import { Metadata } from "next";
 import Script from "next/script";
 
-export const metadata = {
-    title: "Lunex",
-    description: "Creative Agency Template",
-    icons: {
-        icon: "/assets/images/favicon.png",
-    },
+export const metadata: Metadata = {
+    title: "Lunex - Creative Agency HTML Template",
 };
 
 export default function RootLayout({

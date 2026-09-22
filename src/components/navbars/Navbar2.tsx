@@ -6,6 +6,11 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import MenuPopup from "../menu/MenuPopup";
 
+import Image from "next/image";
+import rightTopArrow from "public/assets/images/icons/right-top-arrow.svg";
+import logo from "public/assets/images/logo.svg";
+import whiteLogo from "public/assets/images/white-logo.svg";
+
 const Navbar2 = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const { theme, setTheme } = useTheme();
@@ -32,18 +37,10 @@ const Navbar2 = () => {
         >
             <div className="container">
                 <nav className="navbar p-0 navbar-expand-lg">
-                    <a className="navbar-brand" href="">
-                        <img
-                            src="assets/images/logo.svg"
-                            alt="logo"
-                            className="black-logo"
-                        />
-                        <img
-                            src="assets/images/white-logo.svg"
-                            className="d-none"
-                            alt="logo"
-                        />
-                    </a>
+                    <Link className="navbar-brand" href="/">
+                        <Image src={logo} alt="logo" className="black-logo" />
+                        <Image src={whiteLogo} className="d-none" alt="logo" />
+                    </Link>
                     <button
                         onClick={() => setMenuOpen(!menuOpen)}
                         className="navbar-toggler"
@@ -375,8 +372,8 @@ const Navbar2 = () => {
                                 className="link-btn style-two d-flex align-items-center"
                             >
                                 <span>
-                                    <img
-                                        src="assets/images/icons/right-top-arrow.svg"
+                                    <Image
+                                        src={rightTopArrow}
                                         alt="right-top-arrow"
                                     />
                                 </span>
