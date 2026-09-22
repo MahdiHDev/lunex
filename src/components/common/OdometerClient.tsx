@@ -18,27 +18,49 @@ function StatBox({ count, label }: { count: number; label: string }) {
     const boxRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
+        if ("scrollRestoration" in window.history) {
+            window.history.scrollRestoration = "manual";
+        }
+
         const ctx = gsap.context(() => {
             const columns = boxRef.current?.querySelectorAll<HTMLElement>(
                 ".odometer-digit-inner",
             );
 
-            ScrollTrigger.create({
+            const playAnimation = () => {
+                columns?.forEach((col, i) => {
+                    const targetDigit = digits[i];
+                    gsap.to(col, {
+                        y: `-${targetDigit * 10}%`,
+                        duration: 1.5 + i * 0.2,
+                        ease: "power3.out",
+                    });
+                });
+            };
+
+            const trigger = ScrollTrigger.create({
                 trigger: boxRef.current,
                 start: "top 85%",
                 once: true,
-                onEnter: () => {
-                    columns?.forEach((col, i) => {
-                        const targetDigit = digits[i];
-                        gsap.to(col, {
-                            y: `-${targetDigit * 10}%`,
-                            duration: 1.5 + i * 0.2,
-                            ease: "power3.out",
-                        });
-                    });
-                },
+                onEnter: playAnimation,
+            });
+
+            // Fallback: if the element is ALREADY within the trigger zone
+            // at creation time (e.g. reload with scroll restored mid-page),
+            // onEnter may never fire because no "crossing" event happens.
+            // Check manually and fire once if so.
+            requestAnimationFrame(() => {
+                trigger.refresh();
+                if (trigger.isActive) {
+                    playAnimation();
+                    trigger.kill();
+                }
             });
         }, boxRef);
+
+        document.fonts.ready.then(() => {
+            ScrollTrigger.refresh();
+        });
 
         return () => ctx.revert();
     }, [digits]);

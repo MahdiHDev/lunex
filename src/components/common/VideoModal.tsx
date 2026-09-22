@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 interface VideoModalProps {
     videoUrl: string | null;
@@ -14,8 +15,13 @@ function getYouTubeEmbedUrl(url: string): string | null {
 }
 
 export default function VideoModal({ videoUrl, onClose }: VideoModalProps) {
-    // Close on Escape, and stop the page from scrolling behind the modal
-    // while it's open.
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setMounted(true);
+    }, []);
+
     useEffect(() => {
         if (!videoUrl) return;
 
@@ -32,43 +38,22 @@ export default function VideoModal({ videoUrl, onClose }: VideoModalProps) {
         };
     }, [videoUrl, onClose]);
 
-    if (!videoUrl) return null;
+    if (!mounted || !videoUrl) return null;
 
     const embedUrl = getYouTubeEmbedUrl(videoUrl);
     if (!embedUrl) return null;
 
-    return (
-        <div
-            className="video-modal-overlay position-fixed top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center"
-            onClick={onClose}
-            style={{
-                zIndex: 999999999999,
-                background: "rgba(0, 0, 0, 0.85)",
-            }}
-        >
+    return createPortal(
+        <div className="video-modal-overlay" onClick={onClose}>
             <div
-                className="video-modal-frame position-absolute"
+                className="video-modal-frame"
                 onClick={(e) => e.stopPropagation()}
-                style={{
-                    width: "min(90vw, 960px)",
-                    aspectRatio: "16 / 9",
-                }}
             >
                 <button
                     type="button"
+                    className="video-modal-close"
                     onClick={onClose}
                     aria-label="Close video"
-                    style={{
-                        position: "absolute",
-                        top: "-30px",
-                        right: 0,
-                        background: "transparent",
-                        border: "none",
-                        color: "#fff",
-                        fontSize: 32,
-                        lineHeight: 1,
-                        cursor: "pointer",
-                    }}
                 >
                     <i className="ri-close-line" />
                 </button>
@@ -80,6 +65,7 @@ export default function VideoModal({ videoUrl, onClose }: VideoModalProps) {
                     style={{ width: "100%", height: "100%", border: 0 }}
                 />
             </div>
-        </div>
+        </div>,
+        document.body,
     );
 }

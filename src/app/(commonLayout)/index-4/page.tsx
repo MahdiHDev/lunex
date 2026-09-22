@@ -3,6 +3,7 @@ import ScrambleText from "@/components/common/ScrambleText";
 import SlideInUp from "@/components/common/SlideInUp";
 import TextAnimation from "@/components/common/TextAnimation";
 import Footer2 from "@/components/index4/Footer2";
+import MarketingVideoModal from "@/components/index4/MarketingVideoModal";
 import PartnerSlider from "@/components/index4/PartnerSlider";
 import Testimonialslider3 from "@/components/index4/TestimonialSlider3";
 import Navbar4 from "@/components/navbars/Navbar4";
@@ -75,18 +76,7 @@ const page = () => {
                                 />{" "}
                                 <span>not merely an outcome.</span>
                             </h2>
-                            <div className="box mx-auto position-relative">
-                                <img
-                                    src="assets/images/videos/video2.jpg"
-                                    alt="video-image"
-                                />
-                                <a
-                                    href="https://www.youtube.com/watch?v=HKk4oLIzhhM"
-                                    className="video-btn popup-youtube d-inline-block rounded-circle text-center"
-                                >
-                                    <i className="ri-play-fill" />
-                                </a>
-                            </div>
+                            <MarketingVideoModal />
                             <div className="shape5">
                                 <img
                                     src="assets/images/shapes/shape5.svg"

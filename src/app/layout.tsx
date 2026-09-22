@@ -2,6 +2,7 @@
 import BootstrapClient from "@/components/BootstrapClient";
 // import "@/styles/odometer.css";
 import "@/app/globals.css";
+import AnimationFailsafe from "@/components/common/AnimationFailsafe";
 import DirectionToggle from "@/components/common/DirectionToggle";
 import ThemeSettingsMenu from "@/components/common/ThemeSettingMenu";
 import { ThemeProvider } from "@/providers/ThemeProvider";
@@ -84,6 +85,7 @@ export default function RootLayout({
                     enableSystem={false}
                 >
                     <BootstrapClient />
+                    <AnimationFailsafe />
                     {children}
                     <DirectionToggle />
                     <ThemeSettingsMenu />

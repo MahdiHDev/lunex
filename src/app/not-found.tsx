@@ -1,7 +1,10 @@
 "use client";
 import ScrambleText from "@/components/common/ScrambleText";
 import useMountedTheme from "@/hooks/useMountedTheme";
+import Image from "next/image";
 import Link from "next/link";
+
+import whiteRightTopArrow from "public/assets/images/icons/white-right-top-arrow.svg";
 
 const NotFound = () => {
     const { mounted, theme, toggleTheme } = useMountedTheme();
@@ -25,8 +28,8 @@ const NotFound = () => {
                                     className="link-btn menu_link text-center d-inline-block rounded-circle"
                                     data-cue="slideInUp"
                                 >
-                                    <img
-                                        src="assets/images/icons/white-right-top-arrow.svg"
+                                    <Image
+                                        src={whiteRightTopArrow}
                                         alt="right-top-arrow"
                                     />
                                     <span className="menu_link-text">
